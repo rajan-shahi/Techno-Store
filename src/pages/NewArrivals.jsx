@@ -14,17 +14,28 @@ const NewArrivals = () => {
   return (
     <div className=" flex justify-center">
       {/* container */}
-      <div className="  w-10/12 grid grid-cols-5 gap-2">
+      <div className="  w-10/12 grid grid-cols-5 gap-4 py-8">
         {products.map((product, index) => (
-
-          <div key={index} className="border p-3 ">
-            <img src={product.image} alt="" />
-            <p>{product.name}</p>
-            <p>{product.model}</p>
-            <p>{product.desc}</p>
-            <p>{product.price}</p>
+          <div key={index} className=" hover:border-2 p-3 hover:rounded-2xl ">
+            <div className=" flex flex-col gap-3 py-12  items-center">
+              <img 
+                className=" cursor-pointer pb-4 h-28 "
+                src={product.image }
+                alt=""
+              />
+              <p className=" text-gray-300  ">{product.name}</p>
+              <p className=" hover:text-orange-600 cursor-pointer text-sm text-gray-500">
+                {product.model}
+              </p>
+              <p className=" hover:text-orange-600 cursor-pointer text-sm">
+                {product.desc}
+              </p>
+              <p className=" text-orange-600 text-2xl cursor-pointer">
+                {product.price}
+              </p>
+              <p>{product.card}</p>
+            </div>
           </div>
-
         ))}
       </div>
     </div>
@@ -33,76 +44,85 @@ const NewArrivals = () => {
 
 export default NewArrivals;
 
-
-
 const products = [
   {
     image: One,
     name: "Laptop",
-    model:"Apple ipad Mini",
-    desc:"G2356",
-    price: 1250.00,
+    model: "Apple ipad Mini",
+    desc: "G2356",
+    price: " $ 1250.00",
+    card:"Add Card"
   },
   {
     image: Two,
     name: "Cameras",
-    model:"New X5c-12.4Ghz Gyro",
-    desc:"Rc Quadcopter Drone",
-    price: 2009.00,
+    model: "New X5c-12.4Ghz Gyro",
+    desc: "Rc Quadcopter Drone",
+    price: " $ 12590.00",
+    card:"Add Card"
   },
   {
     image: Five,
     name: "Cameras",
-    model:"Apple Ipad New",
-    desc:"G2356",
-    price: 1250.00,
+    model: "Apple Ipad New",
+    desc: "G2356",
+    price: " $ 12400.00",
+    card:"Add Card"
   },
   {
-    name: "Cameras",
-    model:"New X5c-12563Djk",
     image: Six,
-    price: 20090.00,
+    name: "Cameras",
+    model: "New X5c-12563Djk",
+    desc: "CKli-01Jb",
+    price: " $ 12542.00",
+    card:"Add Card"
   },
   {
     image: Three,
     name: "Headphones",
-    model:"Beats Solo",
-    desc:"HD",
-    price: 1999.000,
+    model: "Beats Solo",
+    desc: "HD",
+    price: " $ 756250.00",
+    card:"Add Card"
   },
   {
     image: Four,
     name: "Computers",
- model:"Apple Imac Zosc4824",
- desc:"Retin",
-    price: 5759.68,
+    model: "Apple Imac Zosc4824",
+    desc: "Retin",
+    price: " $ 12850.00",
+    card:"Add Card"
   },
   {
     image: Seven,
     name: "Computer",
-  model:"Apple ipad 1232BG 9.7",
-  desc:"Tablet",
-    price: 5565.100,
+    model: "Apple ipad 1232BG 9.7",
+    desc: "Tablet",
+    price: " $ 42250.00",
+    card:"Add Card"
   },
   {
     image: Eighteen,
     name: "Computers",
-model:"smartphone 75",
-desc:"123GB",
-    price: 2356.0123,
+    model: "smartphone 75",
+    desc: "123GB",
+    price: " $ 12552.03650",
+    card:"Add Card"
   },
   {
     image: Seventeen,
     name: "Computers",
-   model:"Beats snarkitecture",
-   desc:"Headphones",
-    price: 5523.01254,
+    model: "Beats snarkitecture",
+    desc: "Headphones",
+    price: " $ 12450.00",
+    card:"Add Card"
   },
   {
     image: Ninteen,
     name: "Computer",
-  model:"Notebook Widescreen Z51-120",
-  desc:"40K6013UPB10",
-    price:  125463.0010,
+    model: "Notebook Widescreen Z51-120",
+    desc: "40K6013UPB10",
+    price: " $ 12050.010",
+    card:"Add Card"
   },
 ];
