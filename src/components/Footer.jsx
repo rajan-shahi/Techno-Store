@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className=" flex justify-center">
       {/* container */}
-      <div className=" flex flex-col w-10/12 py-10">
+      <div className=" flex flex-col  w-10/12 py-10">
         {/* top */}
         <div className=" flex gap-14 bg-gray-100 py-8  px-6 justify-center items-center">
           <div className=" flex flex-col gap-2 text-gray-600 text-sm  ">
@@ -103,11 +103,3 @@ const Footer = () => {
 
 export default Footer;
 
-const links = [
-  {
-    name: "home",
-  },
-  {
-    name: "About",
-  },
-];
