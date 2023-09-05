@@ -14,13 +14,16 @@ const NewArrivals = () => {
   return (
     <div className=" flex justify-center">
       {/* container */}
-      <div className="  w-10/12 grid grid-cols-5 gap-4 py-8">
+      <div className="  w-10/12 grid grid-cols-1 sm:grid-cols-5 gap-4 py-8 ">
         {products.map((product, index) => (
-          <div key={index} className=" hover:border-2 p-3 hover:rounded-2xl ">
+          <div
+            key={index}
+            className="border border-transparent rounded-2xl hover:border-gray-300  p-3 transition all  ease-in-out "
+          >
             <div className=" flex flex-col gap-3 py-12  items-center">
-              <img 
+              <img
                 className=" cursor-pointer pb-4 h-28 "
-                src={product.image }
+                src={product.image}
                 alt=""
               />
               <p className=" text-gray-300  ">{product.name}</p>
@@ -51,7 +54,7 @@ const products = [
     model: "Apple ipad Mini",
     desc: "G2356",
     price: " $ 1250.00",
-    card:"Add Card"
+    card: "Add Card",
   },
   {
     image: Two,
@@ -59,7 +62,7 @@ const products = [
     model: "New X5c-12.4Ghz Gyro",
     desc: "Rc Quadcopter Drone",
     price: " $ 12590.00",
-    card:"Add Card"
+    card: "Add Card",
   },
   {
     image: Five,
@@ -67,7 +70,7 @@ const products = [
     model: "Apple Ipad New",
     desc: "G2356",
     price: " $ 12400.00",
-    card:"Add Card"
+    card: "Add Card",
   },
   {
     image: Six,
@@ -75,7 +78,7 @@ const products = [
     model: "New X5c-12563Djk",
     desc: "CKli-01Jb",
     price: " $ 12542.00",
-    card:"Add Card"
+    card: "Add Card",
   },
   {
     image: Three,
@@ -83,7 +86,7 @@ const products = [
     model: "Beats Solo",
     desc: "HD",
     price: " $ 756250.00",
-    card:"Add Card"
+    card: "Add Card",
   },
   {
     image: Four,
@@ -91,7 +94,7 @@ const products = [
     model: "Apple Imac Zosc4824",
     desc: "Retin",
     price: " $ 12850.00",
-    card:"Add Card"
+    card: "Add Card",
   },
   {
     image: Seven,
@@ -99,7 +102,7 @@ const products = [
     model: "Apple ipad 1232BG 9.7",
     desc: "Tablet",
     price: " $ 42250.00",
-    card:"Add Card"
+    card: "Add Card",
   },
   {
     image: Eighteen,
@@ -107,7 +110,7 @@ const products = [
     model: "smartphone 75",
     desc: "123GB",
     price: " $ 12552.03650",
-    card:"Add Card"
+    card: "Add Card",
   },
   {
     image: Seventeen,
@@ -115,7 +118,7 @@ const products = [
     model: "Beats snarkitecture",
     desc: "Headphones",
     price: " $ 12450.00",
-    card:"Add Card"
+    card: "Add Card",
   },
   {
     image: Ninteen,
@@ -123,6 +126,6 @@ const products = [
     model: "Notebook Widescreen Z51-120",
     desc: "40K6013UPB10",
     price: " $ 12050.010",
-    card:"Add Card"
+    card: "Add Card",
   },
 ];

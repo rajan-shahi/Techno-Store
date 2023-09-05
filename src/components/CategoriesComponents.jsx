@@ -6,7 +6,6 @@ import Three from "../assets/03.png";
 import Four from "../assets/04.png";
 import Five from "../assets/05.png";
 import Six from "../assets/06.png";
-import Seven from "../assets/07.png";
 import Eight from "../assets/08.png";
 import Nine from "../assets/09.png";
 import Ten from "../assets/10.png";
