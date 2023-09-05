@@ -22,7 +22,7 @@ const NavbrFooter = () => {
               <option value="Components">Components</option>
               <option value="Laptop">Laptop</option> 
               <option value="Monitor">Monitor</option>
-              <option value="MP3">MP3</option>
+              <option value="MP3">MP3 </option>
               <option value="Scanner">Scanner</option>
               <option value=""></option>
               <option value=""> Furniters</option>

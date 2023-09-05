@@ -1,15 +1,16 @@
-import "./App.css";
-import Category from "./components/Category";
-import Navbar from "./components/Navbar";
-import NavbrFooter from "./components/NavbrFooter";
-function App() {
+import React from 'react'
+import Navbar from './components/Navbar'
+import Category from './components/Category';
+import NavbrFooter from './components/NavbrFooter';
+
+const App = () => {
   return (
     <div>
-      <Navbar />
-      <NavbrFooter />
+      <Navbar/>
+      <NavbrFooter/>
       <Category/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
