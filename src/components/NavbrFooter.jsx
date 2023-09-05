@@ -52,13 +52,13 @@ const NavbrFooter = () => {
         </div>
         {/* right */}
         <div className=" flex items-center gap-8">
-          <span className=" rounded-full px-3 py-3 border hover:border-orange-300  hover:border-2 cursor-pointer">
+          <span className=" rounded-full px-3 py-3 border-2 hover:border-orange-300   hover:border-2 cursor-pointer">
             <BsArrowLeftRight size={30} className=" text-gray-300" />
           </span>
-          <span  className=" rounded-full px-3 py-3 border hover:border-orange-300  hover:border-2 cursor-pointer">
+          <span  className=" rounded-full px-3 py-3 border-2 hover:border-orange-300  hover:border-2 cursor-pointer">
             <AiOutlineHeart  size={30} className=" text-gray-300"/>
           </span>
-          <span  className=" rounded-full px-3 py-3 border hover:border-orange-300  hover:border-2 cursor-pointer">
+          <span  className=" rounded-full px-3 py-3 border-2 hover:border-orange-300  hover:border-2 cursor-pointer">
             <FaShoppingCart size={30} className=" text-gray-300"/>
           </span>
           <p className=" rounded-full px-2 py- bg-orange-600 ml-[-40px] mt-[-30px] cursor-pointer text-white">4</p>
