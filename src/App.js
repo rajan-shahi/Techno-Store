@@ -4,6 +4,7 @@ import NavbrFooter from './components/NavbrFooter';
 import CategoriesComponents from './components/CategoriesComponents';
 import CardContainer from './components/CardContainer';
 import NewArrivals from './pages/NewArrivals';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
      <CategoriesComponents/>
      <CardContainer/>
      <NewArrivals/>
+     <Footer/>
     </div>
   )
 }
