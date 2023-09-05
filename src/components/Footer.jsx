@@ -23,10 +23,9 @@ const Footer = () => {
               alt=""
             />
             <p className=" text-2xl">Got Question ? Call Us 24/7!</p>
-            <h1>Call Us: (888) 1234 56789</h1>
-            <p>Po Box CT16122 Collins Street</p>
-            <p>West,Victoria 8007,</p>
-            <p>Austrails.</p>
+            {Calls.map((call, index) => (
+              <p className="hover:text-orange-600 " key={index}>{call.name}</p>
+            ))}
             <div className=" flex gap-6 text-gray-400 pt-1">
               <span className=" hover:text-gray-600 cursor-pointer">
                 <BiLogoFacebook size={20} />
@@ -47,23 +46,15 @@ const Footer = () => {
           </div>
           <div className=" flex flex-col gap-2 text-gray-600 text-sm">
             <h1 className=" text-3xl">Find By Categories</h1>
-            <p>Desktop</p>
-            <p>Laptops & Notebooks</p>
-            <p>Components</p>
-            <p>Tablets</p>
-            <p>Software</p>
-            <p>Phones & PDAs</p>
-            <p>Cameras</p>
+            {Categories.map((categorie, index) => (
+              <p className="hover:text-orange-600 " key={index}>{categorie.name}</p>
+            ))}
           </div>
           <div className=" flex flex-col gap-2 text-gray-600 text-sm">
             <h1 className=" text-3xl">Customer Care</h1>
-            <p>Contac Us</p>
-            <p>Site Map</p>
-            <p>My Account</p>
-            <p>Wish List</p>
-            <p>Delivery Information</p>
-            <p>Privacy Policy</p>
-            <p>Terms & Conditions</p>
+            {links.map((link, index) => (
+              <p className="hover:text-orange-600 " key={index}>{link.name}</p>
+            ))}
           </div>
           <div className=" flex flex-col gap-2 text-gray-600 text-sm">
             <h1 className=" text-3xl">Sign Up To New Letter</h1>
@@ -103,3 +94,65 @@ const Footer = () => {
 
 export default Footer;
 
+const links = [
+  {
+    name: "Contac Us",
+  },
+  {
+    name: "Site Map",
+  },
+  {
+    name: "MY Account",
+  },
+  {
+    name: "Wish List",
+  },
+  {
+    name: "Delivery Information",
+  },
+  {
+    name: "Privacy Policy",
+  },
+  {
+    name: "Terms & Conditions",
+  },
+];
+
+const Calls = [
+  {
+    name: "Call Us: (888) 1234 56789",
+  },
+  {
+    name: "Po Box CT16122 Collins Street",
+  },
+  {
+    name: "West,Victoria 8007,",
+  },
+  {
+    name: "Austrails.",
+  },
+];
+
+const Categories = [
+  {
+    name: "Desktops",
+  },
+  {
+    name: "Laptops & Notebooks",
+  },
+  {
+    name: "Components",
+  },
+  {
+    name: "Tablets",
+  },
+  {
+    name: "Software",
+  },
+  {
+    name: "Phone & PDAs",
+  },
+  {
+    name: "Cameras",
+  },
+];
