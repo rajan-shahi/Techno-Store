@@ -7,8 +7,8 @@ const Payment = () => {
   return (
     <div className=" flex justify-center">
       {/* container */}
-      <div className=" grid grid-cols-1 sm:grid-cols-4 w-10/12  justify-between">
-        <div>
+      <div className=" grid grid-cols-1 sm:grid-cols-4 w-10/12  justify-between ">
+        <div className=" flex flex-col  items-center">
           <img
             className="  py-4 px-2 rounded-full  border-2 hover:border-orange-400 cursor-pointer"
             src={Car}
@@ -18,7 +18,7 @@ const Payment = () => {
           <p className=" text-gray-400">free shipping on order over</p>
           <p className=" text-gray-400">$100</p>
         </div>
-        <div>
+        <div className=" flex flex-col  items-center">
           <img
             className="  py-2 px-2 rounded-full  border-2 hover:border-orange-400 cursor-pointer"
             src={Order}
@@ -27,7 +27,7 @@ const Payment = () => {
           <h1 className=" pt-4">Order Online Service</h1>
           <p className=" text-gray-400">Free return products in 30 days</p>
         </div>
-        <div>
+        <div className=" flex flex-col  items-center">
           <img
             className="  py-3 px-2 rounded-full  border-2 hover:border-orange-400 cursor-pointer"
             src={Payments}
@@ -36,7 +36,7 @@ const Payment = () => {
           <h1 className=" pt-4">Payment</h1>
           <p className=" text-gray-400">Secure system</p>
         </div>
-        <div>
+        <div className=" flex flex-col  items-center">
           <img
             className="  py-3 px-2 rounded-full  border-2 hover:border-orange-400 cursor-pointer"
             src={Returns}
