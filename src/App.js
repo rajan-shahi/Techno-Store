@@ -6,6 +6,7 @@ import CardContainer from './components/CardContainer';
 import NewArrivals from './pages/NewArrivals';
 import Footer from './components/Footer';
 import Payment from './components/Payment';
+import Copyright from './components/Copyright';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
      <NewArrivals/>
      <Payment/>
      <Footer/>
+     <Copyright/>
     </div>
   )
 }
