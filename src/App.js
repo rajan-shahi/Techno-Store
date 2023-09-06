@@ -5,6 +5,7 @@ import CategoriesComponents from './components/CategoriesComponents';
 import CardContainer from './components/CardContainer';
 import NewArrivals from './pages/NewArrivals';
 import Footer from './components/Footer';
+import Payment from './components/Payment';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
      <CategoriesComponents/>
      <CardContainer/>
      <NewArrivals/>
+     <Payment/>
      <Footer/>
     </div>
   )
