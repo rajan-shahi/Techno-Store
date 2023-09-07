@@ -10,14 +10,14 @@ import One06 from "../assets/006.jpg";
 import One07 from "../assets/0007.jpg";
 import One08 from "../assets/008.jpg";
 import One010 from "../assets/010.jpg";
-import One011 from "../assets/011.jpg";
+
 const BestSellers = () => {
   return (
     <div className=" flex justify-center ">
       {/* container */}
-      <div className=" flex flex-col w-10/12 bg-gray-200 px-14 py-10">
+      <div className=" flex flex-col w-10/12 bg-gray-200 px-14 py-10 justify-center">
         {/* topcontainer */}
-        <div className=" flex gap-4">
+        <div className=" grid grid-cols-1 sm:grid-cols-2  gap-12 py-6 ">
           {/* left */}
           <div className=" flex flex-col items-center gap-4  text-black/95 bg-gray-100  rounded-md py-8 px-24">
             <h1>
@@ -52,7 +52,7 @@ const BestSellers = () => {
           {/* right */}
           <div>
             <h1 className=" text-xl">Bestsellers</h1>
-            <hr className=" w-[100%] bg-gray-300 h-1 my-4 " />
+            <hr className="  bg-gray-300 h-0.5 " />
             {bestSellers.map((bestseller, index) => (
               <div key={index}>
                 <div className=" flex gap-3 items-center">
@@ -62,9 +62,9 @@ const BestSellers = () => {
                   <div className=" flex flex-col items-center gap-2">
                     <h1 className=" text-xs">{bestseller.name}</h1>
                     <div className=" flex gap-1">
-                    <img   src={bestseller.starImg} alt=""  />
-                    <img src={bestseller.starImg} alt="" />
-                    <img src={bestseller.starImg} alt="" />
+                      <img src={bestseller.starImg} alt="" />
+                      <img src={bestseller.starImg} alt="" />
+                      <img src={bestseller.starImg} alt="" />
                     </div>
                     <p className=" text-xl text-gray-500">{bestseller.price}</p>
                   </div>
@@ -74,22 +74,50 @@ const BestSellers = () => {
           </div>
         </div>
         {/* buttonContainer */}
-        <div className=" flex gap-4">
-          <div>
-            <h1>Featured</h1>
-            <hr className=" bg-gray-300 h-1 my-4 " />
-            <div className=" flex justify-between">
-              <p>left</p>
-              <p>right</p>
-            </div>
+        <div className="  gap-4  grid grid-cols-1 sm:grid-cols-2 ">
+          {/* left */}
+          <div className=" flex flex-col gap-6 pr-52">
+            <h1 className=" text-2xl">Featured</h1>
+            <hr className=" bg-gray-300 h-0.5  " />
+            {features.map((feature, index) => (
+              <div key={index} className=" flex gap-6 items-center">
+                <div>
+                  <img src={feature.img} alt="" />
+                </div>
+                <div>
+                  <p className=" text-xs">{feature.name}</p>
+                  <div className=" flex gap-3">
+                    <img src={feature.starImg} alt="" />
+                    <img src={feature.starImg} alt="" />
+                    <img src={feature.starImg} alt="" />
+                    <img src={feature.starImg} alt="" />
+                  </div>
+                  <p className=" text-xl text-gray-500">{feature.price}</p>
+                </div>
+              </div>
+            ))}
           </div>
-          <div>
-            <h1>Hot Sale</h1>
-            <hr className=" bg-gray-300 h-1 my-4 " />
-            <div className=" flex justify-between">
-              <p>left</p>
-              <p>right</p>
-            </div>
+          {/* right */}
+          <div className=" flex flex-col gap-6">
+            <h1 className=" text-2xl">Hot Salles</h1>
+            <hr className=" bg-gray-300 h-0.5  " />
+            {hots.map((hot, index) => (
+              <div key={index} className=" flex gap-6 items-center">
+                <div>
+                  <img src={hot.img} alt="" />
+                </div>
+                <div>
+                  <p className=" text-xs">{hot.name}</p>
+                  <div className=" flex gap-3">
+                    <img src={hot.starImg} alt="" />
+                    <img src={hot.starImg} alt="" />
+                    <img src={hot.starImg} alt="" />
+                    <img src={hot.starImg} alt="" />
+                  </div>
+                  <p className=" text-xl text-gray-500">{hot.price}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -117,5 +145,47 @@ const bestSellers = [
     name: "Razer RZ02-01071500-R3M1",
     starImg: Star,
     price: "$150.00",
+  },
+];
+
+const features = [
+  {
+    img: One04,
+    name: "Razer RZ02-01071500-R3M1",
+    starImg: Star,
+    price: "$50.00",
+  },
+  {
+    img: One05,
+    name: " Apple iPad Mini G2356",
+    starImg: Star,
+    price: "$520.00",
+  },
+  {
+    img: One06,
+    name: "Beats Pill + Portable Speaker",
+    starImg: Star,
+    price: "$15.00",
+  },
+];
+
+const hots = [
+  {
+    img: One07,
+    name: "Razer RZ02-01071500-R3M1",
+    starImg: Star,
+    price: "$50.00",
+  },
+  {
+    img: One08,
+    name: "Apple iPad Mini G2356",
+    starImg: Star,
+    price: "$520.00",
+  },
+  {
+    img: One010,
+    name: "Beats Pill + Portable Speaker",
+    starImg: Star,
+    price: "$15.00",
   },
 ];
