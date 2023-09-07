@@ -13,9 +13,9 @@ import One010 from "../assets/010.jpg";
 
 const BestSellers = () => {
   return (
-    <div className=" flex justify-center ">
+    <div className=" flex justify-center py-8 ">
       {/* container */}
-      <div className=" flex flex-col w-10/12 bg-gray-200 px-14 py-10 justify-center">
+      <div className=" flex flex-col w-10/12 bg-gray-100 px-14 py-10 justify-center">
         {/* topcontainer */}
         <div className=" grid grid-cols-1 sm:grid-cols-2  gap-12 py-6 ">
           {/* left */}
@@ -25,7 +25,7 @@ const BestSellers = () => {
               <span className=" text-orange-400 text-xl">Save $30.00</span>{" "}
               Special Offer
             </h1>
-            <img src={Jug} alt="" />
+            <img  className=" cursor-pointer" src={Jug} alt="" />
             <h2>Harman Kardon</h2>
             <p className=" text-orange-400  text-xl">$1,250.00</p>
             <div className=" flex gap-8">
@@ -57,14 +57,16 @@ const BestSellers = () => {
               <div key={index}>
                 <div className=" flex gap-3 items-center">
                   <span className=" rounded-md py-8 px-4">
-                    <img src={bestseller.img} alt="" />
+                    <img className=" cursor-pointer" src={bestseller.img} alt="" />
                   </span>
                   <div className=" flex flex-col items-center gap-2">
-                    <h1 className=" text-xs">{bestseller.name}</h1>
+                    <h1 className=" text-xs hover:text-orange-300 cursor-pointer">{bestseller.name}</h1>
                     <div className=" flex gap-1">
-                      <img src={bestseller.starImg} alt="" />
-                      <img src={bestseller.starImg} alt="" />
-                      <img src={bestseller.starImg} alt="" />
+                      <img className=" h-3"  src={bestseller.starImg} alt="" />
+                      <img className=" h-3"  src={bestseller.starImg} alt="" />
+                      <img className=" h-3"  src={bestseller.starImg} alt="" />
+                      <img className=" h-3" src={bestseller.starImg} alt="" />
+                      <img  className=" h-3" src={bestseller.starImg} alt="" />
                     </div>
                     <p className=" text-xl text-gray-500">{bestseller.price}</p>
                   </div>
@@ -82,15 +84,17 @@ const BestSellers = () => {
             {features.map((feature, index) => (
               <div key={index} className=" flex gap-6 items-center">
                 <div>
-                  <img src={feature.img} alt="" />
+                  <img className=" cursor-pointer" src={feature.img} alt="" />
                 </div>
-                <div>
-                  <p className=" text-xs">{feature.name}</p>
+                <div className=" flex flex-col gap-5 ">
+                  <p className=" text-xs hover:text-orange-300 cursor-pointer">{feature.name}</p>
                   <div className=" flex gap-3">
-                    <img src={feature.starImg} alt="" />
-                    <img src={feature.starImg} alt="" />
-                    <img src={feature.starImg} alt="" />
-                    <img src={feature.starImg} alt="" />
+                    <img  className=" h-3" src={feature.starImg} alt="" />
+                    <img className=" h-3" src={feature.starImg} alt="" />
+                    <img className=" h-3" src={feature.starImg} alt="" />
+                    <img className=" h-3" src={feature.starImg} alt="" />
+                    <img className=" h-3" src={feature.starImg} alt="" />
+                    <img className=" h-3" src={feature.starImg} alt="" />
                   </div>
                   <p className=" text-xl text-gray-500">{feature.price}</p>
                 </div>
@@ -103,16 +107,16 @@ const BestSellers = () => {
             <hr className=" bg-gray-300 h-0.5  " />
             {hots.map((hot, index) => (
               <div key={index} className=" flex gap-6 items-center">
-                <div>
-                  <img src={hot.img} alt="" />
-                </div>
-                <div>
-                  <p className=" text-xs">{hot.name}</p>
+                <img className=" cursor-pointer" src={hot.img} alt="" />
+                <div className=" flex flex-col items-center gap-5">
+                  <p className=" text-xs hover:text-orange-300  cursor-pointer">{hot.name}</p>
                   <div className=" flex gap-3">
-                    <img src={hot.starImg} alt="" />
-                    <img src={hot.starImg} alt="" />
-                    <img src={hot.starImg} alt="" />
-                    <img src={hot.starImg} alt="" />
+                    <img className=" h-3" src={hot.starImg} alt="" />
+                    <img className=" h-3" src={hot.starImg} alt="" />
+                    <img className=" h-3" src={hot.starImg} alt="" />
+                    <img className=" h-3" src={hot.starImg} alt="" />
+                    <img className=" h-3" src={hot.starImg} alt="" />
+                    <img className=" h-3" src={hot.starImg} alt="" />
                   </div>
                   <p className=" text-xl text-gray-500">{hot.price}</p>
                 </div>
