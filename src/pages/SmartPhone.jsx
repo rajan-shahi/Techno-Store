@@ -9,6 +9,7 @@ import Seven from "../assets/07.jpg";
 import Eighteen from "../assets/18.jpg";
 import Seventeen from "../assets/17.jpg";
 import Ninteen from "../assets/19.jpg";
+import Airphone from "../assets/Airphone.jpg";
 const SmartPhone = () => {
   return (
     <div className=" flex justify-center py-4">
@@ -43,7 +44,7 @@ const SmartPhone = () => {
               {smartphones.map((smartphone, index) => (
                 <div
                   key={index}
-                  className="  bg-white  flex flex-col border-2 rounded-xl items-center hover:border-orange-300 "
+                  className="  bg-white  flex flex-col border-2  border-gray-100  hover:border-gray-300 rounded-xl items-center "
                 >
                   <img src={smartphone.image} alt="" />
                   <p>{smartphone.name}</p>
@@ -54,16 +55,15 @@ const SmartPhone = () => {
             </div>
           </div>
           {/* right */}
-          <div className=" w-3/12 bg-white px-4 py-4 rounded-md  h-max">
-            <p >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur molestiae tenetur nisi accusamus odit quaerat velit
-              ullam voluptatum id, doloribus dolorem vel dolor quisquam
-              temporibus eius placeat accusantium repellendus eligendi culpa
-              ipsum autem. Neque exercitationem eius ducimus assumenda sit
-              dolorem ullam quos. In eligendi recusandae cum aspernatur ea
-              reprehenderit minus.
-            </p>
+          <div className=" w-3/12 bg-white px-4 py-4 rounded-md border-gray-100 hover:border-orange-400 border-2  h-max">
+            <div className=" px-4 py-4 flex justify-center flex-col items-center gap-4 "  >
+             <img className="  h-80  cursor-pointer " src={Airphone} alt="" />
+             <p className=" text-sm text-gray-400">Headphones</p>
+             <h1 className=" text-2xl text-gray-600">Beats Solo</h1>
+             <h1 className=" text-2xl text-gray-600">HD</h1>
+             <p className=" text-3xl text-orange-300">$5,759.68</p>
+             <button className=" w-full rounded-full bg-orange-700 px-6 py-4  text-xl  text-white hover:bg-orange-400 hover:text-gray-200">Add to card</button>
+            </div>
           </div>
         </div>
       </div>
