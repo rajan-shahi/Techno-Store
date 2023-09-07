@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-// import NavbrFooter from './components/NavbrFooter';
-// import CategoriesComponents from './components/CategoriesComponents';
+import NavbrFooter from './components/NavbrFooter';
+import CategoriesComponents from './components/CategoriesComponents';
 import CardContainer from './components/CardContainer';
 import NewArrivals from './pages/NewArrivals';
 import Footer from './components/Footer';
@@ -12,10 +12,10 @@ import BestSellers from './components/BestSellers';
 const App = () => {
   return (
     <div>
-      {/* <Navbar/> */}
-      {/* <NavbrFooter/> */}
-     {/* <CategoriesComponents/> */}
-     {/* <CardContainer/> */}
+      <Navbar/>
+      <NavbrFooter/>
+     <CategoriesComponents/>
+     <CardContainer/>
      <NewArrivals/>
      <BestSellers/>
      <Payment/>
