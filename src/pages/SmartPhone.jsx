@@ -46,23 +46,28 @@ const SmartPhone = () => {
                   key={index}
                   className="  bg-white  flex flex-col border-2  border-gray-100  hover:border-gray-300 rounded-xl items-center "
                 >
-                  <img src={smartphone.image} alt="" />
-                  <p>{smartphone.name}</p>
-                  <p>{smartphone.model}</p>
-                  <p>{smartphone.price}</p>
+                  <div className=" flex flex-col items-center gap-2  py-6">
+                  <img className=" cursor-pointer" src={smartphone.image} alt="" />
+                  <p className=" text-1xl text-gray-400">{smartphone.name}</p>
+                  <p className=" text-gray-600 text-2xl cursor-pointer hover:text-orange-300">{smartphone.model}</p>
+                  <p className="hover:text-orange-300 cursor-pointer">{smartphone.desc}</p>
+                  <p className=" text-2xl text-orange-400">{smartphone.price}</p>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
           {/* right */}
           <div className=" w-3/12 bg-white px-4 py-4 rounded-md border-gray-100 hover:border-orange-400 border-2  h-max">
-            <div className=" px-4 py-4 flex justify-center flex-col items-center gap-4 "  >
-             <img className="  h-80  cursor-pointer " src={Airphone} alt="" />
-             <p className=" text-sm text-gray-400">Headphones</p>
-             <h1 className=" text-2xl text-gray-600">Beats Solo</h1>
-             <h1 className=" text-2xl text-gray-600">HD</h1>
-             <p className=" text-3xl text-orange-300">$5,759.68</p>
-             <button className=" w-full rounded-full bg-orange-700 px-6 py-4  text-xl  text-white hover:bg-orange-400 hover:text-gray-200">Add to card</button>
+            <div className=" px-4 py-4 flex justify-center flex-col items-center gap-4 ">
+              <img className="  h-80  cursor-pointer " src={Airphone} alt="" />
+              <p className=" text-sm text-gray-400">Headphones</p>
+              <h1 className=" text-2xl text-gray-600">Beats Solo</h1>
+              <h1 className=" text-2xl text-gray-600">HD</h1>
+              <p className=" text-3xl text-orange-300">$5,759.68</p>
+              <button className=" w-full rounded-full bg-orange-700 px-6 py-4  text-xl  text-white hover:bg-orange-400 hover:text-gray-200">
+                Add to card
+              </button>
             </div>
           </div>
         </div>
