@@ -54,7 +54,7 @@ const SmartPhone = () => {
             </div>
           </div>
           {/* right */}
-          <div className=" w-3/12 bg-white px-4 py-4 rounded-md  ">
+          <div className=" w-3/12 bg-white px-4 py-4 rounded-md  h-max">
             <p >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur molestiae tenetur nisi accusamus odit quaerat velit
@@ -149,7 +149,6 @@ const smartphones = [
   {
     image: Ninteen,
     name: "Computer",
-    model: "Notebook Widescreen Z51-120",
     desc: "40K6013UPB10",
     price: " $ 12050.010",
     card: "Add to Card",
