@@ -41,9 +41,9 @@ const SmartPhone = () => {
           <div className=" w-7/12 justify-center">
             <div className=" flex-col gap-4 grid grid-cols-2 ">
               {smartphones.map((smartphone, index) => (
-                <div 
+                <div
                   key={index}
-                  className="  bg-white  flex flex-col border-2 rounded-2xl items-center "
+                  className="  bg-white  flex flex-col border-2 rounded-xl items-center hover:border-orange-300 "
                 >
                   <img src={smartphone.image} alt="" />
                   <p>{smartphone.name}</p>
