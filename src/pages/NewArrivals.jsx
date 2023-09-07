@@ -13,6 +13,7 @@ import Ninteen from "../assets/19.jpg";
 const NewArrivals = () => {
   return (
     <div className=" flex justify-center">
+      <p>rajan</p>
       {/* container */}
       <div className="  w-10/12 grid grid-cols-1 sm:grid-cols-5 gap-4 py-8 ">
         {products.map((product, index) => (
