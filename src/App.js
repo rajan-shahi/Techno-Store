@@ -7,6 +7,7 @@ import NewArrivals from './pages/NewArrivals';
 import Footer from './components/Footer';
 import Payment from './components/Payment';
 import Copyright from './components/Copyright';
+import BestSellers from './components/BestSellers';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
      <CategoriesComponents/>
      <CardContainer/>
      <NewArrivals/>
+     <BestSellers/>
      <Payment/>
      <Footer/>
      <Copyright/>
