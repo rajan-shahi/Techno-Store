@@ -54,8 +54,8 @@ const SmartPhone = () => {
             </div>
           </div>
           {/* right */}
-          <div className=" w-3/12 bg-white px-4 py-4 rounded-md">
-            <p>
+          <div className=" w-3/12 bg-white px-4 py-4 rounded-md  ">
+            <p >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur molestiae tenetur nisi accusamus odit quaerat velit
               ullam voluptatum id, doloribus dolorem vel dolor quisquam
