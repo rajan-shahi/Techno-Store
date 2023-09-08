@@ -3,8 +3,9 @@
 // import Tablets from '../pages/Tablets'
 // import SmartPhone from '../pages/SmartPhone'
 
-import Accessories from "../pages/Accessories"
+// import Accessories from "../pages/Accessories"
 // import Game from "../pages/Game"
+import Mobiles from './../pages/Mobiles';
 
 const Home = () => {
   return (
@@ -13,7 +14,8 @@ const Home = () => {
       {/* <Tablets/> */}
       {/* <Computer/> */}
       {/* <Game/> */}
-      <Accessories/>
+      {/* <Accessories/> */}
+      <Mobiles/>
     </div>
   )
 }
