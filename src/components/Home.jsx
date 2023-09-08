@@ -1,12 +1,14 @@
 import React from 'react'
-import Tablets from '../pages/Tablets'
+import Computer from '../pages/Computer'
+// import Tablets from '../pages/Tablets'
 // import SmartPhone from '../pages/SmartPhone'
 
 const Home = () => {
   return (
     <div>
       {/* <SmartPhone/> */}
-      <Tablets/>
+      {/* <Tablets/> */}
+      <Computer/>
     </div>
   )
 }
