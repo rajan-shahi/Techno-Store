@@ -5,7 +5,7 @@ import Six from "../assets/06.jpg";
 import Three from "../assets/001.jpg";
 import Seven from "../assets/17.jpg";
 import Six0 from "../assets/19.jpg";
-import Headphone from "../assets/Airphone.jpg";
+
 const Computer = () => {
   return (
     <div className=" flex justify-center">
@@ -118,16 +118,4 @@ const computers = [
     price: " $ 12542.00",
     card: "Add to Card",
   },
-];
-
-const Headphones = [
-  {
-    image: Headphone,
-    name: "Headphone",
-    model: "Beats Solo",
-    desc: "HD",
-    price: " $ 1,999.0000",
-    card: "Add to Card",
-  },
-  
 ];
