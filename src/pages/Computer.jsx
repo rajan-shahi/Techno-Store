@@ -9,6 +9,7 @@ import Headphone from "../assets/Airphone.jpg";
 const Computer = () => {
   return (
     <div className=" flex justify-center">
+    <p>Rajan Bahadur Shahi</p>
       {/* container */}
       <div className=" flex  w-10/12 bg-gray-100 gap-4 flex-col">
         <div className=" flex gap-2 ">
