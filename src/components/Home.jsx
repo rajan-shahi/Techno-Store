@@ -3,7 +3,8 @@
 // import Tablets from '../pages/Tablets'
 // import SmartPhone from '../pages/SmartPhone'
 
-import Game from "../pages/Game";
+import Accessories from "../pages/Accessories"
+// import Game from "../pages/Game"
 
 const Home = () => {
   return (
@@ -11,9 +12,10 @@ const Home = () => {
       {/* <SmartPhone/> */}
       {/* <Tablets/> */}
       {/* <Computer/> */}
-      <Game />
+      {/* <Game/> */}
+      <Accessories/>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

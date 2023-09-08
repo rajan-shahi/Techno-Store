@@ -1,10 +1,13 @@
 import React from 'react'
-import Computer from './Computer'
+import Tablets from './Tablets';
+
+
 
 const Game = () => {
   return (
     <div>
-      <Computer/>
+         <Tablets/>
+
     </div>
   )
 }
