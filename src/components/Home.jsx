@@ -1,10 +1,12 @@
 import React from 'react'
-import SmartPhone from '../pages/SmartPhone'
+import Tablets from '../pages/Tablets'
+// import SmartPhone from '../pages/SmartPhone'
 
 const Home = () => {
   return (
     <div>
-      <SmartPhone/>
+      {/* <SmartPhone/> */}
+      <Tablets/>
     </div>
   )
 }
