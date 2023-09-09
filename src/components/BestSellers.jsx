@@ -15,7 +15,7 @@ const BestSellers = () => {
   return (
     <div className=" flex justify-center py-8 ">
       {/* container */}
-      <div className=" flex flex-col w-10/12 bg-gray-100 px-14 py-10 justify-center">
+      <div className="w-full md:w-10/12 flex flex-col  bg-gray-100  py-10 justify-center">
         {/* topcontainer */}
         <div className=" grid grid-cols-1 sm:grid-cols-2  gap-12 py-6 ">
           {/* left */}
@@ -50,7 +50,7 @@ const BestSellers = () => {
             </div>
           </div>
           {/* right */}
-          <div>
+          <div className=" flex flex-col  pl-8">
             <h1 className=" text-xl">Bestsellers</h1>
             <hr className="  bg-gray-300 h-0.5 " />
             {bestSellers.map((bestseller, index) => (
@@ -59,9 +59,9 @@ const BestSellers = () => {
                   <span className=" rounded-md py-8 px-4">
                     <img className=" cursor-pointer" src={bestseller.img} alt="" />
                   </span>
-                  <div className=" flex flex-col items-center gap-2">
+                  <div className=" flex flex-col gap-2">
                     <h1 className=" text-xs hover:text-orange-300 cursor-pointer">{bestseller.name}</h1>
-                    <div className=" flex gap-1">
+                    <div className=" flex gap-1 ">
                       <img className=" h-3"  src={bestseller.starImg} alt="" />
                       <img className=" h-3"  src={bestseller.starImg} alt="" />
                       <img className=" h-3"  src={bestseller.starImg} alt="" />
@@ -78,7 +78,7 @@ const BestSellers = () => {
         {/* buttonContainer */}
         <div className="  gap-4  grid grid-cols-1 sm:grid-cols-2 ">
           {/* left */}
-          <div className=" flex flex-col gap-6 pr-52">
+          <div className=" flex pl-8  flex-col gap-6 pr-52">
             <h1 className=" text-2xl">Featured</h1>
             <hr className=" bg-gray-300 h-0.5  " />
             {features.map((feature, index) => (
@@ -102,7 +102,7 @@ const BestSellers = () => {
             ))}
           </div>
           {/* right */}
-          <div className=" flex flex-col gap-6">
+          <div className=" flex flex-col gap-6 pl-8">
             <h1 className=" text-2xl">Hot Salles</h1>
             <hr className=" bg-gray-300 h-0.5  " />
             {hots.map((hot, index) => (

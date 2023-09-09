@@ -4,7 +4,7 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 const Copyright = () => {
   return (
     <div className=" flex justify-center">
-      <div className=" justify-between flex w-10/12  pb-6 px-8 text-sm sm:text-md">
+      <div className=" justify-between flex w-full md:w-10/12  pb-6 px-8 text-sm sm:text-md">
         <div>
           <p>All Rights Reserved © Rajan Bahadur Shahi 2023</p>
         </div>

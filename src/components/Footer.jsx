@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className=" flex justify-center">
       {/* container */}
-      <div className=" flex flex-col  w-10/12 py-10">
+      <div className=" flex flex-col w-full md:w-10/12 py-10">
         {/* top */}
         <div className="  grid grid-cols-1 sm:grid-cols-5  gap-14 bg-gray-100 py-8  px-6 justify-center items-center">
           <div className=" flex flex-col gap-2 text-gray-600 text-sm  ">
