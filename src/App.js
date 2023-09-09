@@ -9,6 +9,7 @@ import Payment from "./components/Payment";
 import Copyright from "./components/Copyright";
 import BestSellers from "./components/BestSellers";
 import Home from "./components/Home";
+import RecentProducr from "./components/RecentProducr";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <CardContainer />
       <NewArrivals />
       <Home />
+      <RecentProducr/>
       <BestSellers />
       <Payment />
       <Footer />
