@@ -14,16 +14,16 @@ import RecentProducr from "./components/RecentProducr";
 const App = () => {
   return (
     <div className=" flex flex-col w-screen overflow-x-hidden ">
-      {/* <Navbar />
+      <Navbar />
       <NavbrFooter />
       <CategoriesComponents />
       <NewArrivals />
       <Home />
-      <CardContainer /> */}
+      <CardContainer />
       <BestSellers />
       <RecentProducr />
       <Payment />
-      {/* <Footer /> */}
+      <Footer />
       <Copyright />
     </div>
   );

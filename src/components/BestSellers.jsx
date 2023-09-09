@@ -104,7 +104,7 @@ const BestSellers = () => {
           {/* right */}
           <div className=" flex flex-col gap-6 pl-8">
             <h1 className=" text-2xl">Hot Salles</h1>
-            <hr className=" bg-gray-300 h-0.5  " />
+            <hr className=" bg-gray-300 h-0.5 " />
             {hots.map((hot, index) => (
               <div key={index} className=" flex gap-6 items-center">
                 <img className=" cursor-pointer" src={hot.img} alt="" />
