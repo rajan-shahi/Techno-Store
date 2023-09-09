@@ -1,71 +1,33 @@
 import React from "react";
-import { AiOutlineAlignLeft } from "react-icons/ai";
-import One from "../assets/01.png";
-import Two from "../assets/02.png";
-import Three from "../assets/03.png";
-import Four from "../assets/04.png";
-import Five from "../assets/05.png";
-import Six from "../assets/06.png";
-import Seven from "../assets/07.png";
-import Eight from "../assets/08.png";
-import Nine from "../assets/09.png";
-import Ten from "../assets/10.png";
+// import { AiOutlineAlignLeft } from "react-icons/ai";
+import One1 from "../assets/01.png";
+import Two2 from "../assets/02.png";
+import Three3 from "../assets/03.png";
+import Four4 from "../assets/04.png";
+import Five5 from "../assets/05.png";
+import Six6 from "../assets/06.png";
+import Seven7 from "../assets/07.png";
+import Eight8 from "../assets/08.png";
+import Nine9 from "../assets/09.png";
+import Ten10 from "../assets/10.png";
 const CategoriesComponents = () => {
   return (
     <div className=" flex justify-center">
       {/* container */}
-      <div className=" w-10/12 flex justify-between py-6">
+      <div className=" w-10/12 flex justify-between py-6 ">
         {/* leftContainer */}
-        <div className=" flex flex-col justify-center  w-2/12 border-2 items-center">
-          <div className=" flex flex-col items-center gap-4  pb-4 text-gray-600 cursor-pointer">
-            <div className=" flex items-center gap-8 bg-gray-600  py-4 px-6 ">
-              <AiOutlineAlignLeft />
-              <span className=" text-white">All CATEGORIES</span>
+        <div className=" border-2 w-3/12 border-gray-400 flex flex-col gap-3 justify-center ">
+          {alls.map((all, index) => (
+            <div key={index} className=" flex  gap-4 justify-center  items-center ">
+              <h1>
+                <img className=" h-6 w-6  flex justify-center items-center " src={all.image} alt="" />
+              </h1>
+              <h1 className=" flex justify-center items-center ">{all.name}</h1>
             </div>
-            <div className=" flex items-center gap-8">
-              <img src={One} alt="" />
-              <span className=" hover:text-orange-600">Laptop & Mac</span>
-            </div>
-            <div className=" flex items-center gap-8">
-              <img src={Two} alt="" />
-              <span  className=" hover:text-orange-600" >Laptop & Mac</span>
-            </div>
-            <div className=" flex items-center gap-8 ">
-              <img src={Three} alt="" />
-              <span className=" hover:text-orange-600" >Laptop & Mac</span>
-            </div>
-            <div className=" flex items-center gap-8">
-              <img src={Four} alt="" />
-              <span className=" hover:text-orange-600" >Laptop & Mac</span>
-            </div>
-            <div className=" flex items-center gap-8">
-              <img src={Five} alt="" />
-              <span className=" hover:text-orange-600" >Laptop & Mac</span>
-            </div>
-            <div className=" flex items-center gap-8">
-              <img src={Six} alt="" />
-              <span className=" hover:text-orange-600" >Laptop & Mac</span>
-            </div>
-            <div className=" flex items-center gap-8 ">
-              <img src={Seven} alt="" />
-              <span className=" hover:text-orange-600" >Laptop & Mac</span>
-            </div>
-            <div className=" flex items-center gap-8">
-              <img src={Eight} alt="" />
-              <span className=" hover:text-orange-600" >Laptop & Mac</span>
-            </div>
-            <div className=" flex items-center gap-8">
-              <img src={Nine} alt="" />
-              <span className=" hover:text-orange-600" >Laptop & Mac</span>
-            </div>
-            <div className=" flex items-center gap-8">
-              <img src={Ten} alt="" />
-              <span className=" hover:text-orange-600" >Laptop & Mac</span>
-            </div>
-          </div>
+          ))}
         </div>
         {/* rightContainer */}
-        <div className=" w-8/12 bg-gray-600 text-white px-4 py-4 flex items-center ">
+        <div className=" w-7/12 bg-gray-600 text-white px-4 py-4 flex items-center ">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
             corrupti aliquid consequuntur sint aspernatur ratione odit unde
@@ -99,3 +61,49 @@ const CategoriesComponents = () => {
 };
 
 export default CategoriesComponents;
+
+const alls = [
+  {
+    image: One1,
+    name: "Laptop & Mac",
+  },
+  {
+    image: Two2,
+    name: "Mobile & Tablet",
+  },
+  {
+    image: Three3,
+    name: "Home Device",
+  },
+  {
+    image: Four4,
+    name: "Software",
+  },
+
+  {
+    image: Five5,
+    name: "Tv & Audio",
+  },
+
+  {
+    image: Six6,
+    name: "Sports & Fitness",
+  },
+  {
+    image: Seven7,
+    name: "Game & Toys",
+  },
+  {
+    image: Eight8,
+    name: "Video Cameras",
+  },
+  {
+    image: Nine9,
+    name: "Accessories",
+  },
+
+  {
+    image: Ten10,
+    name: "Security",
+  },
+];
