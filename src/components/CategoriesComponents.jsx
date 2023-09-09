@@ -1,5 +1,5 @@
 import React from "react";
-// import { AiOutlineAlignLeft } from "react-icons/ai";
+import { AiOutlineAlignLeft } from "react-icons/ai";
 import One1 from "../assets/01.png";
 import Two2 from "../assets/02.png";
 import Three3 from "../assets/03.png";
@@ -14,20 +14,24 @@ const CategoriesComponents = () => {
   return (
     <div className=" flex justify-center">
       {/* container */}
-      <div className=" w-10/12 flex justify-between py-6 ">
+      <div className=" w-10/12 flex gap-8 py-6 justify-center ">
         {/* leftContainer */}
-        <div className=" border-2 w-3/12 border-gray-400 flex flex-col gap-3 justify-center ">
+        <div className=" border-2 border-gray-600 flex flex-col p-8 h-max gap-6    ">
+           <div className=" flex gap-4  text-gray-700">
+           <span className=" cursor-pointer"><AiOutlineAlignLeft size={30}/></span>
+          <h1 className=" text-2xl">All Categories</h1>
+          </div>
           {alls.map((all, index) => (
-            <div key={index} className=" flex  gap-4 justify-center  items-center ">
+            <div key={index} className=" flex  gap-6  text-gray-600  text-sm ">
               <h1>
-                <img className=" h-6 w-6  flex justify-center items-center " src={all.image} alt="" />
+                <img className=" h-6 w-6 cursor-pointer " src={all.image} alt="" />
               </h1>
-              <h1 className=" flex justify-center items-center ">{all.name}</h1>
+              <h1 className=" cursor-pointer hover:text-orange-400  ">{all.name}</h1>
             </div>
           ))}
         </div>
         {/* rightContainer */}
-        <div className=" w-7/12 bg-gray-600 text-white px-4 py-4 flex items-center ">
+        <div className="  bg-gray-600 text-white px-4 py-4 flex items-center w-8/12 ">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
             corrupti aliquid consequuntur sint aspernatur ratione odit unde
