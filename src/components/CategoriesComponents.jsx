@@ -10,6 +10,21 @@ import Seven7 from "../assets/07.png";
 import Eight8 from "../assets/08.png";
 import Nine9 from "../assets/09.png";
 import Ten10 from "../assets/10.png";
+import clock from "../assets/clock.png";
+import One from "../assets/01.jpg";
+import Two from "../assets/02.jpg";
+import Five from "../assets/05.jpg";
+import Six from "../assets/06.jpg";
+import Three from "../assets/03.jpg";
+import Four from "../assets/04.jpg";
+import Seven from "../assets/07.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
 const CategoriesComponents = () => {
   return (
     <div className=" flex justify-center">
@@ -17,47 +32,60 @@ const CategoriesComponents = () => {
       <div className=" w-10/12 flex gap-8 py-6 justify-center ">
         {/* leftContainer */}
         <div className=" border-2 border-gray-600 flex flex-col p-8 h-max gap-6    ">
-           <div className=" flex gap-4  text-gray-700">
-           <span className=" cursor-pointer"><AiOutlineAlignLeft size={30}/></span>
-          <h1 className=" text-2xl">All Categories</h1>
+          <div className=" flex gap-4  text-gray-700">
+            <span className=" cursor-pointer">
+              <AiOutlineAlignLeft size={30} />
+            </span>
+            <h1 className=" text-2xl">All Categories</h1>
           </div>
           {alls.map((all, index) => (
             <div key={index} className=" flex  gap-6  text-gray-600  text-sm ">
               <h1>
-                <img className=" h-6 w-6 cursor-pointer " src={all.image} alt="" />
+                <img
+                  className=" h-6 w-6 cursor-pointer "
+                  src={all.image}
+                  alt=""
+                />
               </h1>
-              <h1 className=" cursor-pointer hover:text-orange-400  ">{all.name}</h1>
+              <h1 className=" cursor-pointer hover:text-orange-400  ">
+                {all.name}
+              </h1>
             </div>
           ))}
         </div>
         {/* rightContainer */}
-        <div className="  bg-gray-600 text-white px-4 py-4 flex items-center w-8/12 ">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            corrupti aliquid consequuntur sint aspernatur ratione odit unde
-            tempore quasi nisi libero dicta molestias recusandae consequatur
-            explicabo perferendis quia amet eum architecto cupiditate animi,
-            rerum repudiandae, corporis quos! Vel quo nam quaerat! Vel
-            consequatur commodi pariatur obcaecati, quisquam, ratione
-            praesentium velit voluptatibus iusto ipsam sequi aperiam numquam
-            quaerat debitis fugiat cupiditate consequuntur esse assumenda
-            tempora suscipit, saepe aspernatur? Facilis nam autem quos expedita,
-            consectetur minima exercitationem sequi voluptates error blanditiis
-            sit culpa molestiae. Saepe, iusto corrupti culpa laudantium corporis
-            nulla fugiat ab obcaecati, incidunt et facilis suscipit enim.
-            Temporibus voluptates quo minima voluptas veniam fugiat, porro,
-            totam illo magni unde exercitationem nobis similique ab dolore
-            itaque rerum esse hic maxime consequatur. Officiis, explicabo illo,
-            quas obcaecati numquam esse soluta nihil aliquam blanditiis sint
-            recusandae sequi saepe. Facilis ab, cupiditate nostrum earum quia
-            aperiam et totam! Error vel facere voluptates tenetur minus, ducimus
-            dolore voluptatem! Aut dolores ipsam reiciendis modi recusandae,
-            fugiat veritatis qui alias, mollitia culpa vel officiis perspiciatis
-            illo accusamus saepe dolorem non ut autem impedit? Eius praesentium
-            nisi molestiae ullam, natus mollitia quam autem. Iure doloribus
-            pariatur, architecto veritatis, aperiam maiores ab animi voluptates
-            adipisci, tenetur sequi ut recusandae.
-          </p>
+        <div className="  bg-gray-200 px-4 py-4 flex  items-center w-8/12 ">
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            {clocks.map((clock, index) => (
+              <SwiperSlide>
+                <div key={index} className="flex gap-4  p-20 ">
+                  <div className=" flex-1 flex flex-col gap-2 text-gray-500 ">
+                    <h1>{clock.name}</h1>
+                    <p className=" text-3xl pb-4  text-orange-500">{clock.model}</p>
+                    <h2>{clock.desc}</h2>
+                    <p className=" text-3xl py-4 text-orange-400">{clock.price}</p>
+                    <h1 className=" border border-gray-400 w-max px-8  py-2 rounded-full cursor-pointer font-bold text-gray-700 hover:bg-orange-400 hover:text-white">{clock.button}</h1>
+                  </div>
+                  <div className=" flex-1 md:flex sm:hidden  cursor-pointer">
+                    <img className="  bg-transparent" src={clock.image} alt="" />
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>
@@ -109,5 +137,91 @@ const alls = [
   {
     image: Ten10,
     name: "Security",
+  },
+];
+
+const clocks = [
+  {
+    image: clock,
+    name: "Enhanced Technology",
+    model: "SMART TV",
+    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
+    price: "$1.635.999",
+    button: "Show Now",
+  },
+  {
+    image: One,
+    name: "Enhanced Technology",
+    model: "SMART TV",
+    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
+    price: "$1.635.999",
+    button: "Show Now",
+  },
+  {
+    image: Two,
+    name: "Enhanced Technology",
+    model: "SMART TV",
+    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
+    price: "$1.635.999",
+    button: "Show Now",
+  },
+  {
+    image: Five,
+    name: "Enhanced Technology",
+    model: "SMART TV",
+    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
+    price: "$1.635.999",
+    button: "Show Now",
+  },
+
+  {
+    image: Six,
+    name: "Enhanced Technology",
+    model: "SMART TV",
+    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
+    price: "$1.635.999",
+    button: "Show Now",
+  },
+
+  {
+    image: clock,
+    name: "Enhanced Technology",
+    model: "SMART TV",
+    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
+    price: "$1.635.999",
+    button: "Show Now",
+  },
+  {
+    image: Three,
+    name: "Enhanced Technology",
+    model: "SMART TV",
+    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
+    price: "$1.635.999",
+    button: "Show Now",
+  },
+  {
+    image: Four,
+    name: "Enhanced Technology",
+    model: "SMART TV",
+    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
+    price: "$1.635.999",
+    button: "Show Now",
+  },
+  {
+    image: clock,
+    name: "Enhanced Technology",
+    model: "SMART TV",
+    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
+    price: "$1.635.999",
+    button: "Show Now",
+  },
+
+  {
+    image: Seven,
+    name: "Enhanced Technology",
+    model: "SMART TV",
+    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
+    price: "$1.635.999",
+    button: "Show Now",
   },
 ];
