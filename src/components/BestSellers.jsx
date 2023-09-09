@@ -102,7 +102,7 @@ const BestSellers = () => {
             ))}
           </div>
           {/* right */}
-          <div className=" flex flex-col gap-4 pl-8">
+          <div className=" flex flex-col gap-4 pt-6 pl-8">
             <h1 className=" text-2xl">Hot Salles</h1>
             <hr className=" bg-gray-300 h-0.5 " />
             {hots.map((hot, index) => (
