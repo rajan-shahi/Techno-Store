@@ -29,7 +29,7 @@ const CategoriesComponents = () => {
   return (
     <div className=" flex justify-center">
       {/* container */}
-      <div className=" w-10/12 flex gap-8 py-6 justify-center ">
+      <div className=" w-full md:w-10/12  flex gap-8 py-6 justify-center ">
         {/* leftContainer */}
         <div className=" border-2 border-gray-600  sm:flex   hidden flex-col p-8 h-max gap-6    ">
           <div className=" flex gap-4  text-gray-700">
@@ -54,7 +54,7 @@ const CategoriesComponents = () => {
           ))}
         </div>
         {/* rightContainer */}
-        <div className="  bg-gray-200 px-4 py-4 flex  items-center w-8/12 ">
+        <div className="w-full  md:w-8/12 bg-gray-200 py-4 flex  items-center  ">
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -85,7 +85,7 @@ const CategoriesComponents = () => {
                       {clock.button}
                     </h1>
                   </div>
-                  <div className=" flex-1 md:flex sm:hidden  cursor-pointer">
+                  <div className=" flex-1 hidden md:flex sm:hidden  cursor-pointer">
                     <img
                       className="  bg-transparent"
                       src={clock.image}
