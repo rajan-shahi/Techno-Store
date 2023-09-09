@@ -14,12 +14,12 @@ import RecentProducr from "./components/RecentProducr";
 const App = () => {
   return (
     <div>
-      {/* <Navbar />
+      <Navbar />
       <NavbrFooter />
       <CategoriesComponents />
       <CardContainer />
       <NewArrivals />
-      <Home /> */}
+      <Home />
       <RecentProducr/>
       <BestSellers />
       <Payment />
