@@ -16,7 +16,7 @@ const Payment = () => {
           />
           <h1 className=" pt-4">Worldwide Shipping</h1>
           <p className=" text-gray-400">free shipping on order over</p>
-          <p className=" text-gray-400">$100</p>
+          <p className=" text-gray-400">$120</p>
         </div>
         <div className=" flex flex-col  items-center">
           <img
