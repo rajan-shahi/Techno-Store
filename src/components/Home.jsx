@@ -1,7 +1,7 @@
 // import React from 'react'
 // import Computer from '../pages/Computer'
 // import Tablets from '../pages/Tablets'
-import SmartPhone from '../pages/SmartPhone'
+import SmartPhone from "../pages/SmartPhone";
 
 // import Accessories from "../pages/Accessories"
 // import Game from "../pages/Game"
@@ -10,14 +10,14 @@ import SmartPhone from '../pages/SmartPhone'
 const Home = () => {
   return (
     <div>
-      <SmartPhone/>
+      <SmartPhone />
       {/* <Tablets/> */}
       {/* <Computer/> */}
       {/* <Game/> */}
       {/* <Accessories/> */}
       {/* <Mobiles/> */}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

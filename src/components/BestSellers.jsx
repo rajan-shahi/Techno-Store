@@ -78,7 +78,7 @@ const BestSellers = () => {
         {/* buttonContainer */}
         <div className="  gap-4  grid grid-cols-1 sm:grid-cols-2 ">
           {/* left */}
-          <div className=" flex pl-8  flex-col gap-6 pr-52">
+          <div className=" flex pl-8  flex-col gap-6 ">
             <h1 className=" text-2xl">Featured</h1>
             <hr className=" bg-gray-300 h-0.5  " />
             {features.map((feature, index) => (
