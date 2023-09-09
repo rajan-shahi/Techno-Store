@@ -50,9 +50,9 @@ const BestSellers = () => {
             </div>
           </div>
           {/* right */}
-          <div className=" flex flex-col  pl-8">
-            <h1 className=" text-xl">Bestsellers</h1>
-            <hr className="  bg-gray-300 h-0.5 " />
+          <div className=" flex flex-col gap-4  pl-8 ">
+            <h1 className=" text-2xl">Bestsellers</h1>
+            <hr className=" bg-gray-300 h-0.5 " />
             {bestSellers.map((bestseller, index) => (
               <div key={index}>
                 <div className=" flex gap-3 items-center">
@@ -78,7 +78,7 @@ const BestSellers = () => {
         {/* buttonContainer */}
         <div className="  gap-4  grid grid-cols-1 sm:grid-cols-2 ">
           {/* left */}
-          <div className=" flex pl-8  flex-col gap-6 ">
+          <div className=" flex pl-8  flex-col gap-4 ">
             <h1 className=" text-2xl">Featured</h1>
             <hr className=" bg-gray-300 h-0.5  " />
             {features.map((feature, index) => (
@@ -102,7 +102,7 @@ const BestSellers = () => {
             ))}
           </div>
           {/* right */}
-          <div className=" flex flex-col gap-6 pl-8">
+          <div className=" flex flex-col gap-4 pl-8">
             <h1 className=" text-2xl">Hot Salles</h1>
             <hr className=" bg-gray-300 h-0.5 " />
             {hots.map((hot, index) => (
