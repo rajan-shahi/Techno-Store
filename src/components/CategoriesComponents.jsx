@@ -31,7 +31,7 @@ const CategoriesComponents = () => {
       {/* container */}
       <div className=" w-10/12 flex gap-8 py-6 justify-center ">
         {/* leftContainer */}
-        <div className=" border-2 border-gray-600 flex flex-col p-8 h-max gap-6    ">
+        <div className=" border-2 border-gray-600  sm:flex   hidden flex-col p-8 h-max gap-6    ">
           <div className=" flex gap-4  text-gray-700">
             <span className=" cursor-pointer">
               <AiOutlineAlignLeft size={30} />
@@ -71,16 +71,26 @@ const CategoriesComponents = () => {
           >
             {clocks.map((clock, index) => (
               <SwiperSlide>
-                <div key={index} className="flex gap-4  p-20 ">
+                <div key={index} className="flex gap-4  p-20   ">
                   <div className=" flex-1 flex flex-col gap-2 text-gray-500 ">
                     <h1>{clock.name}</h1>
-                    <p className=" text-3xl pb-4  text-orange-500">{clock.model}</p>
+                    <p className=" text-3xl pb-4  text-orange-500">
+                      {clock.model}
+                    </p>
                     <h2>{clock.desc}</h2>
-                    <p className=" text-3xl py-4 text-orange-400">{clock.price}</p>
-                    <h1 className=" border border-gray-400 w-max px-8  py-2 rounded-full cursor-pointer font-bold text-gray-700 hover:bg-orange-400 hover:text-white">{clock.button}</h1>
+                    <p className=" text-3xl py-4 text-orange-400">
+                      {clock.price}
+                    </p>
+                    <h1 className=" border border-gray-400 w-max px-8  py-2 rounded-full cursor-pointer font-bold text-gray-700 hover:bg-orange-400 hover:text-white">
+                      {clock.button}
+                    </h1>
                   </div>
                   <div className=" flex-1 md:flex sm:hidden  cursor-pointer">
-                    <img className="  bg-transparent" src={clock.image} alt="" />
+                    <img
+                      className="  bg-transparent"
+                      src={clock.image}
+                      alt=""
+                    />
                   </div>
                 </div>
               </SwiperSlide>
