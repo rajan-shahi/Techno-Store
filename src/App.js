@@ -13,7 +13,7 @@ import RecentProducr from "./components/RecentProducr";
 
 const App = () => {
   return (
-    <div className=" flex flex-col w-screen overflow-x-hidden overflow-y-hidden ">
+    <div  >
       <Navbar />
       <NavbrFooter />
       <CategoriesComponents />
