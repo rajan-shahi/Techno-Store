@@ -17,19 +17,19 @@ const SmartPhone = () => {
         <div className=" grid grid-cols-2 gap-4 md:gap-1 md:flex justify-between text-gray-400  border-b-2 pb-2 ">
           <h1
             onClick={() => setLists(smartphones)}
-            className="  px-4   text-sm md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full   cursor-pointer"
+            className="  px-4   text-md md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full   cursor-pointer"
           >
             Smartphones
           </h1>
           <h1
             onClick={() => setLists(tablets)}
-            className="px-4   text-sm md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full   cursor-pointer"
+            className="px-4   text-md md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full   md:cursor-pointer"
           >
             Tablets
           </h1>
           <h1
             onClick={() => setLists(games)}
-            className="px-4   text-sm md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full cursor-pointer"
+            className="px-4   text-md md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full cursor-pointer"
           >
             Game Box
           </h1>
@@ -41,13 +41,13 @@ const SmartPhone = () => {
           </h1>
           <h1
             onClick={() => setLists(mobiles)}
-            className="px-4   text-sm md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full  cursor-pointer"
+            className="px-4   text-md md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full  cursor-pointer"
           >
             Mobiles
           </h1>
           <h1
             onClick={() => setLists(computers)}
-            className="px-4   text-sm md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full  cursor-pointer"
+            className="px-4   text-md md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full  cursor-pointer"
           >
             Computers
           </h1>

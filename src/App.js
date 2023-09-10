@@ -14,10 +14,10 @@ import RecentProducr from "./components/RecentProducr";
 const App = () => {
   return (
     <div  className=" overflow-x-hidden" >
-      {/* <Navbar />
+      <Navbar />
       <NavbrFooter />
       <CategoriesComponents />
-      <NewArrivals /> */}
+      <NewArrivals />
       <Home />
       <CardContainer />
       <BestSellers />
