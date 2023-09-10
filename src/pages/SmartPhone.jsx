@@ -6,6 +6,7 @@ import { mobiles } from "../data/Data";
 import { accessories } from "../data/Data";
 import { games } from "../data/Data";
 import { computers } from "../data/Data";
+
 const SmartPhone = () => {
   const [lists, setLists] = useState(smartphones);
 
