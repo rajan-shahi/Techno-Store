@@ -23,7 +23,7 @@ const RecentProducr = () => {
         <div className=" text-gray-800 p-4 border-b-2 w-full">
           <h1 className=" text-2xl "> Recent Products</h1>
         </div>
-        <div className=" flex justify-center items-center px-12">
+        <div className=" flex justify-center items-center px-0  md:px-12">
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
@@ -70,7 +70,7 @@ const RecentProducr = () => {
                       <h2 className=" cursor-pointer hover:text-orange-400">
                         {prouduct.model}
                       </h2>
-                      <p>{prouduct.price}</p>
+                      <p className=" md:pb-0 pb-4">{prouduct.price}</p>
                     </div>
                   </div>
                 </div>
