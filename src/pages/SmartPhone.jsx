@@ -12,7 +12,7 @@ const SmartPhone = () => {
   return (
     <div className=" flex justify-center py-4">
       {/* container */}
-      <div className=" w-10/12  bg-gray-100 py-5 px-10">
+      <div className=" w-full md:w-10/12  bg-gray-100 py-5 px-10">
         {/* top */}
         <div className=" grid grid-cols-2 gap-4 md:gap-1 md:flex justify-between text-gray-400  border-b-2 pb-2 ">
           <h1 
