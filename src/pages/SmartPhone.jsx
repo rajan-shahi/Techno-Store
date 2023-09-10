@@ -84,7 +84,7 @@ const SmartPhone = () => {
             </div>
           </div>
           {/* right */}
-          <div className=" w-3/12 bg-white px-4 py-4 rounded-md border-gray-100 hover:border-orange-400 border-2  h-max">
+          <div className=" hidden md:flex w-full md:w-3/12 bg-white px-4 py-4 rounded-md border-gray-100 hover:border-orange-400 border-2  h-max">
             <div className=" px-4 py-4 flex justify-center flex-col items-center gap-4 ">
               <img className="  h-80  cursor-pointer " src={Airphone} alt="" />
               <p className=" text-sm text-gray-400">Headphones</p>
