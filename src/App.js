@@ -20,8 +20,8 @@ const App = () => {
       <CardContainer />
       <NewArrivalsCom/>
       <Home />
-      <BestSellers />
       <RecentProducr />
+      <BestSellers />
       <Payment />
       <Footer />
       <Copyright />

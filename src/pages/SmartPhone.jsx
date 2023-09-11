@@ -55,7 +55,7 @@ const SmartPhone = () => {
           </button>
         </div>
         {/* down */}
-        <div className=" flex justify-between py-4 px-4 ">
+        <div className=" flex justify-between py-4  ">
           {/* left */}
           <div className="  w-full md:w-7/12 justify-center">
             <div className=" flex-col gap-4 grid  grid-cols-1 md:grid-cols-2 ">
