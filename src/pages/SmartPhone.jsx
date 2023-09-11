@@ -16,42 +16,43 @@ const SmartPhone = () => {
       <div className=" w-full md:w-10/12  bg-gray-100 py-5 px-10">
         {/* top */}
         <div className=" grid grid-cols-2 gap-4 md:gap-1 md:flex justify-between text-gray-400  border-b-2 pb-2 ">
-          <h1
+          <button
             onClick={() => setLists(smartphones)}
-            className="  px-4   text-md md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full   cursor-pointer"
+            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full"
           >
+            {" "}
             Smartphones
-          </h1>
-          <h1
+          </button>
+          <button
             onClick={() => setLists(tablets)}
-            className="px-4   text-md md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full   md:cursor-pointer"
+            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full"
           >
             Tablets
-          </h1>
-          <h1
+          </button>
+          <button
             onClick={() => setLists(games)}
-            className="px-4   text-md md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full cursor-pointer"
+            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full"
           >
             Game Box
-          </h1>
-          <h1
+          </button>
+          <button
             onClick={() => setLists(accessories)}
-            className="px-4   text-sm md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full   cursor-pointer"
+            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full"
           >
             Accessories
-          </h1>
-          <h1
+          </button>
+          <button
             onClick={() => setLists(mobiles)}
-            className="px-4   text-md md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full  cursor-pointer"
+            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full"
           >
             Mobiles
-          </h1>
-          <h1
+          </button>
+          <button
             onClick={() => setLists(computers)}
-            className="px-4   text-md md:text-2xl pb-3 md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full  cursor-pointer"
+            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full"
           >
             Computers
-          </h1>
+          </button>
         </div>
         {/* down */}
         <div className=" flex justify-between py-4 px-4 ">
