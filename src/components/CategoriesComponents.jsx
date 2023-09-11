@@ -29,7 +29,7 @@ const CategoriesComponents = () => {
   return (
     <div className=" flex justify-center">
       {/* container */}
-      <div className=" w-full md:w-10/12  flex gap-8 py-6 justify-center ">
+      <div className=" w-10/12  flex gap-8 py-6 justify-center ">
         {/* leftContainer */}
         <div className=" border-2 border-gray-600  sm:flex   hidden flex-col p-8 h-max gap-6    ">
           <div className=" flex gap-4  text-gray-700">
@@ -54,7 +54,7 @@ const CategoriesComponents = () => {
           ))}
         </div>
         {/* rightContainer */}
-        <div className="w-full  md:w-8/12 bg-gray-200 py-4 flex  items-center  ">
+        <div className="w-full   md:w-8/12 bg-gray-100 py-4 flex  items-center md:rounded-none rounded-xl   ">
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -71,7 +71,7 @@ const CategoriesComponents = () => {
           >
             {clocks.map((clock, index) => (
               <SwiperSlide>
-                <div key={index} className="flex gap-4  p-20   ">
+                <div key={index} className="flex gap-4  md:p-20  p-10   ">
                   <div className=" flex-1 flex flex-col gap-2 text-gray-500 ">
                     <h1>{clock.name}</h1>
                     <p className=" text-3xl pb-4  text-orange-500">
