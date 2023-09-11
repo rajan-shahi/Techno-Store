@@ -17,9 +17,9 @@ const App = () => {
       <Navbar />
       <NavbrFooter />
       <CategoriesComponents />
+      <CardContainer />
       <NewArrivalsCom/>
       <Home />
-      <CardContainer />
       <BestSellers />
       <RecentProducr />
       <Payment />
