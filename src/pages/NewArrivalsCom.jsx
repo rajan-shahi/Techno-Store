@@ -37,11 +37,11 @@ const NewArrivalsCom = () => {
           </buttonn>
         </div>
         <div>
-          <div className=" grid grid-cols-1 sm:grid-cols-5 gap-4 py-8 ">
+          <div className=" grid grid-cols-1 md:grid-cols-6 py-4 ">
             {actives.map((product, index) => (
               <div
                 key={index}
-                className="border border-transparent rounded-2xl hover:border-gray-300  p-3 transition all  ease-in-out "
+                className="border border-transparent rounded-2xl hover:border-gray-300   transition all  ease-in-out "
               >
                 <div className=" flex flex-col gap-3 py-12  items-center">
                   <img
@@ -116,6 +116,14 @@ const products = [
     card: "Add to Card",
   },
   {
+    image: Seventeen,
+    name: "Computers",
+    model: "Beats snarkitecture",
+    desc: "Headphones",
+    price: " $ 12450.00",
+    card: "Add to Card",
+  },
+  {
     image: Four,
     name: "Computers",
     model: "Apple Imac Zosc4824",
@@ -153,6 +161,14 @@ const products = [
     model: "Notebook Widescreen Z51-120",
     desc: "40K6013UPB10",
     price: " $ 12050.010",
+    card: "Add to Card",
+  },
+  {
+    image: Three,
+    name: "Headphones",
+    model: "Beats Solo",
+    desc: "HD",
+    price: " $ 756250.00",
     card: "Add to Card",
   },
 ];
@@ -204,6 +220,22 @@ const featureds = [
     model: "Apple Imac Zosc4824",
     desc: "Retin fgfgvb  head",
     price: " $ 128002250.00",
+    card: "Add to Featured",
+  },
+  {
+    image: Seventeen,
+    name: "Computers",
+    model: "Notebook Widescreen Z51-120",
+    desc: "Headv gbtyhtgb phones",
+    price: " $ 12450.00",
+    card: "Add to Featured",
+  },
+  {
+    image: Five,
+    name: "Camera",
+    model: "New X5c-12.4Ghz Gyro",
+    desc: "G dwfet 2356",
+    price: " $ 1250.00",
     card: "Add to Featured",
   },
   {
@@ -295,6 +327,14 @@ const sellings = [
     card: "Add to Selling",
   },
   {
+    image: Six,
+    name: "Computer",
+    model: "Notebook Widescreen Z51-120",
+    desc: "40K6013UPB10",
+    price: " $ 12050.010",
+    card: "Add to Selling",
+  },
+  {
     image: One,
     name: "Computers",
     model: "smartphone 75",
@@ -316,6 +356,14 @@ const sellings = [
     model: "Notebook Widescreen Z51-120",
     desc: "40K6013UPB10",
     price: " $ 12050.010",
+    card: "Add to Selling",
+  },
+  {
+    image: Seven,
+    name: "Cameras",
+    model: "New X5c-12563Djk",
+    desc: "CKli-01Jb",
+    price: " $ 12542.00",
     card: "Add to Selling",
   },
 ];
