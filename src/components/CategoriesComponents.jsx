@@ -74,7 +74,7 @@ const CategoriesComponents = () => {
                 <div key={index} className="flex gap-4  md:p-20  p-10   ">
                   <div className=" flex-1 flex flex-col gap-2 text-gray-500 ">
                     <h1>{clock.name}</h1>
-                    <p className=" text-3xl pb-4  text-orange-500">
+                    <p className=" text-3xl pb-4  text-orange-400">
                       {clock.model}
                     </p>
                     <h2>{clock.desc}</h2>
