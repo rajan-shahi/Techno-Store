@@ -3,21 +3,23 @@ import Navbar from "./components/Navbar";
 import NavbrFooter from "./components/NavbrFooter";
 import CategoriesComponents from "./components/CategoriesComponents";
 import CardContainer from "./components/CardContainer";
-import NewArrivals from "./pages/NewArrivals";
+// import NewArrivals from "./pages/NewArrivals";
 import Footer from "./components/Footer";
 import Payment from "./components/Payment";
 import Copyright from "./components/Copyright";
 import BestSellers from "./components/BestSellers";
 import Home from "./components/Home";
 import RecentProducr from "./components/RecentProducr";
+import NewArrivalsCom from "./pages/NewArrivalsCom";
 
 const App = () => {
   return (
-    <div  className=" overflow-x-hidden" >
+    <div className=" overflow-x-hidden">
       <Navbar />
       <NavbrFooter />
       <CategoriesComponents />
-      <NewArrivals />
+      {/* <NewArrivals /> */}
+      <NewArrivalsCom/>
       <Home />
       <CardContainer />
       <BestSellers />

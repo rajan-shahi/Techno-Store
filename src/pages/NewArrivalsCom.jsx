@@ -10,16 +10,52 @@ import Eighteen from "../assets/18.jpg";
 import Seventeen from "../assets/17.jpg";
 import Ninteen from "../assets/19.jpg";
 
-const NewArrivals = () => {
+const NewArrivalsCom = () => {
   return (
     <div className=" flex justify-center">
-      {/* container */}
-     
+      <div className=" flex w-10/12 flex-col ">
+        <div className=" flex gap-8 text-xl  text-gray-400  border-b-2 py-4 w-full border-gray-200 ">
+          <button className=" hover:text-gray-700">New Arrivals</button>
+          <button className=" hover:text-gray-700">Featured</button>
+          <button className=" hover:text-gray-700"> Top Selling</button>
+        </div>
+        <div>
+          <div className=" grid grid-cols-1 sm:grid-cols-5 gap-4 py-8 ">
+            {products.map((product, index) => (
+              <div
+                key={index}
+                className="border border-transparent rounded-2xl hover:border-gray-300  p-3 transition all  ease-in-out "
+              >
+                <div className=" flex flex-col gap-3 py-12  items-center">
+                  <img
+                    className=" cursor-pointer pb-4 h-28 "
+                    src={product.image}
+                    alt=""
+                  />
+                  <p className=" text-gray-300  ">{product.name}</p>
+                  <p className=" hover:text-orange-600 cursor-pointer text-sm text-gray-500">
+                    {product.model}
+                  </p>
+                  <p className=" hover:text-orange-600 cursor-pointer text-sm">
+                    {product.desc}
+                  </p>
+                  <p className=" text-orange-600 text-2xl cursor-pointer">
+                    {product.price}
+                  </p>
+                  <p className=" flex items-center bg-orange-300 px-4 py-2 border rounded-full text-white cursor-pointer hover:bg-orange-600     transition all  ease-in-out">
+                    {product.card}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default NewArrivals;
+export default NewArrivalsCom;
 
 const products = [
   {
