@@ -24,7 +24,9 @@ const Footer = () => {
             />
             <p className=" text-2xl">Got Question ? Call Us 24/7!</p>
             {Calls.map((call, index) => (
-              <p className="hover:text-orange-600 " key={index}>{call.name}</p>
+              <p className="hover:text-orange-600 " key={index}>
+                {call.name}
+              </p>
             ))}
             <div className=" flex gap-6 text-gray-400 pt-1">
               <span className=" hover:text-gray-600 cursor-pointer">
@@ -47,13 +49,17 @@ const Footer = () => {
           <div className=" flex flex-col gap-2 text-gray-600 text-sm">
             <h1 className=" text-3xl">Find By Categories</h1>
             {Categories.map((categorie, index) => (
-              <p className="hover:text-orange-600 " key={index}>{categorie.name}</p>
+              <p className="hover:text-orange-600 " key={index}>
+                {categorie.name}
+              </p>
             ))}
           </div>
           <div className=" flex flex-col gap-2 text-gray-600 text-sm">
             <h1 className=" text-3xl">Customer Care</h1>
             {links.map((link, index) => (
-              <p className="hover:text-orange-600 " key={index}>{link.name}</p>
+              <p className="hover:text-orange-600 " key={index}>
+                {link.name}
+              </p>
             ))}
           </div>
           <div className=" flex flex-col gap-2 text-gray-600 text-sm">
