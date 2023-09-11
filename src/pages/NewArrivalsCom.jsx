@@ -15,10 +15,26 @@ const NewArrivalsCom = () => {
   return (
     <div className=" flex justify-center">
       <div className=" flex w-10/12 flex-col ">
-        <div className=" flex gap-8 text-xl  text-gray-400  border-b-2 py-4 w-full border-gray-200 ">
-          <button  onClick={() => setActives(products)} className=" hover:text-gray-700">New Arrivals</button>
-          <button   onClick={() => setActives(featureds)} className=" hover:text-gray-700">Featured</button>
-          <buttonn  onClick={() => setActives(sellings)}  className=" hover:text-gray-700"> Top Selling</buttonn>
+        <div className=" flex gap-8 md:text-xl  text-gray-400  border-b-2 py-4 w-full border-gray-200 ">
+          <button
+            onClick={() => setActives(products)}
+            className=" hover:text-gray-700"
+          >
+            New Arrivals
+          </button>
+          <button
+            onClick={() => setActives(featureds)}
+            className=" hover:text-gray-700"
+          >
+            Featured
+          </button>
+          <buttonn
+            onClick={() => setActives(sellings)}
+            className=" hover:text-gray-700"
+          >
+            {" "}
+            Top Selling
+          </buttonn>
         </div>
         <div>
           <div className=" grid grid-cols-1 sm:grid-cols-5 gap-4 py-8 ">
@@ -43,7 +59,7 @@ const NewArrivalsCom = () => {
                   <p className=" text-orange-600 text-2xl cursor-pointer">
                     {product.price}
                   </p>
-                  <p className=" flex items-center bg-orange-300 px-4 py-2 border rounded-full text-white cursor-pointer hover:bg-orange-600     transition all  ease-in-out">
+                  <p className=" flex items-center bg-orange-300 px-4 py-2 border rounded-full text-white cursor-pointer hover:bg-orange-600     transition all  ease-in-out ">
                     {product.card}
                   </p>
                 </div>
@@ -141,93 +157,87 @@ const products = [
   },
 ];
 
-
-
 const featureds = [
   {
     image: Five,
-    name: "Laptop",
-    model: "Apple ipad Mini",
-    desc: "G2356",
+    name: "Camera",
+    model: "New X5c-12.4Ghz Gyro",
+    desc: "G dwfet 2356",
     price: " $ 1250.00",
-    card: "Add to Card",
+    card: "Add to Featured",
   },
   {
     image: Six,
     name: "Cameras",
-    model: "New X5c-12.4Ghz Gyro",
+    model: "Apple ipad Mini",
     desc: "Rc Quadcopter Drone",
-    price: " $ 12590.00",
-    card: "Add to Card",
+    price: " $ 121200090.00",
+    card: "Add to Featured",
   },
   {
     image: Eighteen,
-    name: "Cameras",
-    model: "Apple Ipad New",
-    desc: "G2356",
-    price: " $ 12400.00",
-    card: "Add to Card",
+    name: "Laptop",
+    model: "New X5c-12563Djk",
+    desc: "Gfgfgy2356",
+    price: " $ 12412200.00",
+    card: "Add to Featured",
   },
   {
     image: Ninteen,
     name: "Cameras",
-    model: "New X5c-12563Djk",
-    desc: "CKli-01Jb",
+    model: "Apple Ipad new or Old",
+    desc: "CKl cdfgf i-01Jb",
     price: " $ 12542.00",
-    card: "Add to Card",
+    card: "Add to Featured",
   },
   {
     image: Four,
     name: "Headphones",
-    model: "Beats Solo",
-    desc: "HD",
-    price: " $ 756250.00",
-    card: "Add to Card",
+    model: "Apple ipad 1232BG 9.7",
+    desc: " cfgvtrytb HD",
+    price: " $ 71056250.00",
+    card: "Add to Featured",
   },
   {
     image: One,
-    name: "Computers",
+    name: "Mobile",
     model: "Apple Imac Zosc4824",
-    desc: "Retin",
-    price: " $ 12850.00",
-    card: "Add to Card",
+    desc: "Retin fgfgvb  head",
+    price: " $ 128002250.00",
+    card: "Add to Featured",
   },
   {
     image: Seven,
     name: "Computer",
-    model: "Apple ipad 1232BG 9.7",
-    desc: "Tablet",
+    model: "Beats head Solo",
+    desc: "Tab cgvrfft let",
     price: " $ 42250.00",
-    card: "Add to Card",
+    card: "Add to Featured",
   },
   {
     image: Two,
-    name: "Computers",
+    name: "Headphones",
     model: "smartphone 75",
-    desc: "123GB",
-    price: " $ 12552.03650",
-    card: "Add to Card",
+    desc: "1 41025 23GB",
+    card: "Add to Featured",
   },
   {
     image: Seventeen,
     name: "Computers",
-    model: "Beats snarkitecture",
-    desc: "Headphones",
+    model: "Notebook Widescreen Z51-120",
+    desc: "Headv gbtyhtgb phones",
     price: " $ 12450.00",
-    card: "Add to Card",
+    card: "Add to Featured",
   },
   {
     image: Three,
     name: "Computer",
     model: "Notebook Widescreen Z51-120",
-    desc: "40K6013UPB10",
+    desc: "40K601 bgtytgb 3UPB10",
     price: " $ 12050.010",
-    card: "Add to Card",
+    card: "Add to Featured",
   },
 ];
-
-
-
 
 const sellings = [
   {
@@ -236,7 +246,7 @@ const sellings = [
     model: "Apple ipad Mini",
     desc: "G2356",
     price: " $ 1250.00",
-    card: "Add to Card",
+    card: "Add to Selling",
   },
   {
     image: Eighteen,
@@ -244,7 +254,7 @@ const sellings = [
     model: "New X5c-12.4Ghz Gyro",
     desc: "Rc Quadcopter Drone",
     price: " $ 12590.00",
-    card: "Add to Card",
+    card: "Add to Selling",
   },
   {
     image: Seventeen,
@@ -252,7 +262,7 @@ const sellings = [
     model: "Apple Ipad New",
     desc: "G2356",
     price: " $ 12400.00",
-    card: "Add to Card",
+    card: "Add to Selling",
   },
   {
     image: Seven,
@@ -260,7 +270,7 @@ const sellings = [
     model: "New X5c-12563Djk",
     desc: "CKli-01Jb",
     price: " $ 12542.00",
-    card: "Add to Card",
+    card: "Add to Selling",
   },
   {
     image: Four,
@@ -268,15 +278,13 @@ const sellings = [
     model: "Beats Solo",
     desc: "HD",
     price: " $ 756250.00",
-    card: "Add to Card",
+    card: "Add to Selling",
   },
   {
     image: One,
     name: "Computers",
     model: "Apple Imac Zosc4824",
-    desc: "Retin",
-    price: " $ 12850.00",
-    card: "Add to Card",
+    card: "Add to Selling",
   },
   {
     image: Three,
@@ -284,7 +292,7 @@ const sellings = [
     model: "Apple ipad 1232BG 9.7",
     desc: "Tablet",
     price: " $ 42250.00",
-    card: "Add to Card",
+    card: "Add to Selling",
   },
   {
     image: One,
@@ -292,7 +300,7 @@ const sellings = [
     model: "smartphone 75",
     desc: "123GB",
     price: " $ 12552.03650",
-    card: "Add to Card",
+    card: "Add to Selling",
   },
   {
     image: Two,
@@ -300,7 +308,7 @@ const sellings = [
     model: "Beats snarkitecture",
     desc: "Headphones",
     price: " $ 12450.00",
-    card: "Add to Card",
+    card: "Add to Selling",
   },
   {
     image: Six,
@@ -308,6 +316,6 @@ const sellings = [
     model: "Notebook Widescreen Z51-120",
     desc: "40K6013UPB10",
     price: " $ 12050.010",
-    card: "Add to Card",
+    card: "Add to Selling",
   },
 ];
