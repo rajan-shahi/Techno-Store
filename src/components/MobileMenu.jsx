@@ -6,29 +6,29 @@ const MobileMenu = () => {
   const [nav, setNev] = useState(false);
   const handleClick = () => setNev(!nav);
   return (
-    <div className=" flex justify-center">
-      <div className=" w-10/12 py-4">
-        <div className=" flex items-center justify-between">
-          <img src={logo} alt="" />
-          <div onClick={handleClick}>
-            {!nav ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
+    <div className=" flex justify-center ">
+      <div className=" w-full  md:w-10/12 py-4  ">
+        <div className=" flex items-center justify-between ">
+          <img src={logo} alt="" className=" px-4"  />
+          <div onClick={handleClick} className=" px-4">
+            {!nav ? < AiOutlineMenu size={30} className=" text-black" /> : <AiOutlineClose size={30}  className="  text-black"/>}
           </div>
         </div>
-        <div>
+        <div className="  py-4">
           <ul
             className={
               !nav
                 ? "hidden"
-                : "absolute top-0 left-0  w-full flex flex-col justify-center  items-center"
+                : "   md:z-0 z-40  absolute   w-full py-7   flex flex-col justify-center   bg-gray-500 items-center rounded-md   "
             }
           >
-            <li className=" py-4 text-4xl">Home</li>
-            <li>Shop</li>
-            <li>Features</li>
-            <li>Electronics</li>
-            <li>Pages</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <li className=" py-4 text-4xl  text-gray-200">Home</li>
+            <li className=" py-4 text-4xl text-white">Shop</li>
+            <li className=" py-4 text-4xl text-white">Features</li>
+            <li className=" py-4 text-4xl text-white">Electronics</li>
+            <li className=" py-4 text-4xl  text-white">Pages</li>
+            <li className=" py-4 text-4xl text-white">Blog</li>
+            <li className=" py-4 text-4xl  text-white">Contact</li>
           </ul>
         </div>
       </div>
