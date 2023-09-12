@@ -6,7 +6,7 @@ const MobileMenu = () => {
   const [nav, setNev] = useState(false);
   const handleClick = () => setNev(!nav);
   return (
-    <div className=" flex justify-center ">
+    <div className="  md:hidden flex justify-center ">
       <div className=" w-full  md:w-10/12 py-4  ">
         <div className=" flex items-center justify-between cursor-pointer ">
           <img src={logo} alt="" className=" px-4" />
@@ -23,7 +23,7 @@ const MobileMenu = () => {
             className={
               !nav
                 ? "hidden"
-                : "   md:z-0 z-40  absolute   w-full py-7   flex flex-col  justify-center   bg-gray-500 items-center rounded-md   "
+                : "   md:z-0 z-40  absolute   w-full py-8   flex flex-col  justify-center   bg-gray-500 items-center rounded-md   "
             }
           >
             <li className="  hover:text-orange-400 cursor-pointer py-4 text-4xl  text-gray-200">
