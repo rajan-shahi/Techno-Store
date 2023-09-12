@@ -7,7 +7,7 @@ const MobileMenu = () => {
   const handleClick = () => setNev(!nav);
   return (
     <div className="  md:hidden flex justify-center ">
-      <div className=" w-full  md:w-10/12 py-4  ">
+      <div className=" w-full  md:w-10/12 py-4   ">
         <div className=" flex items-center justify-between cursor-pointer ">
           <img src={logo} alt="" className=" px-4" />
           <div onClick={handleClick} className=" px-4 ">
@@ -30,22 +30,25 @@ const MobileMenu = () => {
               Home
             </li>
             <li className="   hover:text-orange-400 cursor-pointer py-4 text-4xl text-gray-200">
-              Shop
+            New Arrivals
             </li>
             <li className="   hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200">
               Features
             </li>
             <li className="   hover:text-orange-400 cursor-pointer py-4 text-4xl  text-gray-200">
-              Electronics
+              SmartPhones
             </li>
             <li className="   hover:text-orange-400 cursor-pointer py-4 text-4xl  text-gray-200">
-              Pages
+              Recent Products
             </li>
             <li className="   hover:text-orange-400 cursor-pointer py-4 text-4xl  text-gray-200">
-              Blog
+             Bestsellers
             </li>
             <li className="   hover:text-orange-400   cursor-pointer py-4 text-4xl  text-gray-200">
-              Contact
+              Payments
+            </li>
+            <li className="   hover:text-orange-400   cursor-pointer py-4 text-4xl  text-gray-200">
+            Contacts
             </li>
           </ul>
         </div>
