@@ -14,25 +14,22 @@ const NavbrFooter = () => {
           <img className=" cursor-pointer" sizes="20" src={logo} alt="" />
         </div>
         {/* mid */}
-        <div className=" flex w-[500px] border-2 rounded-full  px-2 text-sm">
+        <div className=" flex  w-[500px] border-2 rounded-full  px-2 text-sm">
           <div className=" flex items-center">
             <select id="" className=" border-r-2  px-4 py-1  items-center flex text-gray-600">
               <option value="">All Category</option>
-              <option value="Electronics">Electronics</option>
+              <option  className="text-2xl" value="Electronics">Electronics</option>
               <option value="Components">Components</option>
               <option value="Laptop">Laptop</option> 
               <option value="Monitor">Monitor</option>
               <option value="MP3">MP3 </option>
               <option value="Scanner">Scanner</option>
-              <option value=""></option>
-              <option value=""> Furniters</option>
-              <option value=""></option>
+              <option  className="text-2xl"value=""> Furniters</option>
               <option value="">Bookcase</option>
               <option value="">Tv stand</option>
               <option value="">Desks</option>
               <option value="">Chairs</option>
-              <option value=""></option>
-              <option value="">Accessories</option>
+              <option  className="text-2xl" value="">Accessories</option>
               <option value="">Software</option>
               <option value="">Mobile</option>
               <option value="">Media</option>
