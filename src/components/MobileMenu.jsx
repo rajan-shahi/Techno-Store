@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-scroll";
 const MobileMenu = () => {
   const [nav, setNev] = useState(false);
   const handleClick = () => setNev(!nav);
@@ -18,7 +19,7 @@ const MobileMenu = () => {
             )}
           </div>
         </div>
-        <div className="  py-4">
+        <div className="  py-8">
           <ul
             className={
               !nav
@@ -26,11 +27,14 @@ const MobileMenu = () => {
                 : "   md:z-0 z-40  absolute   w-full py-8   flex flex-col  justify-center   bg-gray-500 items-center rounded-md   "
             }
           >
+           
+        
             <li className="  hover:text-orange-400 cursor-pointer py-4 text-4xl  text-gray-200">
-              Home
+            <Link to="Home" spy={true} smooth={true} duration={500}>Home</Link>
             </li>
+            
             <li className="   hover:text-orange-400 cursor-pointer py-4 text-4xl text-gray-200">
-            New Arrivals
+            <Link to="NewArrivals" spy={true} smooth={true} duration={500}>  New Arrivals</Link>  
             </li>
             <li className="   hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200">
               Features
@@ -42,13 +46,13 @@ const MobileMenu = () => {
               Recent Products
             </li>
             <li className="   hover:text-orange-400 cursor-pointer py-4 text-4xl  text-gray-200">
-             Bestsellers
+              Bestsellers
             </li>
             <li className="   hover:text-orange-400   cursor-pointer py-4 text-4xl  text-gray-200">
               Payments
             </li>
             <li className="   hover:text-orange-400   cursor-pointer py-4 text-4xl  text-gray-200">
-            Contacts
+              Contacts
             </li>
           </ul>
         </div>

@@ -13,7 +13,7 @@ import Ninteen from "../assets/19.jpg";
 const NewArrivalsCom = () => {
   const [actives, setActives] = useState(products);
   return (
-    <div className=" flex justify-center">
+    <div name="NewArrivals" className=" flex justify-center">
       <div className=" flex w-10/12 flex-col ">
         <div className=" flex gap-8 md:text-xl  text-gray-400  border-b-2 py-4 w-full border-gray-200 ">
           <button
