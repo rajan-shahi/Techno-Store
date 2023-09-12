@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className=" flex justify-center  border-b-2 ">
       {/* container */}
-      <div name="navbar" className="py-3 w-10/12 flex flex-col gap-5  md:flex-row  justify-between text-xs items-center ">
+      <div name="navbar" className="py-3 w-10/12 flex flex-col gap-5  md:flex-row  justify-between text-xs  items-center ">
         {/* leftbar */}
         <div className=" flex gap-4 text-gray-600 ">
           <p className=" border-r-2  pr-2 hover:text-orange-600 cursor-pointer"> Support</p>
@@ -36,7 +36,7 @@ const Navbar = () => {
             <option value="Dolar">Dolar</option>
           </select>
           <select id="" className=" cursor-pointer">
-            <option value="">English</option>
+            <option value="">Language</option>
             <option value="Turkish">Turkish</option>
             <option value="Englidh">English</option>
             <option value="Espanol">Espanol</option>
