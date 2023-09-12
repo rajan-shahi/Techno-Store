@@ -19,12 +19,12 @@ const MobileMenu = () => {
             )}
           </div>
         </div>
-        <div className="  py-8">
+        <div className="  py-4">
           <ul
             className={
               !nav
                 ? "hidden"
-                : "   md:z-0 z-40  absolute   w-full py-8   flex flex-col  justify-center   bg-gray-500 items-center rounded-md   "
+                : "   md:z-0 z-40  absolute   w-full py-6   flex flex-col  justify-center   bg-gray-500 items-center rounded-md   "
             }
           >
            
