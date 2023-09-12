@@ -11,7 +11,7 @@ const SmartPhone = () => {
   const [lists, setLists] = useState(smartphones);
 
   return (
-    <div className=" flex justify-center py-4">
+    <div name="smartPhone" className=" flex justify-center py-4">
       {/* container */}
       <div className=" w-full md:w-10/12  bg-gray-100 py-5 px-10">
         {/* top */}

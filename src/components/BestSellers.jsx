@@ -13,7 +13,7 @@ import One010 from "../assets/010.jpg";
 
 const BestSellers = () => {
   return (
-    <div className=" flex justify-center py-8 ">
+    <div name="seller" className=" flex justify-center py-8 ">
       {/* container */}
       <div className="w-full md:w-10/12 flex flex-col  bg-gray-100  py-10 justify-center">
         {/* topcontainer */}

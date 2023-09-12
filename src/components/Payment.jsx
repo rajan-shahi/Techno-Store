@@ -5,7 +5,7 @@ import Payments from "../assets/payment.png";
 import Returns from "../assets/return.png";
 const Payment = () => {
   return (
-    <div className=" flex justify-center">
+    <div name="payment" className=" flex justify-center">
       {/* container */}
       <div className=" grid grid-cols-1 sm:grid-cols-4 w-10/12  justify-between ">
         <div className=" flex flex-col  items-center">

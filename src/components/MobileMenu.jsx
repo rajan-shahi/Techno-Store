@@ -37,22 +37,22 @@ const MobileMenu = () => {
             <Link to="NewArrivals" spy={true} smooth={true} duration={500}>  New Arrivals</Link>  
             </li>
             <li className="   hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200">
-              Features
+            <Link to="featured" spy={true} smooth={true} duration={500}> Features</Link>
             </li>
             <li className="   hover:text-orange-400 cursor-pointer py-4 text-4xl  text-gray-200">
-              SmartPhones
+            <Link to="smartPhone" spy={true} smooth={true} duration={500}> SmartPhones</Link> 
             </li>
             <li className="   hover:text-orange-400 cursor-pointer py-4 text-4xl  text-gray-200">
-              Recent Products
+            <Link to="product" spy={true} smooth={true} duration={500}>  Recent Products</Link>
             </li>
             <li className="   hover:text-orange-400 cursor-pointer py-4 text-4xl  text-gray-200">
-              Bestsellers
+            <Link to="seller" spy={true} smooth={true} duration={500}> Bestsellers</Link> 
             </li>
             <li className="   hover:text-orange-400   cursor-pointer py-4 text-4xl  text-gray-200">
-              Payments
+            <Link to="payment" spy={true} smooth={true} duration={500}> Payments</Link> 
             </li>
             <li className="   hover:text-orange-400   cursor-pointer py-4 text-4xl  text-gray-200">
-              Contacts
+            <Link to="contact" spy={true} smooth={true} duration={500}> Contacts</Link> 
             </li>
           </ul>
         </div>

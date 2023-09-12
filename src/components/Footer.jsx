@@ -10,7 +10,7 @@ import { AiFillGoogleCircle } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 const Footer = () => {
   return (
-    <div className=" flex justify-center">
+    <div name="contact" className=" flex justify-center">
       {/* container */}
       <div className=" flex flex-col w-full md:w-10/12 py-10">
         {/* top */}
