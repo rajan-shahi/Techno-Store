@@ -23,7 +23,7 @@ const MobileMenu = () => {
             className={
               !nav
                 ? "hidden"
-                : "   md:z-0 z-40  absolute   w-full py-7   flex flex-col justify-center   bg-gray-500 items-center rounded-md   "
+                : "   md:z-0 z-40  absolute   w-full py-7   flex flex-col  justify-center   bg-gray-500 items-center rounded-md   "
             }
           >
             <li className="  hover:text-orange-400 cursor-pointer py-4 text-4xl  text-gray-200">
@@ -32,7 +32,7 @@ const MobileMenu = () => {
             <li className="   hover:text-orange-400 cursor-pointer py-4 text-4xl text-gray-200">
               Shop
             </li>
-            <li className="   hover:text-orange-400  cursor-pointerpy-4 text-4xl  text-gray-200">
+            <li className="   hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200">
               Features
             </li>
             <li className="   hover:text-orange-400 cursor-pointer py-4 text-4xl  text-gray-200">
