@@ -11,12 +11,18 @@ const MobileMenu = () => {
         <div className=" flex items-center justify-between">
           <img src={logo} alt="" />
           <div onClick={handleClick}>
-          {!nav ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
+            {!nav ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
           </div>
         </div>
         <div>
-          <ul>
-            <li>Home</li>
+          <ul
+            className={
+              !nav
+                ? "hidden"
+                : "absolute top-0 left-0  w-full flex flex-col justify-center  items-center"
+            }
+          >
+            <li className=" py-4 text-4xl">Home</li>
             <li>Shop</li>
             <li>Features</li>
             <li>Electronics</li>
