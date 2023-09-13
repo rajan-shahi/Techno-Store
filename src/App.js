@@ -11,6 +11,7 @@ import Home from "./components/Home";
 import RecentProducr from "./components/RecentProducr";
 import NewArrivalsCom from "./pages/NewArrivalsCom";
 import MobileMenu from "./components/MobileMenu";
+import BestSellersComp from './components/BestSellersComp';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <CardContainer />
       <NewArrivalsCom/>
       <Home />
+      <BestSellersComp/>
       <RecentProducr />
       <BestSellers />
       <Payment />
