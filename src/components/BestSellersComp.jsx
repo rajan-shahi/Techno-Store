@@ -4,64 +4,80 @@ import Two from "../assets/02.jpg";
 import Five from "../assets/05.jpg";
 import Six from "../assets/06.jpg";
 import Three from "../assets/03.jpg";
-import Four from "../assets/04.jpg";
-import Seven from "../assets/07.jpg";
 import Eighteen from "../assets/18.jpg";
 import Seventeen from "../assets/17.jpg";
 import Ninteen from "../assets/19.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
 
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 const BestSellersComp = () => {
   return (
-    <div className=" flex justify-center">
-      <div className=" flex flex-col w-10/12">
-        <div className=" flex  text-2xl text-gray-500 border-b-2 w-full py-3">
-          Best Sellers
-        </div>
-        <div className=" flex justify-center py-4 ">
-          <Swiper
-            slidesPerView={3}
-            spaceBetween={10}
-            centeredSlides={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={true}
-            modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper"
-          >
-            <div className=" px-10">
-              {bestsellers.map((bestseller, index) => (
-                <div key={index} className="">
-                  <SwiperSlide>
-                    <div className="  items-center flex gap-2 hover:border-orange-300  border-2 py-4  px-4">
-                      <div className="">
-                        <img className=" h-36" src={bestseller.image} alt="" />
-                      </div>
-                      <div className=" flex flex-col items-center gap-1">
-                        <h1>{bestseller.name}</h1>
-                        <h2>{bestseller.model}</h2>
-                        <h1>{bestseller.desc}</h1>
-                        <span>{bestseller.price}</span>
-                      </div>
-                    </div>
-                  </SwiperSlide>
+     <div name="product" className=" flex justify-center">
+    <div className=" flex w-10/12 py-8  flex-col gap-8">
+      <div className=" text-gray-800 p-4 border-b-2 w-full">
+        <h1 className=" text-2xl ">Best Sellers</h1>
+      </div>
+      <div className=" flex justify-center items-center px-0  md:px-12">
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 50,
+            },
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+        >
+          {bestsellers.map((bestseller, index) => (
+            <SwiperSlide>
+              <div
+                key={index}
+                className=" flex flex-col justify-center gap-4 items-center px-8 py-5 border-2 hover:border-orange-300 rounded-md   "
+              >
+                <div className=" flex flex-col gap-3 justify-center items-center">
+                  <span>
+                    <img
+                      className=" cursor-pointer"
+                      src={bestseller.image}
+                      alt=""
+                    />
+                  </span>
+                  <div className=" flex flex-col gap-1 items-center">
+                    <h1 className=" text-sm text-gray-600 hover:text-orange-400 cursor-pointer">
+                      {bestseller.name}
+                    </h1>
+                    <h2 className=" cursor-pointer hover:text-orange-400">
+                      {bestseller.model}
+                    </h2>
+                    <p className=" md:pb-0 pb-4">{bestseller.price}</p>
+                  </div>
                 </div>
-              ))}
-            </div>
-          </Swiper>
-        </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
-  );
+  </div>
+);
 };
 
 export default BestSellersComp;
@@ -107,30 +123,7 @@ const bestsellers = [
     price: " $ 756250.00",
     card: "Add to Card",
   },
-  {
-    image: Seventeen,
-    name: "Computers",
-    model: "Beats snarkitecture",
-    desc: "Headphones",
-    price: " $ 12450.00",
-    card: "Add to Card",
-  },
-  {
-    image: Four,
-    name: "Computers",
-    model: "Apple Imac Zosc4824",
-    desc: "Retin",
-    price: " $ 12850.00",
-    card: "Add to Card",
-  },
-  {
-    image: Seven,
-    name: "Computer",
-    model: "Apple ipad 1232BG 9.7",
-    desc: "Tablet",
-    price: " $ 42250.00",
-    card: "Add to Card",
-  },
+
   {
     image: Eighteen,
     name: "Computers",
@@ -150,7 +143,7 @@ const bestsellers = [
   {
     image: Ninteen,
     name: "Computer",
-    model: "Notebook Widescreen Z51-120",
+    model: "Notebook Widescreen Z52",
     desc: "40K6013UPB10",
     price: " $ 12050.010",
     card: "Add to Card",
@@ -163,22 +156,7 @@ const bestsellers = [
     price: " $ 756250.00",
     card: "Add to Card",
   },
-  {
-    image: Seven,
-    name: "Computer",
-    model: "Apple ipad 1232BG 9.7",
-    desc: "Tablet",
-    price: " $ 42250.00",
-    card: "Add to Card",
-  },
-  {
-    image: Eighteen,
-    name: "Computers",
-    model: "smartphone 75",
-    desc: "123GB",
-    price: " $ 12552.03650",
-    card: "Add to Card",
-  },
+
   {
     image: Seventeen,
     name: "Computers",
@@ -190,7 +168,7 @@ const bestsellers = [
   {
     image: Ninteen,
     name: "Computer",
-    model: "Notebook Widescreen Z51-120",
+    model: "Notebook Widescreen Z50",
     desc: "40K6013UPB10",
     price: " $ 12050.010",
     card: "Add to Card",
