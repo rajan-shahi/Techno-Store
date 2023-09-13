@@ -22,8 +22,8 @@ const App = () => {
       <CategoriesComponents />
       <CardContainer />
       <NewArrivalsCom/>
-      <Home />
       <BestSellersComp/>
+      <Home />
       <RecentProducr />
       <BestSellers />
       <Payment />

@@ -15,69 +15,69 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 const BestSellersComp = () => {
   return (
-     <div name="product" className=" flex justify-center">
-    <div className=" flex w-10/12 py-8  flex-col gap-8">
-      <div className=" text-gray-800 p-4 border-b-2 w-full">
-        <h1 className=" text-2xl ">Best Sellers</h1>
-      </div>
-      <div className=" flex justify-center items-center px-0  md:px-12">
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={30}
-          loop={true}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 4,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 5,
-              spaceBetween: 50,
-            },
-          }}
-          navigation={true}
-          modules={[Pagination, Navigation]}
-          className="mySwiper"
-        >
-          {bestsellers.map((bestseller, index) => (
-            <SwiperSlide>
-              <div
-                key={index}
-                className=" flex flex-col justify-center gap-4 items-center px-8 py-5 border-2 hover:border-orange-300 rounded-md   "
-              >
-                <div className=" flex flex-col gap-3 justify-center items-center">
-                  <span>
-                    <img
-                      className=" cursor-pointer"
-                      src={bestseller.image}
-                      alt=""
-                    />
-                  </span>
-                  <div className=" flex flex-col gap-1 items-center">
-                    <h1 className=" text-sm text-gray-600 hover:text-orange-400 cursor-pointer">
-                      {bestseller.name}
-                    </h1>
-                    <h2 className=" cursor-pointer hover:text-orange-400">
-                      {bestseller.model}
-                    </h2>
-                    <p className=" md:pb-0 pb-4">{bestseller.price}</p>
+    <div name="product" className=" flex justify-center">
+      <div className=" flex w-10/12 md:py-8  py-4 flex-col gap-8">
+        <div className=" text-gray-800 ma:p-4 p-2 border-b-2 w-full">
+          <h1 className=" md:text-2xl text-3xl ">Best Sellers</h1>
+        </div>
+        <div className=" flex justify-center items-center px-0  md:px-12">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+              },
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
+            {bestsellers.map((bestseller, index) => (
+              <SwiperSlide>
+                <div
+                  key={index}
+                  className=" flex flex-col justify-center gap-4 items-center px-8 py-5 border-2 hover:border-orange-300 rounded-md   "
+                >
+                  <div className=" flex flex-col gap-3 justify-center items-center">
+                    <span>
+                      <img
+                        className=" cursor-pointer"
+                        src={bestseller.image}
+                        alt=""
+                      />
+                    </span>
+                    <div className=" flex flex-col gap-1 items-center">
+                      <h1 className=" text-sm text-gray-600 hover:text-orange-400 cursor-pointer">
+                        {bestseller.name}
+                      </h1>
+                      <h2 className=" cursor-pointer hover:text-orange-400">
+                        {bestseller.model}
+                      </h2>
+                      <p className=" md:pb-0 pb-4">{bestseller.price}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
 };
 
 export default BestSellersComp;
