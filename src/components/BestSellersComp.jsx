@@ -18,13 +18,14 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const BestSellersComp = () => {
   return (
     <div className=" flex justify-center">
-      <div className=" flex flex-col  w-10/12">
+      <div className=" flex flex-col w-10/12">
         <div className=" flex  text-2xl text-gray-500 border-b-2 w-full py-3">
           Best Sellers
         </div>
-        <div className=" flex justify-center py-4">
+        <div className=" flex justify-center py-4 ">
           <Swiper
-            spaceBetween={30}
+            slidesPerView={3}
+            spaceBetween={10}
             centeredSlides={true}
             autoplay={{
               delay: 2500,
@@ -37,21 +38,25 @@ const BestSellersComp = () => {
             modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
           >
-            {bestsellers.map((bestseller, index) => (
-              <div key={ index}>
-                <SwiperSlide>
-                  <div>
-                    <div>
-                      <img src={bestseller.image} alt="" />
+            <div className=" px-10">
+              {bestsellers.map((bestseller, index) => (
+                <div key={index} className="">
+                  <SwiperSlide>
+                    <div className="  items-center flex gap-2 hover:border-orange-300  border-2 py-4  px-4">
+                      <div className="">
+                        <img className=" h-36" src={bestseller.image} alt="" />
+                      </div>
+                      <div className=" flex flex-col items-center gap-1">
+                        <h1>{bestseller.name}</h1>
+                        <h2>{bestseller.model}</h2>
+                        <h1>{bestseller.desc}</h1>
+                        <span>{bestseller.price}</span>
+                      </div>
                     </div>
-                    <div>
-                      <h1>{bestseller.name}</h1>
-                    </div>
-                  </div>
-                </SwiperSlide>
-               
-              </div>
-            ))}
+                  </SwiperSlide>
+                </div>
+              ))}
+            </div>
           </Swiper>
         </div>
       </div>
@@ -156,6 +161,38 @@ const bestsellers = [
     model: "Beats Solo",
     desc: "HD",
     price: " $ 756250.00",
+    card: "Add to Card",
+  },
+  {
+    image: Seven,
+    name: "Computer",
+    model: "Apple ipad 1232BG 9.7",
+    desc: "Tablet",
+    price: " $ 42250.00",
+    card: "Add to Card",
+  },
+  {
+    image: Eighteen,
+    name: "Computers",
+    model: "smartphone 75",
+    desc: "123GB",
+    price: " $ 12552.03650",
+    card: "Add to Card",
+  },
+  {
+    image: Seventeen,
+    name: "Computers",
+    model: "Beats snarkitecture",
+    desc: "Headphones",
+    price: " $ 12450.00",
+    card: "Add to Card",
+  },
+  {
+    image: Ninteen,
+    name: "Computer",
+    model: "Notebook Widescreen Z51-120",
+    desc: "40K6013UPB10",
+    price: " $ 12050.010",
     card: "Add to Card",
   },
 ];
