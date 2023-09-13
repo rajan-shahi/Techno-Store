@@ -67,7 +67,7 @@ const BestSellersComp = () => {
                       <h2 className=" cursor-pointer hover:text-orange-400">
                         {bestseller.model}
                       </h2>
-                      <p className=" md:pb-0 pb-4">{bestseller.price}</p>
+                      <p className=" md:pb-0 pb-4 text-2xl text-orange-400">{bestseller.price}</p>
                     </div>
                   </div>
                 </div>

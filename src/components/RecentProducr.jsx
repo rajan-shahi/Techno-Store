@@ -70,7 +70,7 @@ const RecentProducr = () => {
                       <h2 className=" cursor-pointer hover:text-orange-400">
                         {prouduct.model}
                       </h2>
-                      <p className=" md:pb-0 pb-4">{prouduct.price}</p>
+                      <p className=" md:pb-0 pb-4  text-2xl text-orange-400">{prouduct.price}</p>
                     </div>
                   </div>
                 </div>
@@ -91,7 +91,7 @@ const prouducts = [
     name: "Laptop",
     model: "Apple ipad Mini",
     desc: "G2356",
-    price: " $ 1250.00",
+    price: " $ 125140.00",
     card: "Add to Card",
   },
   {
