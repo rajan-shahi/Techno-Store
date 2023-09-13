@@ -28,13 +28,13 @@ const NewArrivalsCom = () => {
           >
             Featured
           </button>
-          <buttonn
+          <button
             onClick={() => setActives(sellings)}
             className=" hover:text-gray-700"
           >
             {" "}
             Top Selling
-          </buttonn>
+          </button>
         </div>
         <div>
           <div className=" grid grid-cols-1 md:grid-cols-6 py-4 ">
