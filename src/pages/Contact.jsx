@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div className=" flex justify-center">
-      <div className=" flex w-10/12 py-8 justify-center bg-gray-300">
+      <div className=" flex  w-full md:w-10/12 md:py-8  py-4 justify-center bg-gray-300">
         <div className=" flex flex-col  shadow-md shadow-slate-400 px-8 py-8 w-[400px]">
           <span className=" text-xl text-white py-1 cursor-pointer">First Name:</span>
           <input
