@@ -12,10 +12,12 @@ import RecentProducr from "./components/RecentProducr";
 import NewArrivalsCom from "./pages/NewArrivalsCom";
 import MobileMenu from "./components/MobileMenu";
 import BestSellersComp from './components/BestSellersComp';
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
     <div className=" overflow-x-hidden">
+      <Contact/>
       <MobileMenu/>
       <Navbar />
       <NavbrFooter />
