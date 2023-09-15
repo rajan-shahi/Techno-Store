@@ -3,39 +3,39 @@ const Contact = () => {
     <div className=" flex justify-center">
       <div className=" flex  w-full md:py-8  py-4 justify-center ">
         <div className=" flex flex-col  shadow-md shadow-slate-400 md:px-8 bg-gray-200  px-4 md:py-8 w-[400px]">
-          <span className=" text-gray-700   font-bold py-1 cursor-pointer">
+          <span className=" text-gray-700   font-bold  p-1 cursor-pointer">
             First Name*
           </span>
           <input
             name="name"
             className="  p-2 rounded-full bg-gray-100 outline-orange-400 px-2 "
             type="text"
-            placeholder=" Enter your first name........."
+            placeholder=" Enter your first name"
           />
-          <span className=" font-bold  text-gray-700 py-1 cursor-pointer">
+          <span className=" font-bold  text-gray-700  p-1 pt-5 cursor-pointer">
             Last Name*
           </span>
           <input
             name="name"
             className=" p-2 rounded-full outline-orange-400 px-2 "
             type="text"
-            placeholder=" Enter your last name ........"
+            placeholder=" Enter your last name "
           />
-          <span className=" font-bold   text-gray-700 p-1 cursor-pointer">
+          <span className=" font-bold   text-gray-700   pt-5 p-1 cursor-pointer">
             Subject
           </span>
           <input
             name="subject"
             className=" p-2 rounded-full outline-orange-400 px-2  "
             type="text"
-            placeholder=" subject ............"
+            placeholder=" subject "
           />
-          <span className=" font-bold text-gray-700 py-1 cursor-pointer">
+          <span className=" font-bold text-gray-700 pt-5 p-1 cursor-pointer">
             Message
           </span>
           <textarea
             className=" h-40 rounded-2xl py-1 outline-orange-400 px-2 "
-            placeholder=" message................"
+            placeholder=" message"
             name="message"
             id=""
             cols="10"
