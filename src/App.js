@@ -17,7 +17,7 @@ import Contact from "./pages/Contact";
 const App = () => {
   return (
     <div className=" overflow-x-hidden">
-      <Contact/>
+      {/* <Contact/> */}
       <MobileMenu/>
       <Navbar />
       <NavbrFooter />
