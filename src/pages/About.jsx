@@ -14,13 +14,11 @@ import brand5 from "../assets/brand5.png";
 import brand6 from "../assets/brand6.png";
 import brand7 from "../assets/brand7.png";
 
-
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import {  Navigation,  Pagination, History } from "swiper/modules";
+import { Navigation, Pagination, History } from "swiper/modules";
 const About = () => {
   return (
     <div className=" flex justify-center">
@@ -103,7 +101,9 @@ const About = () => {
           </div>
         </div>
         {/* meet our team */}
-        <h1 className=" text-xl text-gray-700 py-8 px-4  md:justify-start justify-center flex md:items-start items-center  ">Meet Our Team</h1>
+        <h1 className=" text-xl text-gray-700 py-8 px-4  md:justify-start justify-center flex md:items-start items-center  ">
+          Meet Our Team
+        </h1>
         <div className=" md:px-10 pb-10 ">
           <Swiper
             spaceBetween={10}
@@ -133,8 +133,11 @@ const About = () => {
             <div className=" ">
               {meets.map((meet, index) => (
                 <SwiperSlide data-history="1">
-                  <div key={index} className=" flex   items-center flex-col pb-10">
-                    <div className=" border-2 border-gray-200  rounded-lg hover:border-orange-300 cursor-pointer">
+                  <div
+                    key={index}
+                    className=" flex   items-center flex-col pb-10"
+                  >
+                    <div className=" border-2 border-gray-200 rounded-lg hover:border-orange-300 cursor-pointer">
                       <img className=" h-80 w-80" src={meet.image} alt="" />
                     </div>
                     <h1 className=" text-xl py-1  pt-4 text-gray-800 hover:text-orange-400  cursor-pointer">
@@ -148,13 +151,15 @@ const About = () => {
           </Swiper>
         </div>
         {/*pattrens */}
-        <h1 className=" text-2xl md:text-xl cursor-pointer  text-gray-700  pt-6 hover:text-orange-400 flex justify-center md:justify-start md:w-max">Partners</h1>
+        <h1 className=" text-2xl md:text-xl cursor-pointer  text-gray-700  pt-6 hover:text-orange-400 flex justify-center md:justify-start md:w-max">
+          Partners
+        </h1>
         <div className=" grid grid-cols-2 md:grid-cols-6 gap-8 pt-5 pb-10  justify-center">
-        <img className=" cursor-pointer" src={brand4} alt="" />
+          <img className=" cursor-pointer" src={brand4} alt="" />
           <img className=" cursor-pointer" src={brand2} alt="" />
           <img className=" cursor-pointer" src={brand3} alt="" />
           <img className=" cursor-pointer" src={brand6} alt="" />
-          <img className=" cursor-pointer" src={brand7} alt="" /> 
+          <img className=" cursor-pointer" src={brand7} alt="" />
           <img className=" cursor-pointer" src={brand5} alt="" />
         </div>
       </div>
