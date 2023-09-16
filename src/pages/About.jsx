@@ -7,11 +7,20 @@ import boy1 from "../assets/boy1.jpg";
 import boy3 from "../assets/boy3.jpg";
 import girl5 from "../assets/girl5.jpg";
 import about from "../assets/about.jpg";
+import brand2 from "../assets/brand2.png";
+import brand3 from "../assets/brand3.png";
+import brand4 from "../assets/brand4.png";
+import brand5 from "../assets/brand5.png";
+import brand6 from "../assets/brand6.png";
+import brand7 from "../assets/brand7.png";
+
+
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination, History } from "swiper/modules";
+import {  Navigation,  Pagination, History } from "swiper/modules";
 const About = () => {
   return (
     <div className=" flex justify-center">
@@ -94,8 +103,8 @@ const About = () => {
           </div>
         </div>
         {/* meet our team */}
-        <h1 className=" text-2xl text-gray-700 py-8">Meet Our Team</h1>
-        <div className=" px-10">
+        <h1 className=" text-xl text-gray-700 py-8 px-4">Meet Our Team</h1>
+        <div className=" px-10 pb-10 ">
           <Swiper
             spaceBetween={10}
             slidesPerView={4}
@@ -110,17 +119,29 @@ const About = () => {
             <div className=" ">
               {meets.map((meet, index) => (
                 <SwiperSlide data-history="1">
-                  <div key={index} className=" flex flex-col items-center px-10 py-10">
-                    <div className=" border-2 px-6 ">
-                    <img src={meet.image} alt="" />
+                  <div key={index} className=" flex flex-col pb-10">
+                    <div className=" border-2 border-gray-200  rounded-lg hover:border-orange-300 cursor-pointer">
+                      <img className=" h-80 w-80" src={meet.image} alt="" />
                     </div>
-                    <h1>{meet.name}</h1>
-                    <p>{meet.desc}</p>
+                    <h1 className=" text-xl py-1  pt-4 text-gray-800 hover:text-orange-400  cursor-pointer">
+                      {meet.name}
+                    </h1>
+                    <p className=" text-sm text-gray-500">{meet.desc}</p>
                   </div>
                 </SwiperSlide>
               ))}
             </div>
           </Swiper>
+        </div>
+        {/*pattrens */}
+        <h1 className=" text-xl text-gray-600  pt-6">Partners</h1>
+        <div className=" flex  gap-8 pt-5 pb-10 items-center justify-center">
+        <img src={brand4} alt="" />
+          <img src={brand2} alt="" />
+          <img src={brand3} alt="" />
+          <img src={brand6} alt="" />
+          <img src={brand7} alt="" /> 
+          <img src={brand5} alt="" />
         </div>
       </div>
     </div>
