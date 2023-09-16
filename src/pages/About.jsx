@@ -2,7 +2,16 @@ import React from "react";
 import boy from "../assets/boy.jpg";
 import girl from "../assets/girl.jpg";
 import girl2 from "../assets/girl2.jpg";
+import girl4 from "../assets/girl4.jpg";
+import boy1 from "../assets/boy1.jpg";
+import boy3 from "../assets/boy3.jpg";
+import girl5 from "../assets/girl5.jpg";
 import about from "../assets/about.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination, History } from "swiper/modules";
 const About = () => {
   return (
     <div className=" flex justify-center">
@@ -54,7 +63,11 @@ const About = () => {
             </p>
           </div>
           <div className=" flex-1 flex flex-col l md:gap-3 gap-5  items-center md:items-start ">
-            <img className=" cursor-pointer md:pt-0 pt-9 rounded-lg" src={girl2} alt="" />
+            <img
+              className=" cursor-pointer md:pt-0 pt-9 rounded-lg"
+              src={girl2}
+              alt=""
+            />
             <h1 className=" text-gray-700 text-xl hover:text-orange-400 cursor-pointer">
               Many desktop publishing
             </h1>
@@ -65,7 +78,11 @@ const About = () => {
             </p>
           </div>
           <div className=" flex-1 flex flex-col l md:gap-3 gap-5  items-center md:items-start  ">
-            <img className="  cursor-pointer rounded-lg md:pt-0  pt-9" src={boy} alt="" />
+            <img
+              className="  cursor-pointer rounded-lg md:pt-0  pt-9"
+              src={boy}
+              alt=""
+            />
             <h1 className=" text-gray-700 text-xl hover:text-orange-400 cursor-pointer">
               Lorem Ipsum is simply
             </h1>
@@ -77,10 +94,80 @@ const About = () => {
           </div>
         </div>
         {/* meet our team */}
-        <h1 className=" text-2xl text-gray-700">Meet Our Team</h1>
+        <h1 className=" text-2xl text-gray-700 py-8">Meet Our Team</h1>
+        <div className=" px-10">
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={4}
+            navigation={true}
+            pagination={true}
+            history={{
+              key: "slide",
+            }}
+            modules={[Navigation, Pagination, History]}
+            className="mySwiper"
+          >
+            <div className=" ">
+              {meets.map((meet, index) => (
+                <SwiperSlide data-history="1">
+                  <div key={index} className=" flex flex-col items-center px-10 py-10">
+                    <div className=" border-2 px-6 ">
+                    <img src={meet.image} alt="" />
+                    </div>
+                    <h1>{meet.name}</h1>
+                    <p>{meet.desc}</p>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </div>
+          </Swiper>
+        </div>
       </div>
     </div>
   );
 };
 
 export default About;
+
+const meets = [
+  {
+    image: boy1,
+    name: "Garry Stil",
+    desc: "CEo/Founder",
+  },
+  {
+    image: girl5,
+    name: "Angela baby",
+    desc: "fashion Designer",
+  },
+  {
+    image: boy3,
+    name: "john swim",
+    desc: "Manager/HOD",
+  },
+  {
+    image: girl4,
+    name: "Harry Dor",
+    desc: "Web Designer",
+  },
+  {
+    image: boy1,
+    name: "Garry Stil",
+    desc: "CEo/Founder",
+  },
+  {
+    image: girl5,
+    name: "Angela baby",
+    desc: "fashion Designer",
+  },
+  {
+    image: boy3,
+    name: "john swim",
+    desc: "Manager/HOD",
+  },
+  {
+    image: girl4,
+    name: "Harry Dor",
+    desc: "Web Designer",
+  },
+];
