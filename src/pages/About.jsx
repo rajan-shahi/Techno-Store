@@ -104,7 +104,7 @@ const About = () => {
         </div>
         {/* meet our team */}
         <h1 className=" text-xl text-gray-700 py-8 px-4  md:justify-start justify-center flex md:items-start items-center  ">Meet Our Team</h1>
-        <div className=" px-10 pb-10 ">
+        <div className=" md:px-10 pb-10 ">
           <Swiper
             spaceBetween={10}
             slidesPerView={1}
@@ -133,7 +133,7 @@ const About = () => {
             <div className=" ">
               {meets.map((meet, index) => (
                 <SwiperSlide data-history="1">
-                  <div key={index} className=" flex  items-center flex-col pb-10">
+                  <div key={index} className=" flex   items-center flex-col pb-10">
                     <div className=" border-2 border-gray-200  rounded-lg hover:border-orange-300 cursor-pointer">
                       <img className=" h-80 w-80" src={meet.image} alt="" />
                     </div>
