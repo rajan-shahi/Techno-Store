@@ -11,22 +11,23 @@ import Home from "./components/Home";
 import RecentProducr from "./components/RecentProducr";
 import NewArrivalsCom from "./pages/NewArrivalsCom";
 import MobileMenu from "./components/MobileMenu";
-import BestSellersComp from './components/BestSellersComp';
-// import About from "./pages/About";
-// import Contact from "./pages/Contact";
+import BestSellersComp from "./components/BestSellersComp";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+
 
 const App = () => {
   return (
     <div className=" overflow-x-hidden">
-      {/* <Contact/> */}
-      {/* <About/> */}
-      <MobileMenu/>
+      <Contact />
+      <About />
+      <MobileMenu />
       <Navbar />
       <NavbrFooter />
       <CategoriesComponents />
       <CardContainer />
-      <NewArrivalsCom/>
-      <BestSellersComp/>
+      <NewArrivalsCom />
+      <BestSellersComp />
       <Home />
       <RecentProducr />
       <BestSellers />

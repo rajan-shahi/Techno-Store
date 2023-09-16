@@ -7,7 +7,8 @@ const Navbar = () => {
       <div name="navbar" className="py-3 w-10/12 flex flex-col gap-5  md:flex-row  justify-between text-xs  items-center ">
         {/* leftbar */}
         <div className=" flex gap-4 text-gray-600 ">
-          <p className=" border-r-2  pr-2 hover:text-orange-600 cursor-pointer"> Support</p>
+          <p className=" border-r-2  pr-2 hover:text-orange-600 cursor-pointer">
+             Support</p>
           <p className=" border-r-2 pr-2  hover:text-orange-600 cursor-pointer">
             Store Location
           </p>
