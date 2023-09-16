@@ -41,10 +41,10 @@ const About = () => {
           </div>
         </div>
         {/* buttom container */}
-        <div className=" py-12 flex gap-4">
-          <div className=" flex-1 flex flex-col gap-3">
-            <img className=" rounded-lg" src={girl} alt="" />
-            <h1 className=" text-gray-700 text-xl hover:text-orange-400 cursor-pointer">
+        <div className=" py-12 md:flex gap-4 ">
+          <div className=" flex-1 flex flex-col md:gap-3 gap-5 items-center md:items-start ">
+            <img className=" cursor-pointer rounded-lg" src={girl} alt="" />
+            <h1 className=" text-gray-700 text-xl hover:text-orange-400 cursor-pointer ">
               There are many
             </h1>
             <p className=" text-gray-400 text-sm">
@@ -53,8 +53,8 @@ const About = () => {
               conduct a further search of the area. He was
             </p>
           </div>
-          <div className=" flex-1 flex flex-col gap-3">
-            <img className=" rounded-lg" src={girl2} alt="" />
+          <div className=" flex-1 flex flex-col l md:gap-3 gap-5  items-center md:items-start ">
+            <img className=" cursor-pointer md:pt-0 pt-9 rounded-lg" src={girl2} alt="" />
             <h1 className=" text-gray-700 text-xl hover:text-orange-400 cursor-pointer">
               Many desktop publishing
             </h1>
@@ -64,18 +64,20 @@ const About = () => {
               conduct a further search of the area. He was
             </p>
           </div>
-          <div className=" flex-1 flex flex-col gap-3">
-            <img className=" rounded-lg" src={boy} alt="" />
+          <div className=" flex-1 flex flex-col l md:gap-3 gap-5  items-center md:items-start  ">
+            <img className="  cursor-pointer rounded-lg md:pt-0  pt-9" src={boy} alt="" />
             <h1 className=" text-gray-700 text-xl hover:text-orange-400 cursor-pointer">
               Lorem Ipsum is simply
             </h1>
-            <p className=" text-gray-400 text-sm">
+            <p className=" text-gray-400 text-sm ">
               This is a Rebel that surrendered to us. Although he denies it, I
               believe there may be more of them, and I request permission to
               conduct a further search of the area. He was
             </p>
           </div>
         </div>
+        {/* meet our team */}
+        <h1 className=" text-2xl text-gray-700">Meet Our Team</h1>
       </div>
     </div>
   );
