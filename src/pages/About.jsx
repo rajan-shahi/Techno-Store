@@ -103,7 +103,7 @@ const About = () => {
           </div>
         </div>
         {/* meet our team */}
-        <h1 className=" text-xl text-gray-700 py-8 px-4  pl-20 md:pl-0 flex md:items-start items-center  ">Meet Our Team</h1>
+        <h1 className=" text-xl text-gray-700 py-8 px-4  md:justify-start justify-center flex md:items-start items-center  ">Meet Our Team</h1>
         <div className=" px-10 pb-10 ">
           <Swiper
             spaceBetween={10}
@@ -148,8 +148,8 @@ const About = () => {
           </Swiper>
         </div>
         {/*pattrens */}
-        <h1 className=" text-2xl md:text-xl cursor-pointer  text-gray-700  pt-6 hover:text-orange-400 flex justify-center md:justify-start md:pl-0 w-max">Partners</h1>
-        <div className=" grid grid-cols-2 md:grid-cols-6 gap-8 pt-5 pb-10 items-center justify-center">
+        <h1 className=" text-2xl md:text-xl cursor-pointer  text-gray-700  pt-6 hover:text-orange-400 flex justify-center md:justify-start md:w-max">Partners</h1>
+        <div className=" grid grid-cols-2 md:grid-cols-6 gap-8 pt-5 pb-10  justify-center">
         <img className=" cursor-pointer" src={brand4} alt="" />
           <img className=" cursor-pointer" src={brand2} alt="" />
           <img className=" cursor-pointer" src={brand3} alt="" />
