@@ -134,14 +134,14 @@ const About = () => {
           </Swiper>
         </div>
         {/*pattrens */}
-        <h1 className=" text-xl text-gray-600  pt-6">Partners</h1>
-        <div className=" flex  gap-8 pt-5 pb-10 items-center justify-center">
-        <img src={brand4} alt="" />
-          <img src={brand2} alt="" />
-          <img src={brand3} alt="" />
-          <img src={brand6} alt="" />
-          <img src={brand7} alt="" /> 
-          <img src={brand5} alt="" />
+        <h1 className=" text-xl  cursor-pointer  text-gray-700  pt-6 hover:text-orange-400">Partners</h1>
+        <div className=" grid grid-cols-2 md:grid-cols-6 gap-8 pt-5 pb-10 items-center justify-center">
+        <img className=" cursor-pointer" src={brand4} alt="" />
+          <img className=" cursor-pointer" src={brand2} alt="" />
+          <img className=" cursor-pointer" src={brand3} alt="" />
+          <img className=" cursor-pointer" src={brand6} alt="" />
+          <img className=" cursor-pointer" src={brand7} alt="" /> 
+          <img className=" cursor-pointer" src={brand5} alt="" />
         </div>
       </div>
     </div>
