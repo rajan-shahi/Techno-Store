@@ -1,9 +1,13 @@
 import React from "react";
+import boy from "../assets/boy.jpg";
+import girl from "../assets/girl.jpg";
+import girl2 from "../assets/girl2.jpg";
 import about from "../assets/about.jpg";
 const About = () => {
   return (
     <div className=" flex justify-center">
-      <div className=" flex   w-full md:px-0 px-4  md:w-10/12">
+      <div className=" flex flex-col w-full md:px-0 px-4  md:w-10/12">
+        {/* topcontainer */}
         <div className=" md:flex  py-10 md:py-20">
           <div className=" flex-1  z-20">
             <img
@@ -34,6 +38,24 @@ const About = () => {
                 lacinia feugiat velit, cursus molestie lectus mollis et.
               </span>
             </p>
+          </div>
+        </div>
+        {/* buttom container */}
+        <div className=" flex gap-4">
+          <div className=" flex-1">
+            <img src={girl} alt="" />
+            <h1>There are many</h1>
+            <p>This is a Rebel that surrendered to us. Although he denies it, I believe there may be more of them, and I request permission to conduct a further search of the area. He was</p>
+          </div>
+          <div className=" flex-1">
+            <img src={girl2} alt="" />
+          <h1>Many desktop publishing</h1>  
+          <p>This is a Rebel that surrendered to us. Although he denies it, I believe there may be more of them, and I request permission to conduct a further search of the area. He was</p>
+          </div>
+          <div className=" flex-1">
+            <img src={boy} alt="" />
+            <h1>Lorem Ipsum is simply</h1>
+            <p>This is a Rebel that surrendered to us. Although he denies it, I believe there may be more of them, and I request permission to conduct a further search of the area. He was</p>
           </div>
         </div>
       </div>
