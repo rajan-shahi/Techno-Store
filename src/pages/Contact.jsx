@@ -51,7 +51,7 @@ const Contact = () => {
         </div>
       </div>
       <Link to={"/"}>
-      <span className=" flex  py-4 justify-center text-gray-400 cursor-pointer   pl-72">
+      <span className=" flex  py-4 justify-center text-gray-400 cursor-pointer   pl-72 hover:text-orange-300">
         <HiArrowNarrowRight size={40} />
       </span>
       </Link>
