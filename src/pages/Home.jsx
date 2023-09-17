@@ -15,7 +15,7 @@ import NavbrFooter from "./../components/NavbrFooter";
 
 const Home = () => {
   return (
-    <div>
+    <div name="home">
       <MobileMenu />
       <Navbar />
       <NavbrFooter />
