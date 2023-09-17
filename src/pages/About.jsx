@@ -164,7 +164,7 @@ const About = () => {
           <img className=" cursor-pointer" src={brand7} alt="" />
           <img className=" cursor-pointer" src={brand5} alt="" />
         </div>
-        <Link to={"/"}>
+        <Link to={"/contact"}>
         <span className=" pb-10 flex justify-end px-10 cursor-pointer text-gray-600">
           <BsArrowRight size={40} className=" hover:text-orange-300" />
         </span>
