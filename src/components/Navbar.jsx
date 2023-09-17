@@ -1,25 +1,37 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className=" flex justify-center  border-b-2 ">
       {/* container */}
-      <div name="navbar" className="py-3 w-10/12 flex flex-col gap-5  md:flex-row  justify-between text-xs  items-center ">
+      <div
+        name="navbar"
+        className="py-3 w-10/12 flex flex-col gap-5  md:flex-row  justify-between text-xs  items-center "
+      >
         {/* leftbar */}
         <div className=" flex gap-4 text-gray-600 ">
-          <p className=" border-r-2  pr-2 hover:text-orange-600 cursor-pointer">
-             Support</p>
-          <p className=" border-r-2 pr-2  hover:text-orange-600 cursor-pointer">
-            Store Location
+          <Link to={"/contact"}>
+            <p className=" border-r-2 text-md  pr-2 hover:text-orange-600 cursor-pointer">
+              Contact
+            </p>
+          </Link>
+          <Link to={"/about"}>
+            <p className=" border-r-2 pr-2  hover:text-orange-600 cursor-pointer">
+              About
+            </p>
+          </Link>
+          <p className=" hover:text-orange-600 cursor-pointer">
+            Track Your Order
           </p>
-          <p className=" hover:text-orange-600 cursor-pointer">Track Your Order</p>
         </div>
         {/* midbar */}
         <div className=" text-gray-600">
           <p>
             {" "}
-            <span className="text-orange-600 ">Call Us: </span> <span className=" cursor-pointer">(888)  123456789</span>
-          </p> 
+            <span className="text-orange-600 ">Call Us: </span>{" "}
+            <span className=" cursor-pointer">(888) 123456789</span>
+          </p>
         </div>
         {/* righrbar */}
         <div className=" flex gap-4 text-gray-600">
