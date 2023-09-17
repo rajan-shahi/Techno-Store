@@ -1,12 +1,12 @@
-// import React from 'react'
-import SmartPhone from "../pages/SmartPhone";
+// // import React from 'react'
+// import SmartPhone from "../pages/SmartPhone";
 
-const Home = () => {
-  return (
-    <div>
-      <SmartPhone />
-    </div>
-  );
-};
+// const Home = () => {
+//   return (
+//     <div>
+//       <SmartPhone />
+//     </div>
+//   );
+// };
 
-export default Home;
+// export default Home;
