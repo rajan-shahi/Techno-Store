@@ -13,12 +13,14 @@ import brand4 from "../assets/brand4.png";
 import brand5 from "../assets/brand5.png";
 import brand6 from "../assets/brand6.png";
 import brand7 from "../assets/brand7.png";
-
+import { BsArrowRight } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, History } from "swiper/modules";
+import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <div className=" flex justify-center">
@@ -162,6 +164,11 @@ const About = () => {
           <img className=" cursor-pointer" src={brand7} alt="" />
           <img className=" cursor-pointer" src={brand5} alt="" />
         </div>
+        <Link to={"/"}>
+        <span className=" pb-10 flex justify-end px-10 cursor-pointer text-gray-600">
+          <BsArrowRight size={40} className=" hover:text-orange-300" />
+        </span>
+        </Link>
       </div>
     </div>
   );
