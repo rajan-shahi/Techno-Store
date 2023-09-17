@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
         {/* righrbar */}
         <div className=" flex gap-4 text-gray-600">
-          <select className=" flex flex-col  border-r-2 text-sm  px-4 cursor-pointer ">
+          <select className=" flex flex-col  border-r-2  px-4 cursor-pointer ">
             <option value=""> My Account</option>
             <option value="Login">Login</option>
             <option value="Wishlist">Wishlist</option>
@@ -43,7 +43,7 @@ const Navbar = () => {
             <option value="My Account">My Account</option>
             <option value="Checkout">CheckOut</option>
           </select>
-          <select id="" className=" border-r-2 text-sm px-4 cursor-pointer">
+          <select id="" className=" border-r-2  px-4 cursor-pointer">
             <option value="">USD</option>
             <option value="Euro">Euro</option>
             <option value="Dolar">Dolar</option>
