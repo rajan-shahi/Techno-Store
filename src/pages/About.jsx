@@ -205,7 +205,7 @@ const meets = [
   {
     image: girl5,
     name: "Angela baby",
-    desc: "fashion Designer",
+    desc: "Full Stack Developer",
   },
   {
     image: boy3,
