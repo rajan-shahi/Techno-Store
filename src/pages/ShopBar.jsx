@@ -241,9 +241,10 @@ const ShopBar = () => {
             </div>
           </div>
           {/* shopcard container */}
-          <div>
+          <div className=" py-6">
             {shopcards.map((shopcard, index) => (
-              <div key={index} className=" grid grid-rows-1">
+              <div key={index} className=" grid grid-rows-1 ">
+                <div className=" flex items-center justify-between border-2 border-transparent hover:border-gray-300  rounded-lg px-4 py-4">
                 <div>
                   <img src={shopcard.image} alt="" />
                 </div>
@@ -257,8 +258,9 @@ const ShopBar = () => {
                   <h1>{shopcard.like}</h1>
                 </div>
                 <div>
-                    <h1>{shopcard.price}</h1>
-                    <h2>{shopcard.card}</h2>
+                  <h1>{shopcard.price}</h1>
+                  <h2>{shopcard.card}</h2>
+                </div>
                 </div>
               </div>
             ))}
