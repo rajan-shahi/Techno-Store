@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineMinus } from "react-icons/ai";
-import { FaBeer } from 'react-icons/fa';
-import { FaBeer } from 'react-icons/fa';
+import { PiDotsNineBold } from "react-icons/pi";
+import { AiOutlineBarcode } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -155,63 +155,78 @@ const ShopBar = () => {
         </div>
         {/* rightbar */}
         <div className="w-8/12 flex flex-col">
-            <div className="py-4">
-          <Swiper
-            spaceBetween={30}
-            centeredSlides={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={true}
-            modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper"
-          >
-            <div className=" w-full">
-              {shops.map((shop, index) => (
-            <div key={index} className="">
-                <SwiperSlide>
-                    <div className=" px-10 flex justify-between items-center bg-gray-100 rounded-lg ">
+          <div className="py-4">
+            <Swiper
+              spaceBetween={30}
+              centeredSlides={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+            >
+              <div className=" w-full">
+                {shops.map((shop, index) => (
+                  <div key={index} className="">
+                    <SwiperSlide>
+                      <div className=" px-10 flex justify-between items-center bg-gray-100 rounded-lg ">
                         <div className=" flex flex-col  gap-6 px-4">
-                            <h1 className=" text-gray-400">{shop.name}</h1>
-                            <h2 className="  text-6xl space-x-4  text-orange-400  ">{shop.model}</h2>
+                          <h1 className=" text-gray-400">{shop.name}</h1>
+                          <h2 className="  text-6xl space-x-4  text-orange-400  ">
+                            {shop.model}
+                          </h2>
                         </div>
                         <img className=" px-4" src={shop.image} alt="" />
-                    </div>
-                </SwiperSlide>
-                </div>
-              ))}
-            </div>
-          </Swiper>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                ))}
+              </div>
+            </Swiper>
           </div>
           {/* mobile and test */}
           <div className=" flex justify-between py-4 pt-10 border-b-2">
             <h1 className=" text-xl text-gray-700">Mobile & Tablet</h1>
-            <h2 className=" text-sm text-gray-500">Showing 1–15 of 20 results</h2>
+            <h2 className=" text-sm text-gray-500">
+              Showing 1–15 of 20 results
+            </h2>
           </div>
           {/* show container */}
           <div>
             <div className=" py-7">
-                <div>
-
-                </div>
-                <div>
-                <select className=" px-6  py-2 border-2 rounded-full text-gray-500" name="" id="">sort by popularity
-                <option value="sort by popularity">sort by popularity</option>
-                <option value="sort by popularity">sort by popularity</option>
-                <option value="sort by popularity">sort by popularity</option>
-                <option value="sort by popularity">sort by popularity</option>
+              <div>
+                <PiDotsNineBold />
+          <AiOutlineBarcode/>
+              </div>
+              <div>
+                <select
+                  className=" px-6  py-2 border-2 rounded-full text-gray-500"
+                  name=""
+                  id=""
+                >
+                  sort by popularity
+                  <option value="sort by popularity">sort by popularity</option>
+                  <option value="sort by popularity">sort by popularity</option>
+                  <option value="sort by popularity">sort by popularity</option>
+                  <option value="sort by popularity">sort by popularity</option>
                 </select>
-                <select className=" px-6  py-2 border-2 rounded-full text-gray-500" name="" id="">show 15
-                <option value="show 15">show 15</option>
-                <option value="show 15">show 15</option>
-                <option value="show 15">show 15</option>
-                <option value="show 15">show 15</option>
+                <select
+                  className=" px-6  py-2 border-2 rounded-full text-gray-500"
+                  name=""
+                  id=""
+                >
+                  show 15
+                  <option value="show 15">show 15</option>
+                  <option value="show 15">show 15</option>
+                  <option value="show 15">show 15</option>
+                  <option value="show 15">show 15</option>
                 </select>
-                </div>
+              </div>
             </div>
             <div></div>
           </div>
