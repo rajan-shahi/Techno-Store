@@ -3,6 +3,11 @@ import { AiOutlineMinus } from "react-icons/ai";
 import { PiDotsNineBold } from "react-icons/pi";
 import { AiOutlineBarcode } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
+import One from "../assets/01.jpg";
+import Two from "../assets/02.jpg";
+import Five from "../assets/05.jpg";
+import Six from "../assets/06.jpg";
+import Three from "../assets/03.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -234,7 +239,29 @@ const ShopBar = () => {
                 </select>
               </div>
             </div>
-            <div></div>
+          </div>
+          {/* shopcard container */}
+          <div>
+            {shopcards.map((shopcard, index) => (
+              <div key={index} className=" grid grid-rows-1">
+                <div>
+                  <img src={shopcard.image} alt="" />
+                </div>
+                <div>
+                  <h1>{shopcard.name}</h1>
+                  <h2>{shopcard.model}</h2>
+                  <h3>{shopcard.desc}</h3>
+                  <h1>{shopcard.stock}</h1>
+                  <h2>{shopcard.the}</h2>
+                  <h2>{shopcard.apple}</h2>
+                  <h1>{shopcard.like}</h1>
+                </div>
+                <div>
+                    <h1>{shopcard.price}</h1>
+                    <h2>{shopcard.card}</h2>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -282,5 +309,68 @@ const shops = [
     image: headphone,
     name: "You Can buld the banner for other categories",
     model: "Shop Banner",
+  },
+];
+
+const shopcards = [
+  {
+    image: One,
+    name: "Laptop",
+    model: "Apple iPad Air 2 32GB 9.7",
+    desc: "Tablet",
+    stock: "Availablity: In stock",
+    the: "The iPhone 5c replaces the iPhone 5 in",
+    apple: "the Apple stable, inheriting its internals,",
+    like: "like the A6 processor, 4 screen...",
+    price: " $ 125140.00",
+    card: "Add to Card",
+  },
+  {
+    image: Two,
+    name: "Cameras",
+    model: "Apple iPad Air 2 32GB 9.7",
+    desc: "Tablet",
+    stock: "Availablity: In stock",
+    the: "The iPhone 5c replaces the iPhone 5 in",
+    apple: "the Apple stable, inheriting its internals,",
+    like: "like the A6 processor, 4 screen...",
+    price: " $ 125140.00",
+    card: "Add to Card",
+  },
+  {
+    image: Five,
+    name: "Cameras",
+    model: "Apple iPad Air 2 32GB 9.7",
+    desc: "Tablet",
+    stock: "Availablity: In stock",
+    the: "The iPhone 5c replaces the iPhone 5 in",
+    apple: "the Apple stable, inheriting its internals,",
+    like: "like the A6 processor, 4 screen...",
+    price: " $ 12400.00",
+    card: "Add to Card",
+  },
+  {
+    image: Six,
+    name: "Cameras",
+    model: "Apple iPad Air 2 32GB 9.7",
+    desc: "Tablet",
+    stock: "Availablity: In stock",
+    the: "The iPhone 5c replaces the iPhone 5 in",
+    apple: "the Apple stable, inheriting its internals,",
+    like: "like the A6 processor, 4 screen...",
+    price: " $ 12542.00",
+    card: "Add to Card",
+  },
+  {
+    image: Three,
+    name: "Headphones",
+    model: "Apple iPad Air 2 32GB 9.7",
+    desc: "Tablet",
+    stock: "Availablity: In stock",
+    the: "The iPhone 5c replaces the iPhone 5 in",
+    apple: "the Apple stable, inheriting its internals,",
+    like: "like the A6 processor, 4 screen...",
+    price: " $ 756250.00",
+    card: "Add to Card",
   },
 ];
