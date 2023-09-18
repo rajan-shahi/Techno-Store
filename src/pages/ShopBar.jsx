@@ -190,7 +190,7 @@ const ShopBar = () => {
             </Swiper>
           </div>
           {/* mobile and test */}
-          <div className=" flex justify-between py-4 pt-10 border-b-2">
+          <div className=" flex justify-between py-4 pt-10 border-b border-gray-300">
             <h1 className=" text-xl text-gray-700">Mobile & Tablet</h1>
             <h2 className=" text-sm text-gray-500">
               Showing 1–15 of 20 results
@@ -198,12 +198,18 @@ const ShopBar = () => {
           </div>
           {/* show container */}
           <div>
-            <div className=" py-7">
-              <div>
-                <PiDotsNineBold />
-          <AiOutlineBarcode/>
+            <div className=" flex items-center justify-between py-7 border-b border-gray-300 ">
+              <div className=" flex gap-4">
+                <PiDotsNineBold
+                  size={30}
+                  className=" cursor-pointer text-gray-700"
+                />
+                <AiOutlineBarcode
+                  size={30}
+                  className=" cursor-pointer text-gray-500"
+                />
               </div>
-              <div>
+              <div className=" flex gap-4">
                 <select
                   className=" px-6  py-2 border-2 rounded-full text-gray-500"
                   name=""
