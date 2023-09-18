@@ -17,9 +17,9 @@ const ShopBar = () => {
   return (
     <div className=" flex justify-center py-6">
       {/* container */}
-      <div className=" flex w-11/12 justify-center gap-4">
+      <div className=" md:flex  flex-col  w-full md:w-11/12 justify-center gap-4">
         {/* leftbar */}
-        <div className="w-3/12 flex flex-col">
+        <div className="md:w-3/12 w-full flex flex-col">
           {/* category */}
           <div className=" flex flex-col px-4">
             <div className=" flex  items-center justify-between py-4 border-b border-gray-300">
@@ -248,7 +248,7 @@ const ShopBar = () => {
                 <div>
                   <img src={shopcard.image} alt="" />
                 </div>
-                <div>
+                <div className=" flex flex-col gap-1">
                   <h1>{shopcard.name}</h1>
                   <h2>{shopcard.model}</h2>
                   <h3>{shopcard.desc}</h3>
