@@ -1,5 +1,7 @@
 import React from "react";
 import { AiOutlineMinus } from "react-icons/ai";
+import { FaBeer } from 'react-icons/fa';
+import { FaBeer } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,7 +12,7 @@ const ShopBar = () => {
   return (
     <div className=" flex justify-center py-6">
       {/* container */}
-      <div className=" flex w-10/12 gap-4">
+      <div className=" flex w-11/12 justify-center gap-4">
         {/* leftbar */}
         <div className="w-3/12 flex flex-col">
           {/* category */}
@@ -152,7 +154,7 @@ const ShopBar = () => {
           <div>bestsellers</div>
         </div>
         {/* rightbar */}
-        <div className="w-7/12 flex flex-col">
+        <div className="w-8/12 flex flex-col">
             <div className="py-4">
           <Swiper
             spaceBetween={30}
@@ -184,6 +186,34 @@ const ShopBar = () => {
               ))}
             </div>
           </Swiper>
+          </div>
+          {/* mobile and test */}
+          <div className=" flex justify-between py-4 pt-10 border-b-2">
+            <h1 className=" text-xl text-gray-700">Mobile & Tablet</h1>
+            <h2 className=" text-sm text-gray-500">Showing 1–15 of 20 results</h2>
+          </div>
+          {/* show container */}
+          <div>
+            <div className=" py-7">
+                <div>
+
+                </div>
+                <div>
+                <select className=" px-6  py-2 border-2 rounded-full text-gray-500" name="" id="">sort by popularity
+                <option value="sort by popularity">sort by popularity</option>
+                <option value="sort by popularity">sort by popularity</option>
+                <option value="sort by popularity">sort by popularity</option>
+                <option value="sort by popularity">sort by popularity</option>
+                </select>
+                <select className=" px-6  py-2 border-2 rounded-full text-gray-500" name="" id="">show 15
+                <option value="show 15">show 15</option>
+                <option value="show 15">show 15</option>
+                <option value="show 15">show 15</option>
+                <option value="show 15">show 15</option>
+                </select>
+                </div>
+            </div>
+            <div></div>
           </div>
         </div>
       </div>
