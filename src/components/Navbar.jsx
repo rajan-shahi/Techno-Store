@@ -5,6 +5,7 @@ const Navbar = () => {
   return (
     <div className=" flex justify-center  border-b-2 z-10  ">
       {/* container */}
+      raj
       <div
         name="navbar"
         className=" z-20 py-3 w-10/12 flex flex-col gap-5  md:flex-row  justify-between text-xs  items-center sticky "
