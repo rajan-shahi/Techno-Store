@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineMinus } from "react-icons/ai";
 import { PiDotsNineBold } from "react-icons/pi";
 import { AiOutlineBarcode } from "react-icons/ai";
@@ -8,16 +8,22 @@ import Two from "../assets/02.jpg";
 import Five from "../assets/05.jpg";
 import Six from "../assets/06.jpg";
 import Three from "../assets/03.jpg";
+import wat from "../assets/wat.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import headphone from "../assets/headphone1.png";
 const ShopBar = () => {
+  const [open , setopen] =useState(true)
+  const openClose= ()=>{
+    setopen(!open)
+
+  }
   return (
     <div className=" flex justify-center py-6">
       {/* container */}
-      <div className=" md:flex  flex-col  w-full md:w-11/12 justify-center gap-4">
+      <div className=" md:flex  w-full md:w-11/12 justify-center gap-4">
         {/* leftbar */}
         <div className="md:w-3/12 w-full flex flex-col">
           {/* category */}
@@ -59,8 +65,9 @@ const ShopBar = () => {
           <div className="flex flex-col px-4">
             <div className=" flex  items-center justify-between py-4 border-b border-gray-300">
               <h1 className=" text-xl text-gray-600 ">Brands</h1>
-              <span className=" cursor-pointer">
-                <AiOutlineMinus size={20} />
+              <span className=" cursor-pointer hover:text-pink-400">
+                <span onClick={openClose}>
+                < AiOutlineMinus size={20} /></span>
               </span>
             </div>
             <div className=" py-5">
@@ -70,7 +77,7 @@ const ShopBar = () => {
                 placeholder=" brands search"
               />
             </div>
-            <div className=" flex flex-col gap-4 py-8 text-sm text-gray-500 overflow-y-scroll  sticky h-56">
+           { open &&  <div className=" flex flex-col gap-4 py-8 text-sm text-gray-500 overflow-y-scroll  sticky h-56">
               <div className=" flex gap-4">
                 <input className=" cursor-pointer" type="checkbox" />
                 <h1>Dell (1)</h1>
@@ -103,13 +110,13 @@ const ShopBar = () => {
                 <input type="checkbox" />
                 <h1>Oppo (4)</h1>
               </div>
-            </div>
+            </div>}
           </div>
           {/* colors */}
           <div className=" flex flex-col px-4">
             <div className=" flex  items-center justify-between py-4 border-b border-gray-300">
               <h1 className=" text-xl text-gray-600 ">Colors</h1>
-              <span className=" cursor-pointer">
+              <span  className=" cursor-pointer">
                 <AiOutlineMinus size={20} />
               </span>
             </div>
@@ -156,10 +163,21 @@ const ShopBar = () => {
             </div>
           </div>
           {/* bestsellers */}
-          <div>bestsellers</div>
+          <div className=" flex flex-col px-4">
+          <div className=" flex  items-center justify-between py-4 border-b border-gray-300">
+              <h1 className=" text-xl text-gray-600 "> Berst Sellers</h1>
+              <span onClick={openClose} className=" cursor-pointer">
+                <AiOutlineMinus size={20} />
+              </span>
+            </div>
+          { open &&<div className=" flex flex-col gap-3 py-2">
+          <img src={wat} alt="" />
+          <img src={wat} alt="" />
+          </div>}
+          </div>
         </div>
         {/* rightbar */}
-        <div className="w-8/12 flex flex-col">
+        <div className="md:w-8/12 w-full md:px-0 px-2 flex flex-col">
           <div className="py-4">
             <Swiper
               spaceBetween={30}
@@ -179,14 +197,14 @@ const ShopBar = () => {
                 {shops.map((shop, index) => (
                   <div key={index} className="">
                     <SwiperSlide>
-                      <div className=" px-10 flex justify-between items-center bg-gray-100 rounded-lg ">
+                      <div className=" px-10 flex justify-between items-center bg-gray-100 md:pb-0  pb-24 md:py-0 py-4 rounded-lg ">
                         <div className=" flex flex-col  gap-6 px-4">
                           <h1 className=" text-gray-400">{shop.name}</h1>
-                          <h2 className="  text-6xl space-x-4  text-orange-400  ">
+                          <h2 className="  md:text-6xl text-4xl space-x-4  text-orange-400  ">
                             {shop.model}
                           </h2>
                         </div>
-                        <img className=" px-4" src={shop.image} alt="" />
+                        <img className=" px-4 md:flex hidden" src={shop.image} alt="" />
                       </div>
                     </SwiperSlide>
                   </div>
@@ -244,22 +262,22 @@ const ShopBar = () => {
           <div className=" py-6">
             {shopcards.map((shopcard, index) => (
               <div key={index} className=" grid grid-rows-1 ">
-                <div className=" flex items-center justify-between border-2 border-transparent hover:border-gray-300  rounded-lg px-4 py-4">
+                <div className=" flex items-center justify-between border-2 border-transparent hover:border-gray-300  rounded-lg px-4 py-4 ">
                 <div>
                   <img src={shopcard.image} alt="" />
                 </div>
-                <div className=" flex flex-col gap-1">
-                  <h1>{shopcard.name}</h1>
-                  <h2>{shopcard.model}</h2>
-                  <h3>{shopcard.desc}</h3>
-                  <h1>{shopcard.stock}</h1>
-                  <h2>{shopcard.the}</h2>
-                  <h2>{shopcard.apple}</h2>
-                  <h1>{shopcard.like}</h1>
+                <div className=" flex flex-col gap-1 pb-8">
+                  <h1 className=" text-gray-400">{shopcard.name}</h1>
+                  <h2 className=" text-gray-600 hover:text-orange-400 cursor-pointer">{shopcard.model}</h2>
+                  <h3 className=" hover:text-orange-400 cursor-pointer">{shopcard.desc}</h3>
+                  <h1 className=" text-orange-600 py-1 text-sm">{shopcard.stock}</h1>
+                  <h2 className=" text-gray-400 text-sm">{shopcard.the}</h2>
+                  <h2 className=" text-gray-400 text-sm">{shopcard.apple}</h2>
+                  <h1 className=" text-gray-400 text-sm">{shopcard.like}</h1>
                 </div>
-                <div>
-                  <h1>{shopcard.price}</h1>
-                  <h2>{shopcard.card}</h2>
+                <div className=" flex flex-col gap-4 px-4">
+                  <h1 className=" text-2xl text-orange-400">{shopcard.price}</h1>
+                  <h2 className=" text-white bg-orange-600 px-6 py-2 rounded-full cursor-pointer">{shopcard.card}</h2>
                 </div>
                 </div>
               </div>
@@ -325,6 +343,18 @@ const shopcards = [
     apple: "the Apple stable, inheriting its internals,",
     like: "like the A6 processor, 4 screen...",
     price: " $ 125140.00",
+    card: "Add to Card",
+  },
+  {
+    image: Six,
+    name: "Cameras",
+    model: "Apple iPad Air 2 32GB 9.7",
+    desc: "Tablet",
+    stock: "Availablity: In stock",
+    the: "The iPhone 5c replaces the iPhone 5 in",
+    apple: "the Apple stable, inheriting its internals,",
+    like: "like the A6 processor, 4 screen...",
+    price: " $ 12542.00",
     card: "Add to Card",
   },
   {
