@@ -24,12 +24,12 @@ const ShopBar = () => {
     <div className=" flex flex-col justify-center py-2">
       <div className=" flex justify-center md:gap-4  py-3">
         <div className=" flex items-center md:gap-2">
-        <h1 className=" flex border px-4 md:px-8 py-2 rounded-full text-gray-500 cursor-pointer hover:text-white hover:bg-orange-400">
+        <h1 className=" flex border md:px-8 py-2 rounded-full text-gray-500 cursor-pointer hover:text-white hover:bg-orange-400">
           home
         </h1>
         <span className=" text-gray-400"><BiRightArrowAlt size={30}/></span>
         </div >
-        <div className=" flex items-center md:gap-2">
+        <div className=" flex items-center gap-2">
         <h1 className=" flex border px-8 py-2 rounded-full text-gray-500 cursor-pointer hover:text-white hover:bg-orange-400">
           shop
         </h1>
