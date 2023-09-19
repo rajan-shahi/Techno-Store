@@ -15,6 +15,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import headphone from "../assets/headphone1.png";
+import { Link } from "react-router-dom";
 const ShopBar = () => {
   const [open, setopen] = useState(true);
   const openClose = () => {
@@ -24,16 +25,20 @@ const ShopBar = () => {
     <div className=" flex flex-col justify-center py-2">
       <div className=" flex justify-center md:gap-4  py-3">
         <div className=" flex items-center md:gap-2">
-        <h1 className=" flex border md:px-8 py-2 rounded-full text-gray-500 cursor-pointer hover:text-white hover:bg-orange-400">
-          home
-        </h1>
-        <span className=" text-gray-400"><BiRightArrowAlt size={30}/></span>
-        </div >
+          <h1 className=" flex border md:px-8 py-2 rounded-full text-gray-500 cursor-pointer hover:text-white hover:bg-orange-400">
+            home
+          </h1>
+          <span className=" text-gray-400">
+            <BiRightArrowAlt size={30} />
+          </span>
+        </div>
         <div className=" flex items-center gap-2">
-        <h1 className=" flex border px-8 py-2 rounded-full text-gray-500 cursor-pointer hover:text-white hover:bg-orange-400">
-          shop
-        </h1>
-        <span className=" text-gray-400"><BiRightArrowAlt size={30}/></span>
+          <h1 className=" flex border px-8 py-2 rounded-full text-gray-500 cursor-pointer hover:text-white hover:bg-orange-400">
+            shop
+          </h1>
+          <span className=" text-gray-400">
+            <BiRightArrowAlt size={30} />
+          </span>
         </div>
         <button className=" flex border px-8 py-2 rounded-full text-gray-500 cursor-pointer hover:text-white hover:bg-orange-400">
           SmartPhones
@@ -334,6 +339,15 @@ const ShopBar = () => {
               </div>
             ))}
           </div>
+            {/* footer */}
+        <div className=" flex justify-end px-4 py-4">
+          <span className=" text-gray-500">
+            {" "}
+            <Link to={"/"}>
+            <BiRightArrowAlt size={40} />
+            </Link>
+          </span>
+        </div>
         </div>
       </div>
     </div>

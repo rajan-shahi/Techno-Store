@@ -10,7 +10,7 @@ const Navbar = () => {
         className="py-3 w-10/12 flex flex-col gap-5  md:flex-row  justify-between text-xs  items-center "
       >
         {/* leftbar */}
-        <div className=" flex gap-4 text-gray-600 ">
+        <div className=" hidden md:flex gap-4 text-gray-600 text-xl ">
           <Link to={"/contact"}>
             <p className=" border-r-2 text-md  pr-2 hover:text-orange-600 cursor-pointer">
               Contact
@@ -21,9 +21,10 @@ const Navbar = () => {
               About
             </p>
           </Link>
-          <p className=" hover:text-orange-600 cursor-pointer">
-            Track Your Order
-          </p>
+
+          <Link to={"/shopbar"}>
+            <p className=" hover:text-orange-600 cursor-pointer">Shop Cards</p>
+          </Link>
         </div>
         {/* midbar */}
         <div className=" text-gray-600">
