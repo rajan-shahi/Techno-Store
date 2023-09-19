@@ -15,11 +15,10 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import headphone from "../assets/headphone1.png";
 const ShopBar = () => {
-  const [open , setopen] =useState(true)
-  const openClose= ()=>{
-    setopen(!open)
-
-  }
+  const [open, setopen] = useState(true);
+  const openClose = () => {
+    setopen(!open);
+  };
   return (
     <div className=" flex justify-center py-6">
       {/* container */}
@@ -67,7 +66,8 @@ const ShopBar = () => {
               <h1 className=" text-xl text-gray-600 ">Brands</h1>
               <span className=" cursor-pointer hover:text-pink-400">
                 <span onClick={openClose}>
-                < AiOutlineMinus size={20} /></span>
+                  <AiOutlineMinus size={20} />
+                </span>
               </span>
             </div>
             <div className=" py-5">
@@ -77,46 +77,48 @@ const ShopBar = () => {
                 placeholder=" brands search"
               />
             </div>
-           { open &&  <div className=" flex flex-col gap-4 py-8 text-sm text-gray-500 overflow-y-scroll  sticky h-56">
-              <div className=" flex gap-4">
-                <input className=" cursor-pointer" type="checkbox" />
-                <h1>Dell (1)</h1>
+            {open && (
+              <div className=" flex flex-col gap-4 py-8 text-sm text-gray-500 overflow-y-scroll  sticky h-56">
+                <div className=" flex gap-4">
+                  <input className=" cursor-pointer" type="checkbox" />
+                  <h1>Dell (1)</h1>
+                </div>
+                <div className=" flex gap-4">
+                  <input type="checkbox" />
+                  <h1>Apple (4)</h1>
+                </div>
+                <div className=" flex gap-4">
+                  <input type="checkbox" />
+                  <h1>Samsung (2)</h1>
+                </div>
+                <div className=" flex gap-4">
+                  <input type="checkbox" />
+                  <h1>HTC (2)</h1>
+                </div>
+                <div className=" flex gap-4">
+                  <input type="checkbox" />
+                  <h1>LG (2)</h1>
+                </div>
+                <div className=" flex gap-4">
+                  <input type="checkbox" />
+                  <h1>Sony (3)</h1>
+                </div>
+                <div className=" flex gap-4">
+                  <input type="checkbox" />
+                  <h1>Bphone (4)</h1>
+                </div>
+                <div className=" flex gap-4">
+                  <input type="checkbox" />
+                  <h1>Oppo (4)</h1>
+                </div>
               </div>
-              <div className=" flex gap-4">
-                <input type="checkbox" />
-                <h1>Apple (4)</h1>
-              </div>
-              <div className=" flex gap-4">
-                <input type="checkbox" />
-                <h1>Samsung (2)</h1>
-              </div>
-              <div className=" flex gap-4">
-                <input type="checkbox" />
-                <h1>HTC (2)</h1>
-              </div>
-              <div className=" flex gap-4">
-                <input type="checkbox" />
-                <h1>LG (2)</h1>
-              </div>
-              <div className=" flex gap-4">
-                <input type="checkbox" />
-                <h1>Sony (3)</h1>
-              </div>
-              <div className=" flex gap-4">
-                <input type="checkbox" />
-                <h1>Bphone (4)</h1>
-              </div>
-              <div className=" flex gap-4">
-                <input type="checkbox" />
-                <h1>Oppo (4)</h1>
-              </div>
-            </div>}
+            )}
           </div>
           {/* colors */}
           <div className=" flex flex-col px-4">
             <div className=" flex  items-center justify-between py-4 border-b border-gray-300">
               <h1 className=" text-xl text-gray-600 ">Colors</h1>
-              <span  className=" cursor-pointer">
+              <span className=" cursor-pointer">
                 <AiOutlineMinus size={20} />
               </span>
             </div>
@@ -164,16 +166,18 @@ const ShopBar = () => {
           </div>
           {/* bestsellers */}
           <div className=" flex flex-col px-4">
-          <div className=" flex  items-center justify-between py-4 border-b border-gray-300">
+            <div className=" flex  items-center justify-between py-4 border-b border-gray-300">
               <h1 className=" text-xl text-gray-600 "> Berst Sellers</h1>
               <span onClick={openClose} className=" cursor-pointer">
                 <AiOutlineMinus size={20} />
               </span>
             </div>
-          { open &&<div className=" flex flex-col gap-3 py-2">
-          <img src={wat} alt="" />
-          <img src={wat} alt="" />
-          </div>}
+            {open && (
+              <div className=" flex flex-col gap-3 py-2">
+                <img src={wat} alt="" />
+                <img src={wat} alt="" />
+              </div>
+            )}
           </div>
         </div>
         {/* rightbar */}
@@ -204,7 +208,11 @@ const ShopBar = () => {
                             {shop.model}
                           </h2>
                         </div>
-                        <img className=" px-4 md:flex hidden" src={shop.image} alt="" />
+                        <img
+                          className=" px-4 md:flex hidden"
+                          src={shop.image}
+                          alt=""
+                        />
                       </div>
                     </SwiperSlide>
                   </div>
@@ -214,7 +222,9 @@ const ShopBar = () => {
           </div>
           {/* mobile and test */}
           <div className=" md:px-0 px-4 md:flex  justify-between py-4 pt-10 border-b border-gray-300">
-            <h1 className=" text-xl md:pb-0 pb-2 text-gray-700">Mobile & Tablet</h1>
+            <h1 className=" text-xl md:pb-0 pb-2 text-gray-700">
+              Mobile & Tablet
+            </h1>
             <h2 className=" text-sm text-gray-500">
               Showing 1–15 of 20 results
             </h2>
@@ -222,7 +232,7 @@ const ShopBar = () => {
           {/* show container */}
           <div>
             <div className=" md:flex items-center justify-between py-7 border-b border-gray-300 ">
-              <div className=" flex gap-4">
+              <div className=" flex gap-4 px-4 md:px-0">
                 <PiDotsNineBold
                   size={30}
                   className=" cursor-pointer text-gray-700"
@@ -232,29 +242,41 @@ const ShopBar = () => {
                   className=" cursor-pointer text-gray-500"
                 />
               </div>
-              <div className=" flex gap-4">
-                <select
-                  className=" px-6  py-2 border-2 rounded-full text-gray-500"
-                  name=""
-                  id=""
-                >
-                  sort by popularity
-                  <option value="sort by popularity">sort by popularity</option>
-                  <option value="sort by popularity">sort by popularity</option>
-                  <option value="sort by popularity">sort by popularity</option>
-                  <option value="sort by popularity">sort by popularity</option>
-                </select>
-                <select
-                  className=" px-6  py-2 border-2 rounded-full text-gray-500"
-                  name=""
-                  id=""
-                >
-                  show 15
-                  <option value="show 15">show 15</option>
-                  <option value="show 15">show 15</option>
-                  <option value="show 15">show 15</option>
-                  <option value="show 15">show 15</option>
-                </select>
+              <div className=" md:flex  px-4 md:px-0 gap-4">
+                <div className="md:py-0 py-4">
+                  <select
+                    className=" w-full px-6  py-2 border-2 rounded-full text-gray-500"
+                    name=""
+                    id=""
+                  >
+                    sort by popularity
+                    <option value="sort by popularity">
+                      sort by popularity
+                    </option>
+                    <option value="sort by popularity">
+                      sort by popularity
+                    </option>
+                    <option value="sort by popularity">
+                      sort by popularity
+                    </option>
+                    <option value="sort by popularity">
+                      sort by popularity
+                    </option>
+                  </select>
+                </div>
+                <div>
+                  <select
+                    className=" w-full px-6  py-2 border-2 rounded-full text-gray-500"
+                    name=""
+                    id=""
+                  >
+                    show 15
+                    <option value="show 15">show 15</option>
+                    <option value="show 15">show 15</option>
+                    <option value="show 15">show 15</option>
+                    <option value="show 15">show 15</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
@@ -263,22 +285,32 @@ const ShopBar = () => {
             {shopcards.map((shopcard, index) => (
               <div key={index} className=" grid grid-rows-1 ">
                 <div className=" flex items-center justify-between border-2 border-transparent hover:border-gray-300  rounded-lg px-4 py-4 ">
-                <div>
-                  <img src={shopcard.image} alt="" />
-                </div>
-                <div className=" flex flex-col gap-1 pb-8">
-                  <h1 className=" text-gray-400">{shopcard.name}</h1>
-                  <h2 className=" text-gray-600 hover:text-orange-400 cursor-pointer">{shopcard.model}</h2>
-                  <h3 className=" hover:text-orange-400 cursor-pointer">{shopcard.desc}</h3>
-                  <h1 className=" text-orange-600 py-1 text-sm">{shopcard.stock}</h1>
-                  <h2 className=" text-gray-400 text-sm">{shopcard.the}</h2>
-                  <h2 className=" text-gray-400 text-sm">{shopcard.apple}</h2>
-                  <h1 className=" text-gray-400 text-sm">{shopcard.like}</h1>
-                </div>
-                <div className=" flex flex-col gap-4 px-4">
-                  <h1 className=" text-2xl text-orange-400">{shopcard.price}</h1>
-                  <h2 className=" text-white bg-orange-600 px-6 py-2 rounded-full cursor-pointer">{shopcard.card}</h2>
-                </div>
+                  <div>
+                    <img src={shopcard.image} alt="" />
+                  </div>
+                  <div className=" flex flex-col gap-1 pb-8">
+                    <h1 className=" text-gray-400">{shopcard.name}</h1>
+                    <h2 className=" text-gray-600 hover:text-orange-400 cursor-pointer">
+                      {shopcard.model}
+                    </h2>
+                    <h3 className=" hover:text-orange-400 cursor-pointer">
+                      {shopcard.desc}
+                    </h3>
+                    <h1 className=" text-orange-600 py-1 text-sm">
+                      {shopcard.stock}
+                    </h1>
+                    <h2 className=" text-gray-400 text-sm">{shopcard.the}</h2>
+                    <h2 className=" text-gray-400 text-sm">{shopcard.apple}</h2>
+                    <h1 className=" text-gray-400 text-sm">{shopcard.like}</h1>
+                  </div>
+                  <div className=" flex flex-col gap-4 px-4">
+                    <h1 className=" text-2xl text-orange-400">
+                      {shopcard.price}
+                    </h1>
+                    <h2 className=" text-white bg-orange-600 px-6 py-2 rounded-full cursor-pointer">
+                      {shopcard.card}
+                    </h2>
+                  </div>
                 </div>
               </div>
             ))}
