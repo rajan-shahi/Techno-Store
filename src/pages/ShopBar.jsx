@@ -213,15 +213,15 @@ const ShopBar = () => {
             </Swiper>
           </div>
           {/* mobile and test */}
-          <div className=" flex justify-between py-4 pt-10 border-b border-gray-300">
-            <h1 className=" text-xl text-gray-700">Mobile & Tablet</h1>
+          <div className=" md:px-0 px-4 md:flex  justify-between py-4 pt-10 border-b border-gray-300">
+            <h1 className=" text-xl md:pb-0 pb-2 text-gray-700">Mobile & Tablet</h1>
             <h2 className=" text-sm text-gray-500">
               Showing 1–15 of 20 results
             </h2>
           </div>
           {/* show container */}
           <div>
-            <div className=" flex items-center justify-between py-7 border-b border-gray-300 ">
+            <div className=" md:flex items-center justify-between py-7 border-b border-gray-300 ">
               <div className=" flex gap-4">
                 <PiDotsNineBold
                   size={30}
