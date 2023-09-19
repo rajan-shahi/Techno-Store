@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className=" z-10 bg-white flex justify-center  border-b-2 pt-16 ">
+    <div className=" z-10  bg-transparent flex justify-center  border-b-2 pt-16 ">
       {/* container */}
       <div
         name="navbar"
@@ -36,7 +36,7 @@ const Navbar = () => {
         </div>
         {/* righrbar */}
         <div className=" flex gap-4 text-gray-600">
-          <select className=" flex flex-col  border-r-2  px-4 cursor-pointer ">
+          <select className=" flex flex-col  border-2  py-2 rounded-full  px-4 cursor-pointer ">
             <option value=""> My Account</option>
             <option value="Login">Login</option>
             <option value="Wishlist">Wishlist</option>
@@ -44,12 +44,12 @@ const Navbar = () => {
             <option value="My Account">My Account</option>
             <option value="Checkout">CheckOut</option>
           </select>
-          <select id="" className=" border-r-2  px-4 cursor-pointer">
+          <select id="" className=" border-2 py-2 rounded-full  px-4 cursor-pointer">
             <option value="">USD</option>
             <option value="Euro">Euro</option>
             <option value="Dolar">Dolar</option>
           </select>
-          <select id="" className=" cursor-pointer text-sm">
+          <select id="" className="  border-2 py-2 px-4 rounded-full cursor-pointer text-sm">
             <option value="">Language</option>
             <option value="Turkish">Turkish</option>
             <option value="Englidh">English</option>
