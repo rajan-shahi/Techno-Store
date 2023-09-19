@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className=" flex justify-center  border-b-2 ">
+    <div className=" flex justify-center  border-b-2  ">
       {/* container */}
       <div
         name="navbar"
-        className="py-3 w-10/12 flex flex-col gap-5  md:flex-row  justify-between text-xs  items-center "
+        className=" z-20 py-3 w-10/12 flex flex-col gap-5  md:flex-row  justify-between text-xs  items-center sticky "
       >
         {/* leftbar */}
         <div className=" hidden md:flex gap-4 text-gray-600 text-xl ">
