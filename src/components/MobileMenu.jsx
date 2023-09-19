@@ -7,9 +7,9 @@ const MobileMenu = () => {
   const [nav, setNev] = useState(false);
   const handleClick = () => setNev(!nav);
   return (
-    <div className="  md:hidden flex justify-center ">
-      <div className=" w-full  md:w-10/12 py-4  ">
-        <div className=" flex items-center justify-between cursor-pointer ">
+    <div className="fixed left-0 right-0 top-0 py-3  bg-white   z-50  md:hidden flex justify-center ">
+      <div className=" w-full  md:w-10/12   ">
+        <div className="     flex items-center justify-between cursor-pointer ">
           <img src={logo} alt="" className=" px-4" />
           <div onClick={handleClick} className=" px-4 ">
             {!nav ? (
@@ -19,7 +19,7 @@ const MobileMenu = () => {
             )}
           </div>
         </div>
-        <div className="  py-4">
+        <div className=" ">
           <ul
             className={
               !nav
