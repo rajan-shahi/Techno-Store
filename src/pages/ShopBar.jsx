@@ -284,11 +284,11 @@ const ShopBar = () => {
           <div className=" py-6">
             {shopcards.map((shopcard, index) => (
               <div key={index} className=" grid grid-rows-1 ">
-                <div className=" flex items-center justify-between border-2 border-transparent hover:border-gray-300  rounded-lg px-4 py-4 ">
-                  <div>
+                <div className=" md:flex items-center justify-between border-2 border-transparent hover:border-gray-300  rounded-lg px-4 py-4 ">
+                  <div className=" flex justify-center md:justify-start">
                     <img src={shopcard.image} alt="" />
                   </div>
-                  <div className=" flex flex-col gap-1 pb-8">
+                  <div className=" flex flex-col gap-1 pb-8 md:items-start  items-center">
                     <h1 className=" text-gray-400">{shopcard.name}</h1>
                     <h2 className=" text-gray-600 hover:text-orange-400 cursor-pointer">
                       {shopcard.model}
@@ -303,7 +303,7 @@ const ShopBar = () => {
                     <h2 className=" text-gray-400 text-sm">{shopcard.apple}</h2>
                     <h1 className=" text-gray-400 text-sm">{shopcard.like}</h1>
                   </div>
-                  <div className=" flex flex-col gap-4 px-4">
+                  <div className=" flex flex-col gap-4 md:px-4  md:items-start items-center">
                     <h1 className=" text-2xl text-orange-400">
                       {shopcard.price}
                     </h1>
