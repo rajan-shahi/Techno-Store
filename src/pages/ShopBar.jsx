@@ -20,7 +20,19 @@ const ShopBar = () => {
     setopen(!open);
   };
   return (
-    <div className=" flex justify-center py-6">
+    <div className=" flex flex-col justify-center py-2">
+      <div className=" flex justify-center gap-2 md:gap-10 py-3">
+        <h1 className=" flex border px-8 py-2 rounded-full text-gray-500 cursor-pointer hover:text-white hover:bg-orange-400">
+          home
+        </h1>
+        <h1 className=" flex border px-8 py-2 rounded-full text-gray-500 cursor-pointer hover:text-white hover:bg-orange-400">
+          shop
+        </h1>
+        <button className=" flex border px-8 py-2 rounded-full text-gray-500 cursor-pointer hover:text-white hover:bg-orange-400">
+          SmartPhones
+        </button>
+      </div>
+      <hr />
       {/* container */}
       <div className=" md:flex  w-full md:w-11/12 justify-center gap-4">
         {/* leftbar */}
