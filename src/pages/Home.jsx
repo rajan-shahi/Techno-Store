@@ -12,6 +12,7 @@ import Copyright from "../components/Copyright";
 import MobileMenu from "../components/MobileMenu";
 import SmartPhone from "./SmartPhone";
 import NavbrFooter from "./../components/NavbrFooter";
+import ShopBar from "./ShopBar";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <CardContainer />
       <NewArrivalsCom />
       <BestSellersComp />
+      <ShopBar/>
       <SmartPhone />
       <RecentProducr />
       <BestSellers />
