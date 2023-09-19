@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className=" flex justify-center  border-b-2  ">
-      rajan
+    <div className=" flex justify-center  border-b-2 z-10  ">
       {/* container */}
       <div
         name="navbar"
