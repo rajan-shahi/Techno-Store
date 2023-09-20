@@ -4,6 +4,7 @@ import Contact from "./pages/Contact";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import ShopBar from "./pages/ShopBar";
+import SighIn from "./components/SighIn";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/shopbar" element={<ShopBar/>} />
+          <Route path="/signin" element={<SighIn/>} />
         </Routes>
       </BrowserRouter>
     </div>
