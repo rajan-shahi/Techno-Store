@@ -12,11 +12,11 @@ const SighIn = () => {
           <h2 className=" text-sm text-gray-500">
             Don't have an account?{" "}
             <span className=" text-blue-500 cursor-pointer text-lg">
-            <Link to={"/signup"}>  sign up</Link>
+              <Link to={"/signup"}> sign up</Link>
             </span>
           </h2>
         </div>
-        <div className=" flex flex-col md:gap-4  gap-6 justify-center items-center">
+        <div className=" flex flex-col md:gap-5  gap-6 justify-center items-center">
           <div className=" flex flex-col">
             <span className=" text-md text-gray-600">Email</span>
             <input
@@ -43,7 +43,7 @@ const SighIn = () => {
           <div>
             <h1>or</h1>
           </div>
-          <div className="w-[350px] border  border-gray-400 md:py-2 py-3 rounded-lg  flex justify-center items-center">
+          <div className="w-[350px] border  border-gray-400  py-3 rounded-lg  flex justify-center items-center">
             <span className=" px-1  cursor-pointer">
               <a href="https://www.google.com" target="-blank">
                 {" "}
@@ -51,10 +51,13 @@ const SighIn = () => {
               </a>
             </span>
             <h1 className=" text-sm  text-gray-500  cursor-pointer">
-              Sign in with Google
+              <a href="https://www.google.com" target="-blank">
+                {" "}
+                Sign in with Google{" "}
+              </a>
             </h1>
           </div>
-          <div className="w-[350px] border  border-gray-400 md:py-2  py-3 rounded-lg flex justify-center items-center">
+          <div className="w-[350px] border  border-gray-400   py-3 rounded-lg flex justify-center items-center">
             <span className="  text-blue-500 px-1 cursor-pointer">
               <a
                 href="https://www.facebook.com
@@ -65,10 +68,13 @@ const SighIn = () => {
               </a>
             </span>
             <h1 className=" text-sm  text-gray-500  cursor-pointer">
-              Sign in with Facebook
+              <a href="https://www.facebook.com" target="-blank">
+                {" "}
+                Sign in with Facebook{" "}
+              </a>
             </h1>
           </div>
-          <div className="w-[350px] border  border-gray-400 md:py-2 py-3 rounded-lg  flex justify-center  items-center">
+          <div className="w-[350px] border  border-gray-400  py-3 rounded-lg  flex justify-center  items-center">
             <span className=" text-blue-500 px-1 cursor-pointer">
               <a
                 href="https://www.linkedin.com
@@ -80,7 +86,14 @@ const SighIn = () => {
               </a>
             </span>
             <h1 className=" text-sm  text-gray-500   cursor-pointer">
-              Sign in with Linkedin
+              <a
+                href="https://www.linkedin.com
+"
+                target="-blank"
+              >
+                {" "}
+                Sign in with Linkedin{" "}
+              </a>
             </h1>
           </div>
         </div>
