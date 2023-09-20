@@ -16,6 +16,7 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import headphone from "../assets/headphone1.png";
 import { Link } from "react-router-dom";
+
 const ShopBar = () => {
   const [open, setopen] = useState(true);
   const openClose = () => {
@@ -82,6 +83,19 @@ const ShopBar = () => {
               <h1 className=" hover:text-orange-400 cursor-pointer">
                 Software (23)
               </h1>
+            </div>
+          </div>
+          {/*         
+         prices */}
+          <div className=" flex flex-col px-4">
+            <div className=" flex  items-center justify-between py-4 border-b border-gray-300">
+              <h1 className=" text-xl text-gray-600 ">Prices</h1>
+              <span className=" cursor-pointer">
+                <AiOutlineMinus size={20} />
+              </span>
+            </div>
+            <div>
+            
             </div>
           </div>
           {/* brands */}
@@ -339,15 +353,15 @@ const ShopBar = () => {
               </div>
             ))}
           </div>
-            {/* footer */}
-        <div className=" flex justify-end px-4 py-4">
-          <span className=" text-gray-500">
-            {" "}
-            <Link to={"/"}>
-            <BiRightArrowAlt size={40} />
-            </Link>
-          </span>
-        </div>
+          {/* footer */}
+          <div className=" flex justify-end px-4 py-4">
+            <span className=" text-gray-500">
+              {" "}
+              <Link to={"/"}>
+                <BiRightArrowAlt size={40} />
+              </Link>
+            </span>
+          </div>
         </div>
       </div>
     </div>
