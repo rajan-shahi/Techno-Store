@@ -11,7 +11,7 @@ const SighIn = () => {
           <h1 className=" text-2xl text-gray-600">Login</h1>
           <h2 className=" text-sm text-gray-500">
             Don't have an account?{" "}
-            <span className=" text-blue-500 cursor-pointer text-lg">
+            <span className=" text-blue-500 cursor-pointer text-lg hover:text-orange-400">
               <Link to={"/signup"}> sign up</Link>
             </span>
           </h2>
