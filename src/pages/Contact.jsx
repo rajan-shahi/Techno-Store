@@ -10,7 +10,7 @@ const Contact = () => {
           </span>
           <input
             name="name"
-            className="  p-2 rounded-full bg-gray-100 outline-orange-400 px-2 "
+            className="  p-2 rounded-full bg-gray-100 outline-orange-400 px-2  placeholder:text-sm "
             type="text"
             placeholder=" Enter your first name"
           />
@@ -19,7 +19,7 @@ const Contact = () => {
           </span>
           <input
             name="name"
-            className=" p-2 rounded-full outline-orange-400 px-2 "
+            className=" p-2 rounded-full outline-orange-400 px-2  placeholder:text-sm "
             type="text"
             placeholder=" Enter your last name "
           />
@@ -28,7 +28,7 @@ const Contact = () => {
           </span>
           <input
             name="subject"
-            className=" p-2 rounded-full outline-orange-400 px-2  "
+            className=" p-2 rounded-full outline-orange-400 px-2  placeholder:text-sm "
             type="text"
             placeholder=" subject "
           />
@@ -36,7 +36,7 @@ const Contact = () => {
             Message
           </span>
           <textarea
-            className=" h-40 rounded-2xl py-1 outline-orange-400 px-2 "
+            className=" h-40 rounded-2xl py-1 outline-orange-400 px-2  placeholder:text-sm "
             placeholder=" message"
             name="message"
             id=""
