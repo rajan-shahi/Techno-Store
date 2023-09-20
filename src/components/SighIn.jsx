@@ -16,7 +16,7 @@ const SighIn = () => {
             </span>
           </h2>
         </div>
-        <div className=" flex flex-col md:gap-5  gap-6 justify-center items-center">
+        <div className=" flex  px-4 flex-col md:gap-5  gap-6 justify-center items-center">
           <div className=" flex flex-col">
             <span className=" text-md text-gray-600">Email</span>
             <input
