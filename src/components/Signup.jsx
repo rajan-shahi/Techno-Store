@@ -5,7 +5,9 @@ const Signup = () => {
     <div className=" flex justify-center items-center py-8 ">
       <div className="flex   flex-col gap-2 w-full md:w-3/12 shadow-lg   shadow-gray-300  rounded-lg md:py-12 py-14">
         <div className=" flex justify-center">
-          <h1 className=" text-3xl  text-gray-500 cursor-pointer hover:text-orange-400">Register</h1>
+          <h1 className=" text-3xl  text-gray-500 cursor-pointer hover:text-orange-400">
+            Register
+          </h1>
         </div>
         <div className=" flex  md:px-4 flex-col md:gap-5  gap-6 justify-center items-center">
           <div className=" flex flex-col">
@@ -30,9 +32,9 @@ const Signup = () => {
             <span className=" text-md text-gray-600">Date of birth</span>
             <input
               name="date"
-              className=" w-[350px] border  border-gray-400 outline-orange-400 px-1 md:py-1 py-2 rounded-lg  placeholder:text-sm placeholder:bg-transparent"
+              className=" w-[350px] border  border-gray-400 outline-orange-400 px-1 md:py-1 py-2 rounded-lg  placeholder:text-sm "
               type="date"
-              placeholder="Date of birth"
+              placeholder="mm/dd/yyyy"
             />
           </div>
           <div className=" flex flex-col">
