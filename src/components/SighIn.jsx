@@ -25,17 +25,17 @@ const SighIn = () => {
             <div>
                 <h1>or</h1>
             </div>
-            <div className="w-[350px] border  border-gray-400 py-1 rounded-lg hover:border-orange-400 flex justify-center items-center">
-                <span><FcGoogle/></span>
-                <h1>Sign in with Google</h1>
+            <div className="w-[350px] border  border-gray-400 py-2 rounded-lg  flex justify-center items-center">
+                <span className=" px-1  cursor-pointer"><FcGoogle size={20}/></span>
+                <h1 className=" text-sm  text-gray-500  cursor-pointer">Sign in with Google</h1>
             </div>
-            <div className="w-[350px] border  border-gray-400 py-1 rounded-lg hover:border-orange-400 flex justify-center items-center">
-                <span><SlSocialFacebook/></span>
-                <h1>Sign in with Google</h1>
+            <div className="w-[350px] border  border-gray-400 py-2 rounded-lg flex justify-center items-center">
+                <span className="  text-blue-500 px-1 cursor-pointer"><SlSocialFacebook size={20}/></span>
+                <h1 className=" text-sm  text-gray-500  cursor-pointer">Sign in with Facebook</h1>
             </div>
-            <div className="w-[350px] border  border-gray-400 py-1 rounded-lg hover:border-orange-400 flex justify-center  items-center">
-                <span><FaLinkedinIn/></span>
-                <h1>Sign in with Google</h1>
+            <div className="w-[350px] border  border-gray-400 py-2 rounded-lg  flex justify-center  items-center">
+                <span className=" text-blue-500 px-1 cursor-pointer"><FaLinkedinIn size={20}/></span>
+                <h1 className=" text-sm  text-gray-500   cursor-pointer">Sign in with Linkedin</h1>
             </div>
             
         </div>
