@@ -29,9 +29,9 @@ const Signup = () => {
           <div className=" flex flex-col">
             <span className=" text-md text-gray-600">Date of birth</span>
             <input
-              name="date"
+            name="date"
               className=" w-[350px] border  border-gray-400 outline-orange-400 px-1 md:py-1 py-2 rounded-lg  placeholder:text-sm "
-              type="date"
+              type="text"
               placeholder="mm/dd/yyyy"
             />
           </div>
