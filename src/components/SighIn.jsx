@@ -2,6 +2,7 @@ import React from "react";
 import { FcGoogle } from "react-icons/fc";
 import { SlSocialFacebook } from "react-icons/sl";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const SighIn = () => {
   return (
     <div className=" flex justify-center  py-8 ">
@@ -11,7 +12,7 @@ const SighIn = () => {
           <h2 className=" text-sm text-gray-500">
             Don't have an account?{" "}
             <span className=" text-blue-500 cursor-pointer text-lg">
-              sign up
+            <Link to={"/signup"}>  sign up</Link>
             </span>
           </h2>
         </div>

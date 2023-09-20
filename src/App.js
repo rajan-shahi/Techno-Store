@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import ShopBar from "./pages/ShopBar";
 import SighIn from "./components/SighIn";
+import Signup from "./components/Signup";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/shopbar" element={<ShopBar/>} />
           <Route path="/signin" element={<SighIn/>} />
+          <Route path="/signup" element={<Signup/>} />
         </Routes>
       </BrowserRouter>
     </div>
