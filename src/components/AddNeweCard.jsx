@@ -59,13 +59,13 @@ const AddNeweCard = () => {
         {/* right */}
         <div className=" w-5/12">
           <div className=" flex flex-col   py-16 gap-4 justify-center">
-            <div>
-              <span>Service Title</span>
-              <input type="text" placeholder=" e.g One-page web Design" />
+            <div className=" flex flex-col gap-1">
+              <span  className=" text-xl text-gray-500" >Service Title</span>
+              <input   className=" border-2 px-2 py-2 w-[500px] rounded-full outline-orange-400 placeholder:text-sm" type="text" placeholder=" e.g One-page web Design" />
             </div>
-            <div>
-                <span>Short Description</span>
-                 <textarea className=" h-[200px]" name="" id="" cols="30" rows="10" placeholder=" short description of your services"></textarea>
+            <div className=" flex flex-col gap-1">
+                <span className=" text-xl text-gray-500" >Short Description</span>
+                 <textarea className=" h-[200px] border-2  px-2 py-2 w-[500px]  outline-orange-400 rounded-lg placeholder:text-sm" name="" id="" cols="30" rows="10" placeholder=" short description of your services"></textarea>
             </div>
             <div>
                 <span>Delivery Time</span>
@@ -84,6 +84,12 @@ const AddNeweCard = () => {
             </div>
             <div>
             <input type="text" placeholder="e.g setting up a domain" />
+            </div>
+            <div>
+            <input type="text" placeholder="e.g hosting" />
+            </div>
+            <div>
+                <input type="number" />
             </div>
           </div>
         </div>
