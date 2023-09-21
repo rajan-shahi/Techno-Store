@@ -34,7 +34,6 @@ const Navbar = () => {
             <option value="Wishlist">Wishlist</option>
             <option value="My Cart">My Cart</option>
             <option value="CheckOut">CheckOut</option>
-            <option value="MP3">MP3 </option>
           </select>
           <select
             id=""
