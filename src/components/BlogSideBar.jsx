@@ -1,5 +1,7 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import about from "../assets/about.jpg";
 import post02 from "../assets/post-02.jpg";
 import post03 from "../assets/post-03.jpg";
@@ -36,13 +38,13 @@ const BlogSideBar = () => {
             <img className=" w-full h-[350px] rounded-lg" src={about} alt="" />
           </div>
           <div>
-            <h1 className=" text-xl text-gray-600">
+            <h1 className=" text-xl text-gray-600 hover:text-orange-400 cursor-pointer">
               There are many variations of passages
             </h1>
           </div>
           <div className=" flex gap-4 text-orange-400">
-            <h1>2 Comments</h1>
-            <h2>February 20, 2017</h2>
+            <h1 className=" cursor-pointer">2 Comments</h1>
+            <h2 className=" cursor-pointer">February 20, 2017</h2>
           </div>
           <div>
             <p className=" text-sm text-gray-400">
@@ -62,11 +64,13 @@ const BlogSideBar = () => {
             <img className=" rounded-lg pt-10" src={post02} alt="" />
           </div>
           <div>
-            <h1 className=" text-xl text-gray-600">Many desktop publishing</h1>
+            <h1 className=" text-xl text-gray-600 hover:text-orange-400 cursor-pointer">
+              Many desktop publishing
+            </h1>
           </div>
           <div className=" flex gap-4 text-orange-400">
-            <h2>2 Comments</h2>
-            <h1>February 20, 2017</h1>
+            <h2 className=" cursor-pointer">2 Comments</h2>
+            <h1 className=" cursor-pointer">February 20, 2017</h1>
           </div>
           <div>
             <p className=" text-sm text-gray-400">
@@ -86,13 +90,13 @@ const BlogSideBar = () => {
             <img className=" rounded-lg pt-10" src={post03} alt="" />
           </div>
           <div>
-            <h1 className=" text-xl text-gray-600">
+            <h1 className=" text-xl text-gray-600 hover:text-orange-400 cursor-pointer">
               Lorem Ipsum is simply dummy text
             </h1>
           </div>
           <div className=" flex gap-4 text-orange-400">
-            <h1>2 Comments</h1>
-            <h2> February 20, 2017</h2>
+            <h1 className=" cursor-pointer">2 Comments</h1>
+            <h2 className=" cursor-pointer"> February 20, 2017</h2>
           </div>
           <div>
             <p className=" text-sm text-gray-400">
@@ -103,10 +107,34 @@ const BlogSideBar = () => {
               companions to me. Yes, my Lord.
             </p>
           </div>
-          <div>
+          <div className=" pb-6">
             <button className=" py-2 px-12 border-2 rounded-full hover:bg-orange-400 hover:text-white">
               Read More
             </button>
+          </div>
+          <div className=" flex justify-center items-center gap-4 py-8 border-b-2 border-t-2">
+            <span className=" text-gray-500">
+              <HiOutlineArrowNarrowLeft size={20} />
+            </span>
+            <h1 className=" text-sm text-gray-500 cursor-pointer hover:text-orange-400">Prev Page</h1>
+            <h1 className=" text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
+              01
+            </h1>
+            <h1 className=" text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
+              02
+            </h1>
+            <h1 className=" text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
+              03
+            </h1>
+            <h1 className=" text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
+              04
+            </h1>
+            <h1 className=" text-sm text-gray-500 cursor-pointer hover:text-orange-400">
+              Next Page
+            </h1>
+            <span className=" text-gray-500">
+              <HiOutlineArrowNarrowRight  size={20}/>
+            </span>
           </div>
         </div>
 
