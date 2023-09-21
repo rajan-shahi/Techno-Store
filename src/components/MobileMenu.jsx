@@ -30,7 +30,7 @@ const MobileMenu = () => {
             <li className="   hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200">
               {" "}
               <Link to={"/signin"}>
-             SignIn
+             Sign in
               </Link>
             </li>
 
