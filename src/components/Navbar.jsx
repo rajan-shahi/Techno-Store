@@ -28,7 +28,7 @@ const Navbar = () => {
 
           
           <Link to={"/signin"}>
-            <p className="  hover:text-orange-600 cursor-pointer">SignIn</p>
+            <p className="  hover:text-orange-600 cursor-pointer">Sign in</p>
           </Link>
         </div>
         {/* midbar */}

@@ -86,18 +86,6 @@ const ShopBar = () => {
             </div>
           </div>
           {/*         
-         prices */}
-          <div className=" flex flex-col px-4">
-            <div className=" flex  items-center justify-between py-4 border-b border-gray-300">
-              <h1 className=" text-xl text-gray-600 ">Prices</h1>
-              <span className=" cursor-pointer">
-                <AiOutlineMinus size={20} />
-              </span>
-            </div>
-            <div>
-            
-            </div>
-          </div>
           {/* brands */}
           <div className="flex flex-col px-4">
             <div className=" flex  items-center justify-between py-4 border-b border-gray-300">
