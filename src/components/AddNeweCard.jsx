@@ -9,7 +9,7 @@ const AddNeweCard = () => {
         <div className="md:w-5/12 w-full   flex flex-col  gap-6 justify-center">
           <div className=" flex flex-col justify-center items-center">
             <h1 className=" text-3xl text-gray-500 flex justify-center cursor-pointer hover:text-orange-400">
-            <span>Add New Card</span>  /or
+              <span>Add New Card</span> /or
             </h1>
             <Link to={"/"}>
               <h2 className=" text-sm  text-gray-400 cursor-pointer hover:text-red-600">
@@ -58,14 +58,9 @@ const AddNeweCard = () => {
               placeholder="Brief description to introduce your service to customers"
             ></textarea>
           </div>
-          <div>
-            <button className=" flex justify-center text-md text-white bg-blue-400 border-2  py-2 md:w-[500px] w-[350px] rounded-lg  hover:bg-orange-300  ">
-              Create
-            </button>
-          </div>
         </div>
         {/* right */}
-        <div className=" md:w-5/12 w-full ">
+        <div className=" md:pt-0 pt-6 md:w-5/12 w-full ">
           <div className=" flex flex-col gap-6 justify-center">
             <div className=" flex flex-col gap-1">
               <span className=" text-sm text-gray-500">Service Title</span>
@@ -93,22 +88,15 @@ const AddNeweCard = () => {
                 type="time"
               />
             </div>
+
             <div className=" flex flex-col gap-1">
-              <span className=" text-sm text-gray-500">Revision Number</span>
-              <input
-                className=" border-2 px-2 py-2 md:w-[500px] w-[350px] rounded-full outline-orange-400 placeholder:text-sm"
-                type="number"
-                min={1}
-              />
-            </div>
-            <div className=" flex flex-col gap-1">
-              <span className=" text-sm text-gray-500">Add features</span>
-              <input
-                className=" border-2 px-2 py-2 md:w-[500px] w-[350px] rounded-full outline-orange-400 placeholder:text-sm"
-                type="text"
-                placeholder="e.g page design"
-              />
-            </div>
+            <span className=" text-sm text-gray-500">Add features</span>
+            <input
+              className=" border-2 px-2 py-2 md:w-[500px] w-[350px] rounded-full outline-orange-400 placeholder:text-sm"
+              type="text"
+              placeholder="e.g page design"
+            />
+          </div>
             <div className=" flex flex-col gap-1">
               <span className=" text-sm text-gray-500">Price</span>
               <input
@@ -116,6 +104,11 @@ const AddNeweCard = () => {
                 type="number"
                 min={1}
               />
+            </div>
+            <div>
+              <button className=" flex justify-center text-md text-white bg-blue-400 border-2  py-2 md:w-[500px] w-[350px] rounded-lg  hover:bg-orange-300  ">
+                Create
+              </button>
             </div>
           </div>
         </div>
