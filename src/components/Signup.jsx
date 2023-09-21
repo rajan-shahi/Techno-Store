@@ -1,11 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
     <div className=" flex justify-center items-center py-8 ">
       <div className="flex   flex-col gap-2 w-full md:w-3/12 shadow-lg   shadow-gray-300  rounded-lg md:py-12 py-14">
-        <div className=" flex justify-center">
+        <div className=" flex flex-col items-center justify-center">
           <h1 className=" text-3xl  text-gray-500 cursor-pointer hover:text-orange-400">Register</h1>
+          <h2 className=" text-sm text-gray-500">
+            You have Already an account?{" "}
+            <span className=" text-blue-500 cursor-pointer text-xl hover:text-orange-400">
+              <Link to={"/signin"}> sign in</Link>
+            </span>
+          </h2>
         </div>
         <div className=" flex  md:px-4 flex-col md:gap-5  gap-6 justify-center items-center">
           <div className=" flex flex-col">
