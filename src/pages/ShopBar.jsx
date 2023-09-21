@@ -333,9 +333,10 @@ const ShopBar = () => {
                     <h1 className=" text-2xl text-orange-400">
                       {shopcard.price}
                     </h1>
-                    <h2 className=" text-white bg-orange-600 px-6 py-2 rounded-full cursor-pointer">
+                    <Link to={"/add to card"}>
+                    <h2 className=" text-white bg-orange-600 px-6 py-2 rounded-full cursor-pointer  hover:text-orange-300">
                       {shopcard.card}
-                    </h2>
+                    </h2></Link>
                   </div>
                 </div>
               </div>
