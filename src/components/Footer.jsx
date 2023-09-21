@@ -83,13 +83,15 @@ const Footer = () => {
         <div className=" flex justify-center bg-gray-100 pb-10 ">
           <div className=" flex flex-col items-center">
             <h1>Mobile Apps</h1>
-            <div className=" flex py-4 px-4 gap-6">
+            <div className=" md:flex py-4 px-4 gap-6">
+              <div>
               <h2 className=" py-4 px-12  rounded-full border border-gray-600 cursor-pointer hover:border-orange-600">
                 App Store
-              </h2>
+              </h2></div>
+              <div className=" md:pt-0 pt-5">
               <h2 className=" px-12 py-4 border rounded-full border-gray-600 cursor-pointer hover:border-orange-600">
                 Google Play
-              </h2>
+              </h2></div>
             </div>
           </div>
         </div>
