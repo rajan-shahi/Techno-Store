@@ -9,7 +9,7 @@ const AddNeweCard = () => {
         <div className="w-5/12   flex flex-col  gap-6 justify-center">
           <div className=" flex flex-col justify-center items-center">
             <h1 className=" text-3xl text-gray-500 flex justify-center cursor-pointer hover:text-orange-400">
-              Add New Card/or
+            <span>Add New Card</span>  /or
             </h1>
             <Link to={"/"}>
               <h2 className=" text-sm  text-gray-400 cursor-pointer hover:text-red-600">
@@ -59,7 +59,7 @@ const AddNeweCard = () => {
             ></textarea>
           </div>
           <div>
-            <button className=" flex justify-center text-sm text-white bg-blue-400 border-2  py-2 w-[500px] rounded-lg  ">
+            <button className=" flex justify-center text-md text-white bg-blue-400 border-2  py-2 w-[500px] rounded-lg  hover:bg-orange-300  ">
               Create
             </button>
           </div>
