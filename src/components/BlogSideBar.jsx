@@ -2,12 +2,13 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import {AiOutlineMinus  } from "react-icons/ai";
 import about from "../assets/about.jpg";
 import post02 from "../assets/post-02.jpg";
 import post03 from "../assets/post-03.jpg";
 const BlogSideBar = () => {
   return (
-    <div className=" flex justify-center flex-col">
+    <div className=" flex justify-center items-center flex-col">
       <div className=" flex justify-start items-center py-6  px-56 gap-6 border-b-2 w-full">
         <div className=" flex justify-center items-center">
           <h1 className=" text-sm text-gray-500 hover:text-orange-400 cursor-pointer">
@@ -31,7 +32,7 @@ const BlogSideBar = () => {
           </h1>
         </div>
       </div>
-      <div className=" flex  justify-center items-center w-10/12 py-8">
+      <div className=" flex  justify-center  gap-10 w-10/12 py-8">
         {/* left */}
         <div className=" flex flex-col gap-4 justify-center w-8/12">
           <div>
@@ -116,7 +117,9 @@ const BlogSideBar = () => {
             <span className=" text-gray-500">
               <HiOutlineArrowNarrowLeft size={20} />
             </span>
-            <h1 className=" text-sm text-gray-500 cursor-pointer hover:text-orange-400">Prev Page</h1>
+            <h1 className=" text-sm text-gray-500 cursor-pointer hover:text-orange-400">
+              Prev Page
+            </h1>
             <h1 className=" text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
               01
             </h1>
@@ -133,13 +136,76 @@ const BlogSideBar = () => {
               Next Page
             </h1>
             <span className=" text-gray-500">
-              <HiOutlineArrowNarrowRight  size={20}/>
+              <HiOutlineArrowNarrowRight size={20} />
             </span>
           </div>
         </div>
 
         {/* right */}
-        <div className=" flex flex-col justify-center w-2/12">left</div>
+        <div className=" flex flex-col gap-6  w-2/12">
+          <div>
+            <input
+              className=" border bg-gray-200 py-2 px-2 rounded-full placeholder:text-sm outline-orange-400 w-[300px]"
+              type="text"
+              placeholder=" search"
+            />
+          </div>
+          {/* colors */}
+          <div className=" flex flex-col w-[300px] px-4">
+            <div className=" flex w-[300px] items-center justify-between py-4 border-b border-gray-300">
+              <h1 className=" text-xl text-gray-600 ">Colors</h1>
+              <span className=" cursor-pointer">
+                <AiOutlineMinus size={20} />
+              </span>
+            </div>
+            <div className=" py-5">
+              <input
+                    className=" border bg-gray-200 py-2 px-2 rounded-full placeholder:text-sm outline-orange-400 w-[300px]"
+                type="text"
+                placeholder=" colors search"
+              />
+            </div>
+            <div className=" flex flex-col gap-4 py-8 text-sm text-gray-500 overflow-y-scroll  sticky h-72">
+              <div className=" flex gap-4">
+                <input className=" cursor-pointer" type="checkbox" />
+                <h1>Black (4)</h1>
+              </div>
+              <div className=" flex gap-4">
+                <input type="checkbox" />
+                <h1>Yellow (2)</h1>
+              </div>
+              <div className=" flex gap-4">
+                <input type="checkbox" />
+                <h1>White (2)</h1>
+              </div>
+              <div className=" flex gap-4">
+                <input type="checkbox" />
+                <h1>Blue (2)</h1>
+              </div>
+              <div className=" flex gap-4">
+                <input type="checkbox" />
+                <h1>Red (1)</h1>
+              </div>
+              <div className=" flex gap-4">
+                <input type="checkbox" />
+                <h1>Pink (3)</h1>
+              </div>
+              <div className=" flex gap-4">
+                <input type="checkbox" />
+                <h1>Green (4)</h1>
+              </div>
+              <div className=" flex gap-4">
+                <input type="checkbox" />
+                <h1>Gold (4)</h1>
+              </div>
+            </div>
+            <div>
+                <div>
+                <h1>Latest Products</h1></div>
+                <div></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
