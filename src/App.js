@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import ShopBar from "./pages/ShopBar";
 import SighIn from "./components/SighIn";
 import Signup from "./components/Signup";
+import AddNeweCard from "./components/AddNeweCard";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/shopbar" element={<ShopBar/>} />
           <Route path="/signin" element={<SighIn/>} />
           <Route path="/signup" element={<Signup/>} />
+          <Route path="/add to card" element={<AddNeweCard/>} />
         </Routes>
       </BrowserRouter>
     </div>

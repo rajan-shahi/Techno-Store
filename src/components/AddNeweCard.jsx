@@ -2,12 +2,12 @@ import React from "react";
 
 const AddNeweCard = () => {
   return (
-    <div className=" flex justify-center py-4">
+    <div className=" flex justify-center py-5">
       <div className=" flex  justify-between  w-10/12">
         {/* left */}
-        <div className="w-5/12   flex flex-col  gap-8 justify-center">
+        <div className="w-5/12   flex flex-col  gap-6 justify-center">
           <div>
-            <h1 className=" text-3xl text-gray-500 flex justify-center cursor-pointer">
+            <h1 className=" text-3xl text-gray-500 flex justify-center cursor-pointer hover:text-orange-400">
               Add New Card
             </h1>
           </div>
@@ -53,7 +53,7 @@ const AddNeweCard = () => {
             ></textarea>
           </div>
           <div>
-            <button>Create</button>
+            <button  className=" flex justify-center text-sm text-white bg-blue-400 border-2  py-2 w-[500px] rounded-lg  ">Create</button>
           </div>
         </div>
         {/* right */}
@@ -79,7 +79,7 @@ const AddNeweCard = () => {
                 <span className=" text-sm text-gray-500">Add features</span>
                 <input   className=" border-2 px-2 py-2 w-[500px] rounded-full outline-orange-400 placeholder:text-sm" type="text" placeholder="e.g page design" />
             </div>
-            <div>
+            <div className=" flex flex-col gap-1">
                 <span className=" text-sm text-gray-500">Price</span>
                 <input   className=" border-2 px-2 py-2 w-[500px] rounded-full outline-orange-400 placeholder:text-sm" type="number" />
             </div>

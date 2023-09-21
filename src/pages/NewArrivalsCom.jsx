@@ -9,6 +9,7 @@ import Seven from "../assets/07.jpg";
 import Eighteen from "../assets/18.jpg";
 import Seventeen from "../assets/17.jpg";
 import Ninteen from "../assets/19.jpg";
+import { Link } from "react-router-dom";
 
 const NewArrivalsCom = () => {
   const [actives, setActives] = useState(products);
@@ -59,9 +60,10 @@ const NewArrivalsCom = () => {
                   <p className=" text-orange-600 text-2xl cursor-pointer">
                     {product.price}
                   </p>
+                  <Link to={"/add to card"}>
                   <p className=" flex items-center bg-orange-300 px-4 py-2 border rounded-full text-white cursor-pointer hover:bg-orange-600     transition all  ease-in-out ">
                     {product.card}
-                  </p>
+                  </p></Link>
                 </div>
               </div>
             ))}
@@ -81,7 +83,7 @@ const products = [
     model: "Apple ipad Mini",
     desc: "G2356",
     price: " $ 1250.00",
-    card: "Add to Card",
+    card: "Add to New Card",
   },
   {
     image: Two,
@@ -89,7 +91,7 @@ const products = [
     model: "New X5c-12.4Ghz Gyro",
     desc: "Rc Quadcopter Drone",
     price: " $ 12590.00",
-    card: "Add to Card",
+    card: "Add to New Card",
   },
   {
     image: Five,
@@ -97,7 +99,7 @@ const products = [
     model: "Apple Ipad New",
     desc: "G2356",
     price: " $ 12400.00",
-    card: "Add to Card",
+    card: "Add to New Card",
   },
   {
     image: Six,
@@ -105,7 +107,7 @@ const products = [
     model: "New X5c-12563Djk",
     desc: "CKli-01Jb",
     price: " $ 12542.00",
-    card: "Add to Card",
+    card: "Add to New Card",
   },
   {
     image: Three,
@@ -113,7 +115,7 @@ const products = [
     model: "Beats Solo",
     desc: "HD",
     price: " $ 756250.00",
-    card: "Add to Card",
+    card: "Add to New Card",
   },
   {
     image: Seventeen,
@@ -121,7 +123,7 @@ const products = [
     model: "Beats snarkitecture",
     desc: "Headphones",
     price: " $ 12450.00",
-    card: "Add to Card",
+    card: "Add to New Card",
   },
   {
     image: Four,
@@ -129,7 +131,7 @@ const products = [
     model: "Apple Imac Zosc4824",
     desc: "Retin",
     price: " $ 12850.00",
-    card: "Add to Card",
+    card: "Add to New Card",
   },
   {
     image: Seven,
@@ -137,7 +139,7 @@ const products = [
     model: "Apple ipad 1232BG 9.7",
     desc: "Tablet",
     price: " $ 42250.00",
-    card: "Add to Card",
+    card: "Add to New Card",
   },
   {
     image: Eighteen,
@@ -145,7 +147,7 @@ const products = [
     model: "smartphone 75",
     desc: "123GB",
     price: " $ 12552.03650",
-    card: "Add to Card",
+    card: "Add to New Card",
   },
   {
     image: Seventeen,
@@ -153,7 +155,7 @@ const products = [
     model: "Beats snarkitecture",
     desc: "Headphones",
     price: " $ 12450.00",
-    card: "Add to Card",
+    card: "Add to New Card",
   },
   {
     image: Ninteen,
@@ -161,7 +163,7 @@ const products = [
     model: "Notebook Widescreen Z51-120",
     desc: "40K6013UPB10",
     price: " $ 12050.010",
-    card: "Add to Card",
+    card: "Add to New Card",
   },
   {
     image: Three,
@@ -169,7 +171,7 @@ const products = [
     model: "Beats Solo",
     desc: "HD",
     price: " $ 756250.00",
-    card: "Add to Card",
+    card: "Add to New Card",
   },
 ];
 
@@ -180,7 +182,7 @@ const featureds = [
     model: "New X5c-12.4Ghz Gyro",
     desc: "G dwfet 2356",
     price: " $ 1250.00",
-    card: "Add to Featured",
+    card: "Add to New Featured",
   },
   {
     image: Six,
