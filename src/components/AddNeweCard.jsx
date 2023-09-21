@@ -73,7 +73,7 @@ const AddNeweCard = () => {
             </div>
             <div  className=" flex flex-col gap-1">
                 <span className=" text-sm text-gray-500">Revision Number</span>
-                <input   className=" border-2 px-2 py-2 w-[500px] rounded-full outline-orange-400 placeholder:text-sm" type="number" />
+                <input   className=" border-2 px-2 py-2 w-[500px] rounded-full outline-orange-400 placeholder:text-sm" type="number" min={1} />
             </div>
             <div  className=" flex flex-col gap-1">
                 <span className=" text-sm text-gray-500">Add features</span>
@@ -81,7 +81,7 @@ const AddNeweCard = () => {
             </div>
             <div className=" flex flex-col gap-1">
                 <span className=" text-sm text-gray-500">Price</span>
-                <input   className=" border-2 px-2 py-2 w-[500px] rounded-full outline-orange-400 placeholder:text-sm" type="number" />
+                <input   className=" border-2 px-2 py-2 w-[500px] rounded-full outline-orange-400 placeholder:text-sm" type="number" min={1} />
             </div>
           </div>
         </div>
