@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const AddNeweCard = () => {
   return (
     <div className=" flex justify-center py-5">
-      <div className=" flex  justify-between  w-10/12">
+      <div className=" md:flex md:px-0 px-4  justify-between  md:w-10/12 w-full">
         {/* left */}
-        <div className="w-5/12   flex flex-col  gap-6 justify-center">
+        <div className="md:w-5/12 w-full   flex flex-col  gap-6 justify-center">
           <div className=" flex flex-col justify-center items-center">
             <h1 className=" text-3xl text-gray-500 flex justify-center cursor-pointer hover:text-orange-400">
             <span>Add New Card</span>  /or
@@ -20,7 +20,7 @@ const AddNeweCard = () => {
           <div className=" flex flex-col gap-1">
             <span className=" text-sm text-gray-500">Title</span>
             <input
-              className=" border-2 px-2 py-2 w-[500px] rounded-full outline-orange-400 placeholder:text-sm"
+              className=" border-2 px-2 py-2 md:w-[500px] w-[350px] rounded-full outline-orange-400 placeholder:text-sm"
               type="text"
               placeholder="e.g I will do something Iam really good at"
             />
@@ -29,7 +29,7 @@ const AddNeweCard = () => {
           <div className=" flex flex-col gap-1">
             <span className=" text-sm text-gray-500">Category</span>
             <select
-              className="border-2  px-2 py-2 w-[500px] rounded-full outline-orange-400"
+              className="border-2  px-2 py-2 md:w-[500px] w-[350px] rounded-full outline-orange-400"
               name=""
               id=""
             >
@@ -50,7 +50,7 @@ const AddNeweCard = () => {
           </div>
           <div>
             <textarea
-              className=" h-[200px] border-2  px-2 py-2 w-[500px]  outline-orange-400 rounded-lg placeholder:text-sm"
+              className=" h-[200px] border-2  px-2 py-2 md:w-[500px] w-[350px] outline-orange-400 rounded-lg placeholder:text-sm"
               name=""
               id=""
               cols="30"
@@ -59,18 +59,18 @@ const AddNeweCard = () => {
             ></textarea>
           </div>
           <div>
-            <button className=" flex justify-center text-md text-white bg-blue-400 border-2  py-2 w-[500px] rounded-lg  hover:bg-orange-300  ">
+            <button className=" flex justify-center text-md text-white bg-blue-400 border-2  py-2 md:w-[500px] w-[350px] rounded-lg  hover:bg-orange-300  ">
               Create
             </button>
           </div>
         </div>
         {/* right */}
-        <div className=" w-5/12">
+        <div className=" md:w-5/12 w-full ">
           <div className=" flex flex-col gap-6 justify-center">
             <div className=" flex flex-col gap-1">
               <span className=" text-sm text-gray-500">Service Title</span>
               <input
-                className=" border-2 px-2 py-2 w-[500px] rounded-full outline-orange-400 placeholder:text-sm"
+                className=" border-2 px-2 py-2 md:w-[500px] w-[350px] rounded-full outline-orange-400 placeholder:text-sm"
                 type="text"
                 placeholder=" e.g One-page web Design"
               />
@@ -78,7 +78,7 @@ const AddNeweCard = () => {
             <div className=" flex flex-col gap-1">
               <span className=" text-sm text-gray-500">Short Description</span>
               <textarea
-                className=" h-[200px] border-2  px-2 py-2 w-[500px]  outline-orange-400 rounded-lg placeholder:text-sm"
+                className=" h-[200px] border-2  px-2 py-2 md:w-[500px] w-[350px]  outline-orange-400 rounded-lg placeholder:text-sm"
                 name=""
                 id=""
                 cols="30"
@@ -89,14 +89,14 @@ const AddNeweCard = () => {
             <div className=" flex flex-col gap-1">
               <span className=" text-sm text-gray-500">Delivery Time</span>
               <input
-                className=" border-2 px-2 py-2 w-[500px] rounded-full outline-orange-400 placeholder:text-sm"
+                className=" border-2 px-2 py-2 md:w-[500px] w-[350px] rounded-full outline-orange-400 placeholder:text-sm"
                 type="time"
               />
             </div>
             <div className=" flex flex-col gap-1">
               <span className=" text-sm text-gray-500">Revision Number</span>
               <input
-                className=" border-2 px-2 py-2 w-[500px] rounded-full outline-orange-400 placeholder:text-sm"
+                className=" border-2 px-2 py-2 md:w-[500px] w-[350px] rounded-full outline-orange-400 placeholder:text-sm"
                 type="number"
                 min={1}
               />
@@ -104,7 +104,7 @@ const AddNeweCard = () => {
             <div className=" flex flex-col gap-1">
               <span className=" text-sm text-gray-500">Add features</span>
               <input
-                className=" border-2 px-2 py-2 w-[500px] rounded-full outline-orange-400 placeholder:text-sm"
+                className=" border-2 px-2 py-2 md:w-[500px] w-[350px] rounded-full outline-orange-400 placeholder:text-sm"
                 type="text"
                 placeholder="e.g page design"
               />
@@ -112,7 +112,7 @@ const AddNeweCard = () => {
             <div className=" flex flex-col gap-1">
               <span className=" text-sm text-gray-500">Price</span>
               <input
-                className=" border-2 px-2 py-2 w-[500px] rounded-full outline-orange-400 placeholder:text-sm"
+                className=" border-2 px-2 py-2 md:w-[500px] w-[350px] rounded-full outline-orange-400 placeholder:text-sm"
                 type="number"
                 min={1}
               />
