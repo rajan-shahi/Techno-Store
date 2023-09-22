@@ -32,12 +32,14 @@ const BlogSideBar = () => {
           </h1>
         </div>
       </div>
-      <div className=" flex  justify-center  gap-10 w-10/12 py-8">
+      <div className=" md:flex md:px-0 px-3 justify-center  gap-10 w-full md:w-10/12 py-8">
         {/* left */}
-        <div className=" flex flex-col gap-4 justify-center w-8/12">
-          <div>
-            <img className=" w-full h-[350px] rounded-lg" src={about} alt="" />
+        <div className=" flex flex-col gap-4 justify-center md:w-8/12 w-full">
+        <div>
+            <img className=" w-full  md:h-[350px]  h-[300px] rounded-lg" src={about} alt="" />
           </div>
+      
+        
           <div>
             <h1 className=" text-xl text-gray-600 hover:text-orange-400 cursor-pointer">
               There are many variations of passages
@@ -61,8 +63,8 @@ const BlogSideBar = () => {
               Read More
             </button>
           </div>
-          <div>
-            <img className=" rounded-lg pt-10" src={post02} alt="" />
+           <div>
+            <img className=" w-full  md:h-[350px]  h-[300px] rounded-lg pt-10" src={post02} alt="" />
           </div>
           <div>
             <h1 className=" text-xl text-gray-600 hover:text-orange-400 cursor-pointer">
@@ -88,7 +90,7 @@ const BlogSideBar = () => {
             </button>
           </div>
           <div>
-            <img className=" rounded-lg pt-10" src={post03} alt="" />
+            <img className=" w-full md:h-[350px]  h-[300px]  rounded-lg pt-10" src={post03} alt="" />
           </div>
           <div>
             <h1 className=" text-xl text-gray-600 hover:text-orange-400 cursor-pointer">
@@ -126,10 +128,10 @@ const BlogSideBar = () => {
             <h1 className=" text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
               02
             </h1>
-            <h1 className=" text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
+            <h1 className="  md:flex  hidden text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
               03
             </h1>
-            <h1 className=" text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
+            <h1 className=" md:flex hidden text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
               04
             </h1>
             <h1 className=" text-sm text-gray-500 cursor-pointer hover:text-orange-400">
@@ -142,31 +144,18 @@ const BlogSideBar = () => {
         </div>
 
         {/* right */}
-        <div className=" flex flex-col gap-6  w-2/12">
+        <div className=" flex flex-col  md:pt-0 pt-16 gap-6 w-full  md:w-2/12">
           <div>
             <input
-              className=" border bg-gray-200 py-2 px-2 rounded-full placeholder:text-sm outline-orange-400 w-[300px]"
+              className=" border bg-gray-200 py-2 px-2 rounded-full placeholder:text-sm outline-orange-400 w-full md:w-[300px]"
               type="text"
               placeholder=" search"
             />
           </div>
-          {/* colors */}
-          <div className=" flex flex-col w-[300px] px-4">
-            <div className=" flex w-[300px] items-center justify-between py-4 border-b border-gray-300">
-              <h1 className=" text-xl text-gray-600 ">Colors</h1>
-              <span className=" cursor-pointer">
-                <AiOutlineMinus size={20} />
-              </span>
-            </div>
-            <div className=" py-5">
-              <input
-                className=" border bg-gray-200 py-2 px-2 rounded-full placeholder:text-sm outline-orange-400 w-[300px]"
-                type="text"
-                placeholder=" colors search"
-              />
-            </div>
+
+          <div className=" flex flex-col  w-full md:w-[300px] px-4">
             <div className=" flex flex-col px-4">
-              <div className=" flex  items-center justify-between py-4 border-b border-gray-300">
+              <div className=" flex  items-center justify-between py-4 border-b  border-gray-300">
                 <h1 className=" text-xl text-gray-600 ">Categories</h1>
                 <span className=" cursor-pointer">
                   <AiOutlineMinus size={20} />
@@ -199,27 +188,70 @@ const BlogSideBar = () => {
                 </h1>
               </div>
             </div>
-            <div>
-              <h1>Latest Products</h1>
+            <div className=" py-2 border-b">
+              <h1 className=" text-lg py-2  text-gray-600">Latest Products</h1>
             </div>
-            <div className=" grid grid-cols-2">
+            <div className=" grid grid-cols-2 gap-8 py-4">
               <div>
-                <h1>SmartPhone</h1>
+                <h1 className=" py-2 px-6 border-2  text-gray-400 rounded-full bg-gray-200 text-sm cursor-pointer hover:bg-orange-400 hover:text-white hover:border-orange-400">
+                  SmartPhone
+                </h1>
               </div>
               <div>
-                <h1>Cameras</h1>
+                <h1 className=" py-2 px-6 border-2  text-gray-400 rounded-full bg-gray-200 text-sm cursor-pointer hover:bg-orange-400 hover:text-white hover:border-orange-400 flex justify-center">
+                  Cameras
+                </h1>
               </div>
               <div>
-                <h2>HeadPhones</h2>
+                <h2 className=" py-2 px-6 border-2  text-gray-400 rounded-full bg-gray-200 text-sm cursor-pointer hover:bg-orange-400 hover:text-white hover:border-orange-400">
+                  HeadPhones
+                </h2>
               </div>
               <div>
-                <h1>Musics</h1>
+                <h1 className=" py-2 px-6 border-2  text-gray-400 rounded-full bg-gray-200 text-sm cursor-pointer hover:bg-orange-400 hover:text-white hover:border-orange-400">
+                  Musics
+                </h1>
               </div>
               <div>
-                <h1>Computers</h1>
+                <h1 className=" py-2 px-6 border-2  text-gray-400 rounded-full bg-gray-200 text-sm cursor-pointer hover:bg-orange-400 hover:text-white hover:border-orange-400">
+                  Computers
+                </h1>
               </div>
               <div>
-                <h2>Laptops</h2>
+                <h2 className=" py-2 px-6 border-2  text-gray-400 rounded-full bg-gray-200 text-sm cursor-pointer hover:bg-orange-400 hover:text-white hover:border-orange-400 flex justify-center">
+                  Laptops
+                </h2>
+              </div>
+            </div>
+
+            <div className=" py-2 border-b">
+              <h1 className=" text-lg py-2  text-gray-600">Popular Tags</h1>
+            </div>
+            <div className=" grid grid-cols-2 gap-8 py-4">
+              <div>
+                <h1 className=" py-2 px-6 border-2  text-gray-400 rounded-full bg-gray-200 text-sm cursor-pointer hover:bg-orange-400 hover:text-white hover:border-orange-400 flex justify-center">
+                  Phone
+                </h1>
+              </div>
+              <div>
+                <h1 className=" py-2 px-6 border-2  text-gray-400 rounded-full bg-gray-200 text-sm cursor-pointer hover:bg-orange-400 hover:text-white hover:border-orange-400 flex justify-center">
+                  Cameras
+                </h1>
+              </div>
+              <div>
+                <h1 className=" py-2 px-6 border-2  text-gray-400 rounded-full bg-gray-200 text-sm cursor-pointer hover:bg-orange-400 hover:text-white hover:border-orange-400">
+                  Computers
+                </h1>
+              </div>
+              <div>
+                <h2 className=" py-2 px-6 border-2  text-gray-400 rounded-full bg-gray-200 text-sm cursor-pointer hover:bg-orange-400 hover:text-white hover:border-orange-400">
+                  HeadPhones
+                </h2>
+              </div>
+              <div>
+                <h2 className=" py-2 px-6 border-2  text-gray-400 rounded-full bg-gray-200 text-sm cursor-pointer hover:bg-orange-400 hover:text-white hover:border-orange-400 flex justify-center">
+                  Laptops
+                </h2>
               </div>
             </div>
           </div>
