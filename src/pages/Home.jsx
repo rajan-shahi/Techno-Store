@@ -12,11 +12,10 @@ import Copyright from "../components/Copyright";
 import MobileMenu from "../components/MobileMenu";
 import SmartPhone from "./SmartPhone";
 import NavbrFooter from "./../components/NavbrFooter";
-import BlogSideBar from "../components/BlogSideBar";
+
 const Home = () => {
   return (
     <div name="home">
-      <BlogSideBar/>
       <MobileMenu />
       <Navbar />
       <NavbrFooter />

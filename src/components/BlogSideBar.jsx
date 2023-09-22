@@ -6,9 +6,10 @@ import { AiOutlineMinus } from "react-icons/ai";
 import about from "../assets/about.jpg";
 import post02 from "../assets/post-02.jpg";
 import post03 from "../assets/post-03.jpg";
+import { Link } from "react-router-dom";
 const BlogSideBar = () => {
   return (
-    <div className=" flex justify-center items-center flex-col">
+    <div name="blog" className=" flex justify-center items-center flex-col">
       <div className=" flex justify-start items-center py-6  px-56 gap-6 border-b-2 w-full">
         <div className=" flex justify-center items-center">
           <h1 className=" text-sm text-gray-500 hover:text-orange-400 cursor-pointer">
@@ -35,11 +36,14 @@ const BlogSideBar = () => {
       <div className=" md:flex md:px-0 px-3 justify-center  gap-10 w-full md:w-10/12 py-8">
         {/* left */}
         <div className=" flex flex-col gap-4 justify-center md:w-8/12 w-full">
-        <div>
-            <img className=" w-full  md:h-[350px]  h-[300px] rounded-lg" src={about} alt="" />
+          <div>
+            <img
+              className=" w-full  md:h-[350px]  h-[300px] rounded-lg"
+              src={about}
+              alt=""
+            />
           </div>
-      
-        
+
           <div>
             <h1 className=" text-xl text-gray-600 hover:text-orange-400 cursor-pointer">
               There are many variations of passages
@@ -63,8 +67,12 @@ const BlogSideBar = () => {
               Read More
             </button>
           </div>
-           <div>
-            <img className=" w-full  md:h-[350px]  h-[300px] rounded-lg pt-10" src={post02} alt="" />
+          <div>
+            <img
+              className=" w-full  md:h-[350px]  h-[300px] rounded-lg pt-10"
+              src={post02}
+              alt=""
+            />
           </div>
           <div>
             <h1 className=" text-xl text-gray-600 hover:text-orange-400 cursor-pointer">
@@ -90,7 +98,11 @@ const BlogSideBar = () => {
             </button>
           </div>
           <div>
-            <img className=" w-full md:h-[350px]  h-[300px]  rounded-lg pt-10" src={post03} alt="" />
+            <img
+              className=" w-full md:h-[350px]  h-[300px]  rounded-lg pt-10"
+              src={post03}
+              alt=""
+            />
           </div>
           <div>
             <h1 className=" text-xl text-gray-600 hover:text-orange-400 cursor-pointer">
@@ -116,11 +128,17 @@ const BlogSideBar = () => {
             </button>
           </div>
           <div className=" flex justify-center items-center gap-4 py-8 border-b-2 border-t-2">
-            <span className=" text-gray-500">
-              <HiOutlineArrowNarrowLeft size={20} />
+            <span className=" text-gray-500 cursor-pointer hover:text-orange-400">
+              <Link to="blog" spy={true} smooth={true} duration={500}>
+                {" "}
+                <HiOutlineArrowNarrowLeft size={20} />
+              </Link>
             </span>
             <h1 className=" text-sm text-gray-500 cursor-pointer hover:text-orange-400">
-              Prev Page
+              <Link to="blog" spy={true} smooth={true} duration={500}>
+                {" "}
+                Prev Page
+              </Link>
             </h1>
             <h1 className=" text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
               01
@@ -133,13 +151,15 @@ const BlogSideBar = () => {
             </h1>
             <h1 className=" md:flex hidden text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
               04
-            </h1>
-            <h1 className=" text-sm text-gray-500 cursor-pointer hover:text-orange-400">
-              Next Page
-            </h1>
-            <span className=" text-gray-500">
-              <HiOutlineArrowNarrowRight size={20} />
-            </span>
+            </h1>{" "}
+            <Link to={"/"}>
+              <h1 className=" text-sm text-gray-500 cursor-pointer hover:text-orange-400">
+                 Next Page   
+              </h1> </Link>
+              <span className=" text-gray-500">
+                <HiOutlineArrowNarrowRight size={20} />
+              </span>{" "}
+        
           </div>
         </div>
 

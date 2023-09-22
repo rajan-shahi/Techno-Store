@@ -7,6 +7,7 @@ import ShopBar from "./pages/ShopBar";
 import SighIn from "./components/SighIn";
 import Signup from "./components/Signup";
 import AddNeweCard from "./components/AddNeweCard";
+import BlogSideBar from "./components/BlogSideBar";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/signin" element={<SighIn/>} />
           <Route path="/signup" element={<Signup/>} />
           <Route path="/add to card" element={<AddNeweCard/>} />
+          <Route path="/blog" element={<BlogSideBar/>} />
         </Routes>
       </BrowserRouter>
     </div>

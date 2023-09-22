@@ -77,6 +77,12 @@ const Navbar = () => {
               Shop Cards
             </p>
           </Link>
+          
+          <Link to={"/blog"}>
+            <p className=" border-r-2 pr-2 hover:text-orange-600 cursor-pointer">
+              Blog SideBar
+            </p>
+          </Link>
 
           <Link to={"/signin"}>
             <p className="  hover:text-orange-600 cursor-pointer">Sign in</p>
