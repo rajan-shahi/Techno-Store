@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const BlogSideBar = () => {
   return (
     <div name="blog" className=" flex justify-center items-center flex-col">
-      <div className=" flex justify-start items-center py-6  px-56 gap-6 border-b-2 w-full">
+      <div className=" flex md:justify-start justify-center items-center py-6  md:px-56 gap-6 border-b-2 w-full">
         <div className=" flex justify-center items-center">
           <h1 className=" text-sm text-gray-500 hover:text-orange-400 cursor-pointer">
             Home
@@ -129,16 +129,12 @@ const BlogSideBar = () => {
           </div>
           <div className=" flex justify-center items-center gap-4 py-8 border-b-2 border-t-2">
             <span className=" text-gray-500 cursor-pointer hover:text-orange-400">
-              <Link to="blog" spy={true} smooth={true} duration={500}>
-                {" "}
-                <HiOutlineArrowNarrowLeft size={20} />
-              </Link>
+              {" "}
+              <HiOutlineArrowNarrowLeft size={20} />
             </span>
             <h1 className=" text-sm text-gray-500 cursor-pointer hover:text-orange-400">
-              <Link to="blog" spy={true} smooth={true} duration={500}>
-                {" "}
-                Prev Page
-              </Link>
+              {" "}
+              Prev Page
             </h1>
             <h1 className=" text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
               01
@@ -154,12 +150,12 @@ const BlogSideBar = () => {
             </h1>{" "}
             <Link to={"/"}>
               <h1 className=" text-sm text-gray-500 cursor-pointer hover:text-orange-400">
-                 Next Page   
-              </h1> </Link>
-              <span className=" text-gray-500">
-                <HiOutlineArrowNarrowRight size={20} />
-              </span>{" "}
-        
+                Next Page
+              </h1>{" "}
+            </Link>
+            <span className=" text-gray-500">
+              <HiOutlineArrowNarrowRight size={20} />
+            </span>{" "}
           </div>
         </div>
 

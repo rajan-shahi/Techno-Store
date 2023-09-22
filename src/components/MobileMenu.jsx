@@ -29,29 +29,25 @@ const MobileMenu = () => {
           >
             <li className="   hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200">
               {" "}
-              <Link to={"/signin"}>
-             Sign in
-              </Link>
+              <Link to={"/signin"}>Sign in</Link>
             </li>
 
             <li className="  hover:text-orange-400 cursor-pointer py-4 text-4xl  text-gray-200">
-              <Link to={"/about"}>
-              About
-              </Link>
+              <Link to={"/about"}>About</Link>
             </li>
 
             <li className="   hover:text-orange-400 cursor-pointer py-4 text-4xl text-gray-200">
               {" "}
-              <Link to={"/shopbar"}>
-              Shop cards
-              </Link>
-              
+              <Link to={"/shopbar"}>Shop cards</Link>
+            </li>
+
+            <li className="   hover:text-orange-400 cursor-pointer py-4 text-4xl text-gray-200">
+              {" "}
+              <Link to={"/blog"}>Blog SideBar</Link>
             </li>
             <li className="   hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200">
               {" "}
-              <Link to={"/contact"}>
-              Contacts
-              </Link>
+              <Link to={"/contact"}>Contacts</Link>
             </li>
           </ul>
         </div>

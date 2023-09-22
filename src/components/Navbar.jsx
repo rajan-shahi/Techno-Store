@@ -18,8 +18,8 @@ const Navbar = () => {
         <div className=" text-gray-600">
           <p>
             {" "}
-            <span className="text-orange-600 ">Call Us: </span>{" "}
-            <span className=" cursor-pointer">(888) 123456789</span>
+            <span className="text-orange-600 text-xl ">Call Us: </span>{" "}
+            <span className=" cursor-pointer text-xl">(888) 123456789</span>
           </p>
         </div>
 
