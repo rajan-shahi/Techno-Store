@@ -35,7 +35,7 @@ const BlogSideBar = () => {
       </div>
       <div className=" md:flex md:px-0 px-3 justify-center  gap-10 w-full md:w-10/12 py-8">
         {/* left */}
-        <div className=" flex flex-col gap-4 justify-center md:w-8/12 w-full">
+        <div className=" flex flex-col md:px-0 px-2 gap-4 justify-center md:w-8/12 w-full">
           <div>
             <img
               className=" w-full  md:h-[350px]  h-[300px] rounded-lg"
