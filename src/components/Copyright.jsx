@@ -10,7 +10,7 @@ const Copyright = () => {
         </div>
         <div>
           <Link to="navbar" spy={true} smooth={true} duration={500}>
-            <AiOutlineArrowUp size={30}  className=" cursor-pointer"/>
+            <AiOutlineArrowUp size={30} className=" cursor-pointer" />
           </Link>
         </div>
       </div>

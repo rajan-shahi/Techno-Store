@@ -5,9 +5,9 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
 const NavbrFooter = () => {
   return (
-    <div className=" hidden md:flex h-[120px] justify-center  items-center">
+    <div className=" hidden md:flex   md:pt-36 md:pb-10 h-[120px] justify-center  items-center">
       {/* container */}
-      <div className="  w-10/12 flex justify-between ">
+      <div className="   w-full md:w-10/12 flex justify-between ">
         {/* left */}
         <div className=" flex  w-[500px] border-2 rounded-full  px-2 text-sm">
           <div className=" flex items-center">
