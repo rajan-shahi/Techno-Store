@@ -20,7 +20,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const CategoriesComponents = () => {
   return (
-    <div  className="  flex justify-center">
+    <div name="navbar" className="  flex justify-center">
       {/* container */}
       <div name="Home" className=" w-full md:w-10/12  flex gap-8 py-6 justify-center ">
         {/* leftContainer */}
