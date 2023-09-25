@@ -11,13 +11,6 @@ import Eight8 from "../assets/08.png";
 import Nine9 from "../assets/09.png";
 import Ten10 from "../assets/10.png";
 import clock from "../assets/clock.png";
-import One from "../assets/01.jpg";
-import Two from "../assets/02.jpg";
-import Five from "../assets/05.jpg";
-import Six from "../assets/06.jpg";
-import Three from "../assets/03.jpg";
-import Four from "../assets/04.jpg";
-import Seven from "../assets/07.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -29,7 +22,7 @@ const CategoriesComponents = () => {
   return (
     <div  className="  flex justify-center">
       {/* container */}
-      <div name="Home" className=" w-10/12  flex gap-8 py-6 justify-center ">
+      <div name="Home" className=" w-full md:w-10/12  flex gap-8 py-6 justify-center ">
         {/* leftContainer */}
         <div className=" border-2 border-gray-600  sm:flex   hidden flex-col p-8 h-max gap-6    ">
           <div className=" flex gap-4  text-gray-700">
@@ -71,8 +64,8 @@ const CategoriesComponents = () => {
           >
             {clocks.map((clock, index) => (
               <SwiperSlide>
-                <div key={index} className="flex gap-4  md:p-20  p-10   ">
-                  <div className=" flex-1 flex flex-col gap-2 text-gray-500 ">
+                <div key={index} className="md:flex gap-4  md:p-20  md:px-10 px-4">
+                  <div className=" md:flex-1 flex md:justify-start md:items-start justify-center items-center  flex-col gap-2 text-gray-500 ">
                     <h1>{clock.name}</h1>
                     <p className=" text-3xl pb-4  text-orange-400">
                       {clock.model}
@@ -85,9 +78,9 @@ const CategoriesComponents = () => {
                       {clock.button}
                     </h1>
                   </div>
-                  <div className=" flex-1 hidden md:flex sm:hidden  cursor-pointer">
+                  <div className=" md:flex-1 cursor-pointer">
                     <img
-                      className="  bg-transparent"
+                      className="   md:pt-0 pt-5 md:py-0 py-4 bg-transparent"
                       src={clock.image}
                       alt=""
                     />
@@ -160,40 +153,6 @@ const clocks = [
     button: "Show Now",
   },
   {
-    image: One,
-    name: "Enhanced Technology",
-    model: "SMART TV",
-    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
-    price: "$1.635.999",
-    button: "Show Now",
-  },
-  {
-    image: Two,
-    name: "Enhanced Technology",
-    model: "SMART TV",
-    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
-    price: "$1.635.999",
-    button: "Show Now",
-  },
-  {
-    image: Five,
-    name: "Enhanced Technology",
-    model: "SMART TV",
-    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
-    price: "$1.635.999",
-    button: "Show Now",
-  },
-
-  {
-    image: Six,
-    name: "Enhanced Technology",
-    model: "SMART TV",
-    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
-    price: "$1.635.999",
-    button: "Show Now",
-  },
-
-  {
     image: clock,
     name: "Enhanced Technology",
     model: "SMART TV",
@@ -202,15 +161,7 @@ const clocks = [
     button: "Show Now",
   },
   {
-    image: Three,
-    name: "Enhanced Technology",
-    model: "SMART TV",
-    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
-    price: "$1.635.999",
-    button: "Show Now",
-  },
-  {
-    image: Four,
+    image: clock,
     name: "Enhanced Technology",
     model: "SMART TV",
     desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
@@ -227,11 +178,21 @@ const clocks = [
   },
 
   {
-    image: Seven,
+    image: clock,
     name: "Enhanced Technology",
     model: "SMART TV",
     desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
     price: "$1.635.999",
     button: "Show Now",
   },
+
+  {
+    image: clock,
+    name: "Enhanced Technology",
+    model: "SMART TV",
+    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
+    price: "$1.635.999",
+    button: "Show Now",
+  },
+  
 ];

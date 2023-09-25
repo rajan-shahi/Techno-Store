@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 const Navbar = () => {
   return (
-    <div className="  flex justify-center  border-b-2 md:pt-0 pt-16 ">
+    <div className="  flex justify-center  border-b-2 md:pt-4 pt-14 pb-4 ">
       {/* container */}
       <div
         name="navbar"
