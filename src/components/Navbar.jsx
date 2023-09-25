@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 const Navbar = () => {
   return (
-    <div   name="navbar" className="  z-30 bg-white md:fixed md:left-0 md:right-0   flex justify-center  border-b-2 md:pt-4 pt-14 pb-4 ">
+    <div className="  z-30 bg-white md:fixed md:left-0 md:right-0   flex justify-center  border-b-2 md:pt-4 pt-14 pb-4 ">
       {/* container */}
       <div
       
