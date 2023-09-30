@@ -32,6 +32,7 @@ const CategoriesComponents = () => {
             test
             loki
             rajan
+            gita
             <h1 className=" text-2xl">All Categories</h1>
           </div>
           {alls.map((all, index) => (
