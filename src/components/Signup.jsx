@@ -25,6 +25,7 @@ const Signup = () => {
             />
           </div>
           loki
+          rajaan
           <div className=" flex flex-col">
             <span className=" text-md text-gray-600">Email</span>
             <input
