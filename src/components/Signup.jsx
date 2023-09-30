@@ -24,6 +24,7 @@ const Signup = () => {
               placeholder="Enter Username"
             />
           </div>
+          loki
           <div className=" flex flex-col">
             <span className=" text-md text-gray-600">Email</span>
             <input
