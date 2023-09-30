@@ -31,6 +31,7 @@ const CategoriesComponents = () => {
             </span>
             test
             loki
+            rajan
             <h1 className=" text-2xl">All Categories</h1>
           </div>
           {alls.map((all, index) => (
