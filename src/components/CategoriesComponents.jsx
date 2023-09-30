@@ -30,6 +30,7 @@ const CategoriesComponents = () => {
               <AiOutlineAlignLeft size={30} />
             </span>
             test
+            loki
             <h1 className=" text-2xl">All Categories</h1>
           </div>
           {alls.map((all, index) => (
