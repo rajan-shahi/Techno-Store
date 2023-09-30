@@ -29,6 +29,7 @@ const CategoriesComponents = () => {
             <span className=" cursor-pointer">
               <AiOutlineAlignLeft size={30} />
             </span>
+            test
             <h1 className=" text-2xl">All Categories</h1>
           </div>
           {alls.map((all, index) => (
@@ -44,6 +45,7 @@ const CategoriesComponents = () => {
                 {all.name}
               </h1>
             </div>
+            
           ))}
         </div>
         {/* rightContainer */}
