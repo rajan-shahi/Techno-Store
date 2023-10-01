@@ -43,6 +43,7 @@ const CategoriesComponents = () => {
               <h1 className=" cursor-pointer hover:text-orange-400  ">
                 {all.name}
               </h1>
+              loki
             </div>
             
           ))}
