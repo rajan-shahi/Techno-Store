@@ -45,6 +45,7 @@ const CategoriesComponents = () => {
               </h1>
               loki
               rajan
+              tapi
             </div>
             
           ))}
