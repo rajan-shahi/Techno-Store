@@ -44,6 +44,7 @@ const CategoriesComponents = () => {
                 {all.name}
               </h1>
               loki
+              rajan
             </div>
             
           ))}
