@@ -24,6 +24,7 @@ const MobileMenu = () => {
         gita
         tapi
         upi
+        chet
         <div className=" ">
           <ul
             className={
