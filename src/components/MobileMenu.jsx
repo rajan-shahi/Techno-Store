@@ -23,6 +23,7 @@ const MobileMenu = () => {
         rajan
         gita
         tapi
+        upi
         <div className=" ">
           <ul
             className={
