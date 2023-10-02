@@ -19,12 +19,6 @@ const MobileMenu = () => {
             )}
           </div>
         </div>
-        loki
-        rajan
-        gita
-        tapi
-        upi
-        chet
         <div className=" ">
           <ul
             className={
