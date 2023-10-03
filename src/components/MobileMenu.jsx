@@ -23,6 +23,7 @@ const MobileMenu = () => {
               <h1 className="  flex flex-col justify-between items-center  text-gray-100">
                 loki
                 rajan
+                gita
               </h1>
             </p>
           </div>
