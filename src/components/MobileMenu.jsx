@@ -21,6 +21,7 @@ const MobileMenu = () => {
           loki
           rajan
           gita
+          tapi
         </div>
         <div className=" ">
           <ul
