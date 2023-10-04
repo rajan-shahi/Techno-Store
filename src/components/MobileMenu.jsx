@@ -21,6 +21,7 @@ const MobileMenu = () => {
           <div className=" flex flex-col justify-center  bg-gray-700 font-bold items-center">
             loki 
             rajan
+            gita
           </div>
         </div>
         <div className=" ">
