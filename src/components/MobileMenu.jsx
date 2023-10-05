@@ -18,9 +18,6 @@ const MobileMenu = () => {
               <AiOutlineClose size={30} className="  text-black" />
             )}
           </div>
-  loki
-  rajan
-  gita
         </div>
         <div className=" ">
           <ul
