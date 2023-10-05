@@ -20,6 +20,7 @@ const MobileMenu = () => {
           </div>
   loki
   rajan
+  gita
         </div>
         <div className=" ">
           <ul
