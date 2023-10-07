@@ -7,11 +7,11 @@ import Three from "../assets/03.jpg";
 import Eighteen from "../assets/18.jpg";
 import Seventeen from "../assets/17.jpg";
 import Ninteen from "../assets/19.jpg";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 import { Pagination, Navigation } from "swiper/modules";
 const BestSellersComp = () => {
   return (
