@@ -22,6 +22,7 @@ const AddNeweCard = () => {
           </div>
 loki
 rajan
+gita kumari bista
           <div className=" flex flex-col gap-1">
             <span className=" text-sm text-gray-500">Category</span>
             <select
