@@ -21,6 +21,7 @@ const AddNeweCard = () => {
             />
           </div>
 loki
+rajan
           <div className=" flex flex-col gap-1">
             <span className=" text-sm text-gray-500">Category</span>
             <select
