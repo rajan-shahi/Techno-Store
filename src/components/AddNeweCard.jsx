@@ -20,6 +20,7 @@ const AddNeweCard = () => {
               placeholder="e.g I will do something Iam really good at"
             />
           </div>
+          hello
           <div className=" flex flex-col gap-1">
             <span className=" text-sm text-gray-500">Category</span>
             <select
