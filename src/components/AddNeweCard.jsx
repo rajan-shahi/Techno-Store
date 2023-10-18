@@ -27,7 +27,7 @@ const AddNeweCard = () => {
               name=""
               id=""
             >
-              hello
+          
               <option value="">Design</option>
               <option value="Web Development">Web Development</option>
               <option value="Music">Music</option>
