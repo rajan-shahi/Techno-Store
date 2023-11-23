@@ -80,6 +80,7 @@ const BestSellers = () => {
           {/* left */}
           <div className=" flex pl-8  pb-6 flex-col gap-4 ">
             <h1 className=" text-2xl">Featured</h1>
+            rajan abahadur shahi 
             <hr className=" bg-gray-300 h-0.5  " />
             {features.map((feature, index) => (
               <div key={index} className=" flex gap-6 items-center">
