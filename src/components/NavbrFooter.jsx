@@ -72,6 +72,7 @@ const NavbrFooter = () => {
         </div>
       </div>
       loki chaulagain
+      rajan bahadur shahi
     </div>
   );
 };
