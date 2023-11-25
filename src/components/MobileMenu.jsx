@@ -19,7 +19,7 @@ const MobileMenu = () => {
             )}
           </div>
         </div>
-        <div className=" ">
+        <div>
           <ul
             className={
               !nav
