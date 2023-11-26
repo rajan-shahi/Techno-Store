@@ -5,6 +5,7 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { AiOutlineMinus } from "react-icons/ai";
 import about from "../assets/about.jpg";
 import post02 from "../assets/post-02.jpg";
+import post03 from "../assets/post-03.jpg";
 import { Link } from "react-router-dom";
 const BlogSideBar = () => {
   return (
