@@ -252,6 +252,7 @@ const BlogSideBar = () => {
               <div>
                 <h1 className=" py-2 px-6 border-2  text-gray-400 rounded-full bg-gray-200 text-sm cursor-pointer hover:bg-orange-400 hover:text-white hover:border-orange-400 flex justify-center">
                   Cameras
+                  rajan bahadur shahi
                 </h1>
               </div>
               <div>
