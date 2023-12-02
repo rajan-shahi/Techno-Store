@@ -26,9 +26,10 @@ const ShopBar = () => {
     <div className=" flex flex-col justify-center py-2">
       <div className=" flex justify-center md:gap-4  py-3">
         <div className=" flex items-center md:gap-2">
+          <Link to={"/"}>
           <h1 className=" md:flex border md:px-8 px-4 py-2 rounded-full text-gray-500 cursor-pointer hover:text-white hover:bg-orange-400 hidden ">
             home
-          </h1>
+          </h1></Link>
           <span className=" text-gray-400 md:flex hidden">
             <BiRightArrowAlt size={30} />
           </span>
