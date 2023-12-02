@@ -51,7 +51,7 @@ const Navbar = () => {
           >
             <option value="">Language</option>
             <option value="English">English</option>
-            <option value="Nepali">Nepali</option>
+            <option value="Hindi">Hindi</option>            <option value="Nepali">Nepali</option>
             <option value="Espanol">Espanol</option>
             <option value="Italion">Italion</option>
             <option value="Turkish">Turkish</option>
