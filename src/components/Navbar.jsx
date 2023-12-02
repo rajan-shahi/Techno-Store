@@ -56,6 +56,7 @@ const Navbar = () => {
             <option value="Italion">Italion</option>
             <option value="Turkish">Turkish</option>
             rajan bahadur shahi
+             git kumari bista
           </select>
         </div>
 
