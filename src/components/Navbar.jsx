@@ -19,7 +19,7 @@ const Navbar = () => {
           <p>
             {" "}
             <span className= "text-orange-600   text-sm md:text-xl ">Call Us: </span>{" "}
-            <span className=" cursor-pointer text-sm md:text-lg">(888) 123456789</span>
+            <span className=" cursor-pointer text-sm md:text-lg">(+977) 9866448106</span>
           </p>
         </div>
 
