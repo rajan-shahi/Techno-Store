@@ -9,7 +9,7 @@ const NavbrFooter = () => {
       {/* container */}
       <div className="   w-full md:w-10/12 flex justify-between ">
         {/* left */}
-        <div className=" flex  w-[500px] border-2 rounded-full  px-2 text-sm">
+        <div className=" flex  w-[500px] border rounded-full  px-2 text-sm">
           <div className=" flex items-center">
             <select
               id=""

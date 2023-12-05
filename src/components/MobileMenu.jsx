@@ -8,7 +8,7 @@ const MobileMenu = () => {
   const [nav, setNev] = useState(false);
   const handleClick = () => setNev(!nav);
   return (
-    <div className="fixed left-0 right-0 top-0 py-3  bg-white  z-50  md:hidden flex justify-center ">
+    <div className="fixed  border-b left-0 right-0 top-0 py-4  bg-white  z-50  md:hidden flex justify-center ">
       <div className=" w-full  md:w-10/12   ">
         <div className="  flex items-center justify-between cursor-pointer ">
           <img src={logo} alt="" className=" px-4" />
