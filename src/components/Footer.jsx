@@ -12,9 +12,9 @@ const Footer = () => {
   return (
     <div name="contact" className=" flex justify-center">
       {/* container */}
-      <div className=" flex flex-col w-full md:w-10/12 py-10">
+      <div className=" flex flex-col  w-full md:w-10/12 py-10">
         {/* top */}
-        <div className="  grid grid-cols-1 sm:grid-cols-5  gap-14 bg-gray-100 py-8  px-6 justify-center items-center">
+        <div className="  grid grid-cols-1 sm:grid-cols-5  gap-14 px-6 bg-gray-100 py-8 justify-center ">
           <div className=" flex flex-col gap-2 text-gray-600 text-sm  ">
             <img
               sizes="20"
@@ -22,7 +22,7 @@ const Footer = () => {
               src={Logo}
               alt=""
             />
-            <p className=" text-2xl">Got Question ? Call Us 24/7!</p>
+            <p className=" text-sm ">Got Question ? Call Us 9866448106</p>
             {Calls.map((call, index) => (
               <p className="hover:text-orange-600 " key={index}>
                 {call.name}
@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
           </div>
           <div className=" flex flex-col gap-2 text-gray-600 text-sm">
-            <h1 className=" text-3xl">Find By Categories</h1>
+            <h1 className=" text-2xl">Find By Categories</h1>
             {Categories.map((categorie, index) => (
               <p className="hover:text-orange-600 " key={index}>
                 {categorie.name}
@@ -55,7 +55,7 @@ const Footer = () => {
             ))}
           </div>
           <div className=" flex flex-col gap-2 text-gray-600 text-sm">
-            <h1 className=" text-3xl">Customer Care</h1>
+            <h1 className=" text-2xl">Customer Care</h1>
             {links.map((link, index) => (
               <p className="hover:text-orange-600 " key={index}>
                 {link.name}
@@ -63,7 +63,7 @@ const Footer = () => {
             ))}
           </div>
           <div className=" flex flex-col gap-2 text-gray-600 text-sm">
-            <h1 className=" text-3xl">Sign Up To New Letter</h1>
+            <h1 className=" text-2xl">Sign Up To New</h1>
             <p>Make sure that you never miss our interesting</p>
             <p>news by joining our newsletter program</p>
             <input
@@ -128,7 +128,7 @@ const links = [
 
 const Calls = [
   {
-    name: "Call Us: (888) 1234 56789",
+    name: "Call Us: (+977) 9866448106",
   },
   {
     name: "Po Box CT16122 Collins Street",
