@@ -48,7 +48,7 @@ const NavbrFooter = () => {
               placeholder="search what you looking for ?"
             />
           </div>
-          <span className=" bg-gray-200 py-2 px-8 rounded-full cursor-pointer">
+          <span className=" bg-gray-200 hover:bg-orange-300 duration-500 py-3 px-8 rounded-full cursor-pointer">
             <FiSearch size={30} />
           </span>
         </div>

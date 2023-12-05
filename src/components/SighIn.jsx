@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const SighIn = () => {
   return (
-    <div className=" flex justify-center md:py-8  ">
+    <div className=" flex justify-center ">
       <div className=" flex   flex-col gap-2 w-full md:w-3/12   rounded-lg  ">
         <div className=" flex flex-col justify-center items-center">
           <h1 className=" text-2xl text-gray-600">Login</h1>
@@ -21,7 +21,7 @@ const SighIn = () => {
             <span className=" text-md text-gray-600">Email</span>
             <input
               name="email"
-              className=" w-[350px] border  border-gray-400 outline-orange-400 px-1 md:py-1 py-2 rounded-lg  placeholder:text-sm"
+              className=" w-[350px] border  border-gray-400 outline-orange-400 px-2 md:py-1 py-2 rounded-lg  placeholder:text-sm"
               type="email"
               placeholder="Enter Your email"
             />
@@ -30,13 +30,13 @@ const SighIn = () => {
             <span className=" text-md text-gray-600 ">Password</span>
             <input
               name="password"
-              className=" w-[350px] border  border-gray-400 outline-orange-400 px-1 md:py-1  py-2 rounded-lg  placeholder:text-sm"
+              className=" w-[350px] border  border-gray-400 outline-orange-400 px-2 md:py-1  py-2 rounded-lg  placeholder:text-sm"
               type="password"
               placeholder="Enter Your password"
             />
           </div>
           <div>
-            <button className=" w-[350px] border  border-gray-400 outline-orange-400 px-1 py-2 md:py-1 rounded-lg  bg-blue-400 text-white">
+            <button className=" w-[350px] border  border-gray-400 outline-orange-400 px-2 py-2 md:py-1 rounded-lg  bg-blue-400 text-white">
               Login
             </button>
           </div>

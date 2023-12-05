@@ -43,7 +43,7 @@ const Contact = () => {
             rows="10"
           ></textarea>
           <div className=" pt-6 md:pb-0 pb-6 text-right">
-            <button className="   text-gray-700  font-bold bg-green-400 hover:bg-orange-400 w-max px-6 py-2 rounded-md cursor-pointer ">
+            <button className="   text-gray-700  font-bold hover:bg-green-400 duration-500 bg-orange-400 w-max px-6 py-2 rounded-md cursor-pointer ">
               Submit
             </button>
           </div>
