@@ -17,7 +17,7 @@ const App = () => {
     <div className=" overflow-x-hidden">
       <BrowserRouter>
         <Navbar />
-        <div className=" py-32"> 
+        <div className=" md:py-32 py-6  md:pb-32 pb-20"> 
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />

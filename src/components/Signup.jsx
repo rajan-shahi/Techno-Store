@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Signup = () => {
   return (
     <div className=" flex justify-center items-center py-8 ">
-      <div className="flex   flex-col gap-2 w-full md:w-3/12 shadow-lg   shadow-gray-300  rounded-lg md:py-12 py-14">
+      <div className="flex  flex-col gap-2 w-full md:w-3/12  ">
         <div className=" flex flex-col items-center justify-center">
           <h1 className=" text-3xl  text-gray-500 cursor-pointer hover:text-orange-400">
             Register

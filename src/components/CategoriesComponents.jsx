@@ -22,7 +22,7 @@ const CategoriesComponents = () => {
   return (
     <div name="navbar" className="  flex justify-center">
       {/* container */}
-      <div name="Home" className=" w-full md:w-10/12  flex gap-8 py-6 justify-center ">
+      <div name="Home" className=" w-full md:w-10/12  flex gap-8 md:py-4 justify-center ">
         {/* leftContainer */}
         <div className=" border-2 border-gray-600  sm:flex   hidden flex-col p-8 h-max gap-6    ">
           <div className=" flex gap-4  text-gray-700">
@@ -48,7 +48,7 @@ const CategoriesComponents = () => {
           ))}
         </div>
         {/* rightContainer */}
-        <div className="w-full   md:w-8/12 bg-gray-100 py-4 flex  items-center md:rounded-none rounded-xl   ">
+        <div className="w-full   md:w-8/12 md:bg-gray-100 py-4 flex  items-center md:rounded-none rounded-xl   ">
           <Swiper
             spaceBetween={30}
             centeredSlides={true}

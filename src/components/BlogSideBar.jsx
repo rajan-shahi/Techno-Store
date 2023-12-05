@@ -7,9 +7,9 @@ import post03 from "../assets/post-03.jpg";
 const BlogSideBar = () => {
   return (
     <div name="blog" className=" flex justify-center items-center flex-col">
-      <div className=" md:flex md:px-0 px-3 justify-center  gap-10 w-full md:w-10/12 ">
+      <div className=" md:flex md:px-0 px-3 justify-center  md:gap-10 w-full md:w-10/12 ">
         {/* left */}
-        <div className=" flex flex-col md:px-0 px-2 gap-4 justify-center md:w-8/12 w-full">
+        <div className=" flex flex-col md:px-0 px-2 gap-4  py-4 justify-center md:w-8/12 w-full">
           <div>
             <img
               className=" w-full  md:h-[350px] h-[300px] rounded-lg"
@@ -104,7 +104,7 @@ const BlogSideBar = () => {
         </div>
 
         {/* right */}
-        <div className=" flex flex-col  md:pt-0 pt-16 gap-6 w-full  md:w-2/12">
+        <div className=" flex flex-col   gap-6 w-full  md:w-2/12">
           <div>
             <input
               className=" border bg-gray-200 py-2 px-2 rounded-full placeholder:text-sm outline-orange-400 w-full md:w-[300px]"

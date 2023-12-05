@@ -3,13 +3,13 @@ const Contact = () => {
   return (
     <div className=" flex flex-col justify-center">
       <div className=" flex w-full  justify-center ">
-        <div className=" flex flex-col  shadow-md shadow-slate-400 md:px-8 bg-gray-200 px-4 pt-10  md:py-8 w-[400px]">
+        <div className=" flex flex-col  shadow-md shadow-slate-400 md:px-8 bg-gray-100 px-4 pt-10  md:py-8 w-[400px]">
           <span className=" text-gray-700   font-bold md:py-0 pt-8  p-1 cursor-pointer">
             First Name*
           </span>
           <input
             name="name"
-            className="  p-2 rounded-full bg-gray-100 outline-orange-400 px-2  placeholder:text-sm "
+            className=" p-2 rounded-full  outline-orange-400 px-2  placeholder:text-sm "
             type="text"
             placeholder=" Enter your first name"
           />
