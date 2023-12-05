@@ -30,14 +30,14 @@ const MobileMenu = () => {
           >
             <li
               onClick={handleClick}
-              className="    hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200"
+              className="    hover:text-orange-400  cursor-pointer py-4 text-2xl  text-gray-200"
             >
               {" "}
               <Link to={"/"}>Home</Link>
             </li>
             <li
               onClick={handleClick}
-              className="   hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200"
+              className="   hover:text-orange-400  cursor-pointer py-4 text-2xl  text-gray-200"
             >
               {" "}
               <Link to={"/signin"}>Sign in</Link>
@@ -45,14 +45,14 @@ const MobileMenu = () => {
 
             <li
               onClick={handleClick}
-              className="  hover:text-orange-400 cursor-pointer py-4 text-4xl  text-gray-200"
+              className="  hover:text-orange-400 cursor-pointer py-4 text-2xl  text-gray-200"
             >
               <Link to={"/about"}>About</Link>
             </li>
 
             <li
               onClick={handleClick}
-              className="   hover:text-orange-400 cursor-pointer py-4 text-4xl text-gray-200"
+              className="   hover:text-orange-400 cursor-pointer py-4 text-2xl text-gray-200"
             >
               {" "}
               <Link to={"/shopbar"}>Shop cards</Link>
@@ -60,14 +60,14 @@ const MobileMenu = () => {
 
             <li
               onClick={handleClick}
-              className="   hover:text-orange-400 cursor-pointer py-4 text-4xl text-gray-200"
+              className="   hover:text-orange-400 cursor-pointer py-4 text-2xl text-gray-200"
             >
               {" "}
               <Link to={"/blog"}>Blog SideBar</Link>
             </li>
             <li
               onClick={handleClick}
-              className="   hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200"
+              className="   hover:text-orange-400  cursor-pointer py-4 text-2xl  text-gray-200"
             >
               {" "}
               <Link to={"/contact"}>Contacts</Link>
