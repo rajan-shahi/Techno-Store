@@ -24,7 +24,7 @@ const About = () => {
     <div className=" flex justify-center">
       <div className=" flex flex-col w-full md:px-0 px-4  md:w-10/12">
         {/* topcontainer */}
-        <div className=" md:flex  py-10 md:py-20">
+        <div className=" md:flex md:py-8">
           <div className=" flex-1  z-20">
             <img
               className=" cursor-pointer md:absolute  rounded-lg  md:pl-[60px] md:mt-[-20px]  pb-8  "
