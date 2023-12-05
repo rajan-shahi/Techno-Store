@@ -19,7 +19,8 @@ const BestSellers = () => {
         {/* topcontainer */}
         <div className=" grid grid-cols-1 sm:grid-cols-2 py-6 ">
           {/* left */}
-          <div className=" flex flex-col items-center gap-4  text-black/95 bg-gray-100  rounded-md py-8 ">
+          <div className=" flex flex-col items-center md:pb-0 pb-8 text-black/95  rounded-md ">
+            <div className=" bg-white   rounded-md flex flex-col gap-4 px-20 py-10 ">
             <h1>
               {" "}
               <span className=" text-orange-400 text-xl">Save $30.00</span>{" "}
@@ -47,6 +48,7 @@ const BestSellers = () => {
                   23
                 </span>
               </p>
+            </div>
             </div>
           </div>
           {/* right */}
