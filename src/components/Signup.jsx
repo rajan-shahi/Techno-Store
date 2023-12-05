@@ -10,7 +10,7 @@ const Signup = () => {
             Register
           </h1>
           <h2 className=" text-sm text-gray-500">
-            You have Already an account?{" "}
+            You have Already an account ?{" "}
             <span className=" text-blue-500 cursor-pointer text-xl hover:text-orange-400">
               <Link to={"/signin"}> sign in</Link>
             </span>
