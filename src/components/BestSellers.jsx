@@ -17,9 +17,9 @@ const BestSellers = () => {
       {/* container */}
       <div className="w-full md:w-10/12 flex flex-col  bg-gray-100  py-10 justify-center">
         {/* topcontainer */}
-        <div className=" grid grid-cols-1 sm:grid-cols-2  gap-12 py-6 ">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 py-6 ">
           {/* left */}
-          <div className=" flex flex-col items-center gap-4  text-black/95 bg-gray-100  rounded-md py-8 px-24">
+          <div className=" flex flex-col items-center gap-4  text-black/95 bg-gray-100  rounded-md py-8 ">
             <h1>
               {" "}
               <span className=" text-orange-400 text-xl">Save $30.00</span>{" "}

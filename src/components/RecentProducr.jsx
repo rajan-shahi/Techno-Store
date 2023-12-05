@@ -9,7 +9,6 @@ import Seven from "../assets/07.jpg";
 import Eighteen from "../assets/18.jpg";
 import Seventeen from "../assets/17.jpg";
 import Ninteen from "../assets/19.jpg";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
