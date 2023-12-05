@@ -15,41 +15,41 @@ const SmartPhone = () => {
       {/* container */}
       <div className=" w-full md:w-10/12  bg-gray-100 py-5 px-10">
         {/* top */}
-        <div className=" grid grid-cols-2 gap-4 md:gap-1 md:flex justify-between text-gray-400  border-b-2 pb-2 ">
+        <div className=" grid grid-cols-2 gap-4 md:gap-1 md:flex justify-between text-gray-700  border-b-2 pb-2 ">
           <button
             onClick={() => setLists(smartphones)}
-            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full"
+            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-orange-500  md:hover:rounded-full"
           >
             {" "}
             Smartphones
           </button>
           <button
             onClick={() => setLists(tablets)}
-            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full"
+            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-orange-500  md:hover:rounded-full"
           >
             Tablets
           </button>
           <button
             onClick={() => setLists(games)}
-            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full"
+            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-orange-500  md:hover:rounded-full"
           >
             Game Box
           </button>
           <button
             onClick={() => setLists(accessories)}
-            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full"
+            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-orange-500  md:hover:rounded-full"
           >
             Accessories
           </button>
           <button
             onClick={() => setLists(mobiles)}
-            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full"
+            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-orange-500  md:hover:rounded-full"
           >
             Mobiles
           </button>
           <button
             onClick={() => setLists(computers)}
-            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-gray-600 md:hover:rounded-full"
+            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-orange-500  md:hover:rounded-full"
           >
             Computers
           </button>

@@ -15,23 +15,23 @@ const NewArrivalsCom = () => {
   const [actives, setActives] = useState(products);
   return (
     <div name="NewArrivals" className=" flex justify-center">
-      <div className=" flex w-10/12 flex-col ">
-        <div className=" flex gap-8 md:text-xl  text-gray-400  border-b-2 py-4 w-full border-gray-200 ">
+      <div className=" md:pt-0 pt-5 flex w-10/12 flex-col ">
+        <div className=" flex gap-8 md:text-xl  text-gray-700  border-b-2 py-4 w-full border-gray-200 ">
           <button
             onClick={() => setActives(products)}
-            className=" hover:text-gray-700"
+            className="  hover:text-orange-500  duration-500 "
           >
             New Arrivals
           </button>
           <button
             onClick={() => setActives(featureds)}
-            className=" hover:text-gray-700"
+            className=" hover:text-orange-500  duration-500"
           >
             Featured
           </button>
           <button
             onClick={() => setActives(sellings)}
-            className=" hover:text-gray-700"
+            className=" hover:text-orange-500  duration-500"
           >
             {" "}
             Top Selling
