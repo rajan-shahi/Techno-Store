@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { BsArrowRight } from "react-icons/bs";
+
 const AddNeweCard = () => {
   return (
     <div className=" flex  justify-center py-5">
@@ -104,12 +103,6 @@ const AddNeweCard = () => {
               <button className=" flex justify-center text-md text-white bg-blue-400 border-2  py-2 md:w-[500px] w-[350px] rounded-lg  hover:bg-orange-300  ">
                 Create
               </button>
-            </div>
-            <div className=" flex px-10  justify-end items-center">
-            <Link to={"/"}> 
-              <span className=" cursor-pointer">
-                <BsArrowRight size={25} />
-              </span>   </Link>
             </div>
           </div>
         </div>
