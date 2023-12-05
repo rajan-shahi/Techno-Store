@@ -10,7 +10,7 @@ import AddNeweCard from "./components/AddNeweCard";
 import BlogSideBar from "./components/BlogSideBar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-// import Copyright from "../components/Copyright";
+
 
 const App = () => {
   return (

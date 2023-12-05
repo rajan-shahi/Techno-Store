@@ -6,14 +6,14 @@ import BestSellersComp from "../components/BestSellersComp";
 import RecentProducr from "../components/RecentProducr";
 import BestSellers from "../components/BestSellers";
 import Payment from "../components/Payment";
-import MobileMenu from "../components/MobileMenu";
+
 import SmartPhone from "./SmartPhone";
 import NavbrFooter from "./../components/NavbrFooter";
 
 const Home = () => {
   return (
     <div name="home">
-      <MobileMenu />
+   
       <NavbrFooter />
       <CategoriesComponents />
       <CardContainer />

@@ -18,39 +18,56 @@ const MobileMenu = () => {
               <AiOutlineClose size={30} className="  text-black" />
             )}
           </div>
-
         </div>
         <div>
           <ul
             className={
               !nav
                 ? "hidden"
-                : "   md:z-0 z-40  absolute   w-full py-6   flex flex-col  justify-center   bg-gray-500 items-center rounded-md   "
+                : "   md:z-0 z-40  absolute   w-full py-6   top-14 flex flex-col  justify-center   bg-gray-500 items-center rounded-md   "
             }
           >
-             <li className="   hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200">
+            <li
+              onClick={handleClick}
+              className="    hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200"
+            >
               {" "}
               <Link to={"/"}>Home</Link>
             </li>
-            <li className="   hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200">
+            <li
+              onClick={handleClick}
+              className="   hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200"
+            >
               {" "}
               <Link to={"/signin"}>Sign in</Link>
             </li>
 
-            <li className="  hover:text-orange-400 cursor-pointer py-4 text-4xl  text-gray-200">
+            <li
+              onClick={handleClick}
+              className="  hover:text-orange-400 cursor-pointer py-4 text-4xl  text-gray-200"
+            >
               <Link to={"/about"}>About</Link>
             </li>
 
-            <li className="   hover:text-orange-400 cursor-pointer py-4 text-4xl text-gray-200">
+            <li
+              onClick={handleClick}
+              className="   hover:text-orange-400 cursor-pointer py-4 text-4xl text-gray-200"
+            >
               {" "}
               <Link to={"/shopbar"}>Shop cards</Link>
             </li>
 
-            <li className="   hover:text-orange-400 cursor-pointer py-4 text-4xl text-gray-200">
+            <li
+              onClick={handleClick}
+              className="   hover:text-orange-400 cursor-pointer py-4 text-4xl text-gray-200"
+            >
               {" "}
               <Link to={"/blog"}>Blog SideBar</Link>
             </li>
-            <li className="   hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200">
+            <li
+              onClick={handleClick}
+              className="   hover:text-orange-400  cursor-pointer py-4 text-4xl  text-gray-200"
+            >
               {" "}
               <Link to={"/contact"}>Contacts</Link>
             </li>
