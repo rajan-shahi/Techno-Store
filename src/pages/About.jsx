@@ -13,13 +13,11 @@ import brand4 from "../assets/brand4.png";
 import brand5 from "../assets/brand5.png";
 import brand6 from "../assets/brand6.png";
 import brand7 from "../assets/brand7.png";
-import { BsArrowRight } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, History } from "swiper/modules";
-import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -153,10 +151,10 @@ const About = () => {
           </Swiper>
         </div>
         {/*pattrens */}
-        <h1 className=" text-2xl md:text-xl cursor-pointer  text-gray-700  pt-6 hover:text-orange-400 flex justify-center md:justify-start md:w-max">
+        <h1 className=" text-2xl md:text-xl cursor-pointer  text-gray-700  hover:text-orange-400 flex justify-center md:justify-start md:w-max">
           Partners
         </h1>
-        <div className=" grid grid-cols-2 md:grid-cols-6 gap-8 pt-5 pb-10  justify-center">
+        <div className=" grid grid-cols-2 md:grid-cols-6 gap-8 justify-center">
           <img className=" cursor-pointer" src={brand4} alt="" />
           <img className=" cursor-pointer" src={brand2} alt="" />
           <img className=" cursor-pointer" src={brand3} alt="" />
@@ -164,11 +162,6 @@ const About = () => {
           <img className=" cursor-pointer" src={brand7} alt="" />
           <img className=" cursor-pointer" src={brand5} alt="" />
         </div>
-        <Link to={"/"}>
-        <span className=" pb-10 flex justify-end px-10 cursor-pointer text-gray-600">
-          <BsArrowRight size={40} className=" hover:text-orange-300" />
-        </span>
-        </Link>
       </div>
     </div>
   );

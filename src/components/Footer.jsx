@@ -8,13 +8,14 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
+import Copyright from "./Copyright";
 const Footer = () => {
   return (
-    <div name="contact" className=" flex justify-center">
+    <div name="contact" className=" flex flex-col items-center gap-4 justify-center">
       {/* container */}
-      <div className=" flex flex-col  w-full md:w-10/12 py-10">
+      <div className=" flex flex-col  w-full md:w-10/12 ">
         {/* top */}
-        <div className="  grid grid-cols-1 sm:grid-cols-5  gap-14 px-6 bg-gray-100 py-8 justify-center ">
+        <div className="  grid grid-cols-1 sm:grid-cols-5  gap-14 px-6 bg-gray-100 py-8 rounded-xl justify-center ">
           <div className=" flex flex-col gap-2 text-gray-600 text-sm  ">
             <img
               sizes="20"
@@ -85,17 +86,20 @@ const Footer = () => {
             <h1>Mobile Apps</h1>
             <div className=" md:flex py-4 px-4 gap-6">
               <div>
-              <h2 className=" py-4 px-12  rounded-full border border-gray-600 cursor-pointer hover:border-orange-600">
-                App Store
-              </h2></div>
+                <h2 className=" py-4 px-12  rounded-full border border-gray-600 cursor-pointer hover:border-orange-600">
+                  App Store
+                </h2>
+              </div>
               <div className=" md:pt-0 pt-5">
-              <h2 className=" px-12 py-4 border rounded-full border-gray-600 cursor-pointer hover:border-orange-600">
-                Google Play
-              </h2></div>
+                <h2 className=" px-12 py-4 border rounded-full border-gray-600 cursor-pointer hover:border-orange-600">
+                  Google Play
+                </h2>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <Copyright />
     </div>
   );
 };

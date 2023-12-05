@@ -1,44 +1,18 @@
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
-import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { AiOutlineMinus } from "react-icons/ai";
 import about from "../assets/about.jpg";
 import post02 from "../assets/post-02.jpg";
 import post03 from "../assets/post-03.jpg";
-import { Link } from "react-router-dom";
+
 const BlogSideBar = () => {
   return (
     <div name="blog" className=" flex justify-center items-center flex-col">
-      <div className=" flex md:justify-start justify-center items-center py-6  md:px-56 gap-6 border-b-2 w-full">
-        <div className=" flex justify-center items-center">
-          <h1 className=" text-sm text-gray-500 hover:text-orange-400 cursor-pointer">
-            Home
-          </h1>
-        </div>
-        <div className=" flex justify-center items-center gap-1">
-          <span className=" text-gray-600">
-            <BsArrowRight size={20} />
-          </span>
-          <h1 className=" text-sm text-gray-500 hover:text-orange-400 cursor-pointer">
-            Shop
-          </h1>
-        </div>
-        <div className=" flex justify-center items-center gap-1">
-          <span className=" text-gray-600">
-            <BsArrowRight size={20} />
-          </span>
-          <h1 className=" border px-4 py-2 rounded-full text-sm text-gray-500 hover:bg-orange-400 hover:text-white cursor-pointer">
-            Smartphones
-          </h1>
-        </div>
-      </div>
-      <div className=" md:flex md:px-0 px-3 justify-center  gap-10 w-full md:w-10/12 py-8">
+      <div className=" md:flex md:px-0 px-3 justify-center  gap-10 w-full md:w-10/12 ">
         {/* left */}
         <div className=" flex flex-col md:px-0 px-2 gap-4 justify-center md:w-8/12 w-full">
           <div>
             <img
-              className=" w-full  md:h-[350px]  h-[300px] rounded-lg"
+              className=" w-full  md:h-[350px] h-[300px] rounded-lg"
               src={about}
               alt=""
             />
@@ -126,36 +100,6 @@ const BlogSideBar = () => {
             <button className=" py-2 px-12 border-2 rounded-full hover:bg-orange-400 hover:text-white">
               Read More
             </button>
-          </div>
-          <div className=" flex justify-center items-center gap-4 py-8 border-b-2 border-t-2">
-            <span className=" text-gray-500 cursor-pointer hover:text-orange-400">
-              {" "}
-              <HiOutlineArrowNarrowLeft size={20} />
-            </span>
-            <h1 className=" text-sm text-gray-500 cursor-pointer hover:text-orange-400">
-              {" "}
-              Prev Page
-            </h1>
-            <h1 className=" text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
-              01
-            </h1>
-            <h1 className=" text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
-              02
-            </h1>
-            <h1 className="  md:flex  hidden text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
-              03
-            </h1>
-            <h1 className=" md:flex hidden text-sm border-2 border-gray-300  px-3 py-2  rounded-full cursor-pointer  hover:bg-orange-400  hover:text-white">
-              04
-            </h1>{" "}
-            <Link to={"/"}>
-              <h1 className=" text-sm text-gray-500 cursor-pointer hover:text-orange-400">
-                Next Page
-              </h1>{" "}
-            </Link>
-            <span className=" text-gray-500">
-              <HiOutlineArrowNarrowRight size={20} />
-            </span>{" "}
           </div>
         </div>
 

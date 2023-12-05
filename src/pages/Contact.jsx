@@ -1,9 +1,8 @@
-import { HiArrowNarrowRight } from "react-icons/hi";
-import { Link } from "react-router-dom";
+
 const Contact = () => {
   return (
     <div className=" flex flex-col justify-center">
-      <div className=" flex w-full md:py-8 py-0  justify-center ">
+      <div className=" flex w-full  justify-center ">
         <div className=" flex flex-col  shadow-md shadow-slate-400 md:px-8 bg-gray-200 px-4 pt-10  md:py-8 w-[400px]">
           <span className=" text-gray-700   font-bold md:py-0 pt-8  p-1 cursor-pointer">
             First Name*
@@ -50,11 +49,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Link to={"/"}>
-      <span className=" flex  py-4 justify-center text-gray-400  pl-72 ">
-        <HiArrowNarrowRight size={40} className="hover:text-orange-300 w-max cursor-pointer " />
-      </span>
-      </Link>
     </div>
   );
 };
