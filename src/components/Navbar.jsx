@@ -14,32 +14,32 @@ const Navbar = () => {
         </div>
         
         {/* righrbar */}
-        <div className=" hidden md:flex gap-4 text-gray-600 text-xl ">
+        <div className=" hidden md:flex gap-8 text-gray-600 text-xl ">
         <Link to={"/"}>
-            <p className=" border-r-2 pr-2  hover:text-orange-600 cursor-pointer">
+            <p className="  hover:border-b hover:text-orange-600 cursor-pointer">
               Home
             </p>
           </Link>
           <Link to={"/about"}>
-            <p className=" border-r-2 pr-2  hover:text-orange-600 cursor-pointer">
+            <p className="  hover:text-orange-600 cursor-pointer">
               About
             </p>
           </Link>
 
           <Link to={"/shopbar"}>
-            <p className=" border-r-2 pr-2 hover:text-orange-600 cursor-pointer">
+            <p className="  hover:text-orange-600 cursor-pointer">
               Shop Cards
             </p>
           </Link>
 
           <Link to={"/blog"}>
-            <p className=" border-r-2 pr-2 hover:text-orange-600 cursor-pointer">
+            <p className="  hover:text-orange-600 cursor-pointer">
               Blog SideBar
             </p>
           </Link>
 
           <Link to={"/contact"}>
-            <p className=" border-r-2 text-md  pr-2 hover:text-orange-600 cursor-pointer">
+            <p className="  text-md  pr-2 hover:text-orange-600 cursor-pointer">
               Contact
             </p>
           </Link>

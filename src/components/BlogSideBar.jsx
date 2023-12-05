@@ -37,7 +37,7 @@ const BlogSideBar = () => {
             </p>
           </div>
           <div>
-            <button className=" py-2 px-12 border-2 rounded-full hover:bg-orange-400 hover:text-white">
+            <button className=" py-2 px-12 border-2 rounded-full hover:bg-orange-400  hover:text-white">
               Read More
             </button>
           </div>
