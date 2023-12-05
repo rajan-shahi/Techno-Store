@@ -18,8 +18,8 @@ const Footer = () => {
         <div className="  grid grid-cols-1 sm:grid-cols-5  gap-14 px-6 bg-gray-100 py-8 rounded-xl justify-center ">
           <div className=" flex flex-col gap-2 text-gray-600 text-sm  ">
             <img
-              sizes="20"
-              className=" pb-8 cursor-pointer"
+              sizes="10"
+              className="  pb-8 cursor-pointer"
               src={Logo}
               alt=""
             />
