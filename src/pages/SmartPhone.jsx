@@ -92,7 +92,7 @@ const SmartPhone = () => {
               <p className=" text-sm text-gray-400">Headphones</p>
               <h1 className=" text-2xl text-gray-600">Beats Solo</h1>
               <h1 className=" text-2xl text-gray-600">HD</h1>
-              <p className=" text-3xl text-orange-300">$5,759.68</p>
+              <p className=" text-3xl text-orange-300">$559.00</p>
               <button className=" w-full rounded-xl hover:bg-orange-700 px-4 py-2  text-xl  text-white bg-orange-400 hover:text-gray-200">
                 Add to card
               </button>
