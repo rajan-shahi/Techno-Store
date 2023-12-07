@@ -27,7 +27,7 @@ export const smartphones = {
       name: "Cameras",
       model: "New X5c-12.4Ghz Gyro",
       desc: "Rc Quadcopter Drone",
-      price: " $ 12590.00",
+      price: " $ 129.00",
       card: "Add to Card",
     },
     {
