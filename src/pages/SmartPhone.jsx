@@ -15,10 +15,10 @@ const SmartPhone = () => {
       {/* container */}
       <div className=" w-full md:w-10/12  bg-gray-100 py-5 px-10">
         {/* top */}
-        <div className=" grid grid-cols-2 gap-4 md:gap-1 md:flex justify-between text-gray-700  border-b-2 pb-2 ">
+        <div className=" grid grid-cols-2 gap-4 md:gap-1 md:flex justify-between text-gray-700  text-xl border-b-2 pb-2 ">
           <button
             onClick={() => setLists(smartphones)}
-            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-orange-500  md:hover:rounded-full"
+            className={` ${lists.name === "smart" ? "px-2 text-white/80 bg-orange-500 rounded-full" : ""}`}
           >
             {" "}
             Smartphones
@@ -59,7 +59,7 @@ const SmartPhone = () => {
           {/* left */}
           <div className="  w-full md:w-7/12 justify-center">
             <div className=" flex-col gap-4 grid  grid-cols-1 md:grid-cols-2 ">
-              {lists.map((smartphone, index) => (
+              {lists?.items?.map((smartphone, index) => (
                 <div
                   key={index}
                   className="  bg-white  flex flex-col border-2  border-gray-100  hover:border-gray-300 rounded-xl items-center "

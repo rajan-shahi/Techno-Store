@@ -11,7 +11,10 @@ import Ninteen from "../assets/19.jpg";
 import Six0 from "../assets/19.jpg";
 import Airphone from "../assets/Airphone.jpg"
 
-export const smartphones = [
+export const smartphones = 
+{
+  name: "smart",
+items:[
   {
     image: One,
     name: "Laptop",
@@ -91,7 +94,8 @@ export const smartphones = [
     price: " $ 12050.010",
     card: "Add to Card",
   },
-];
+]
+};
 
 
  export const mobiles = [
