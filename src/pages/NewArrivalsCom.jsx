@@ -289,7 +289,7 @@ const sellings = {
       image: Ninteen,
       name: "Laptop",
       model: "Apple ipad Mini",
-      desc: "G2356",
+      desc: "ASKO-G2356",
       price: " $ 1250.00",
       card: "Add to Selling",
     },
