@@ -328,7 +328,7 @@ const sellings = {
     {
       image: One,
       name: "Computers",
-      model: "Apple Imac Zosc4824",
+      model: "Apple Imac R4824",
       price: " $ 856.00",
       desc: "lkgli-01Jb",
       card: "Add to Selling",
