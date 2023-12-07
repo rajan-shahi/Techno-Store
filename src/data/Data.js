@@ -78,21 +78,6 @@ export const smartphones = {
       price: " $ 12552.03650",
       card: "Add to Card",
     },
-    {
-      image: Seventeen,
-      name: "Computers",
-      model: "Beats snarkitecture",
-      desc: "Headphones",
-      price: " $ 12450.00",
-      card: "Add to Card",
-    },
-    {
-      image: Ninteen,
-      name: "Computer",
-      desc: "40K6013UPB10",
-      price: " $ 12050.010",
-      card: "Add to Card",
-    },
   ],
 };
 
