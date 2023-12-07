@@ -345,7 +345,7 @@ const sellings = {
       image: Six,
       name: "Computer",
       model: "Notebook Widescreen Z51-120",
-      desc: "40K6013UPB10",
+      desc: "40K6B10",
       price: " $ 550.010",
       card: "Add to Selling",
     },
