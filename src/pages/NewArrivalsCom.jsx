@@ -102,7 +102,7 @@ const products = {
       name: "Cameras",
       model: "Apple Ipad New",
       desc: "G2356",
-      price: " $ 12400.00",
+      price: " $ 120.00",
       card: "Add to New Card",
     },
     {
@@ -110,7 +110,7 @@ const products = {
       name: "Cameras",
       model: "New X5c-12563Djk",
       desc: "CKli-01Jb",
-      price: " $ 12542.00",
+      price: " $ 142.00",
       card: "Add to New Card",
     },
     {
@@ -118,7 +118,7 @@ const products = {
       name: "Headphones",
       model: "Beats Solo",
       desc: "HD",
-      price: " $ 756250.00",
+      price: " $ 750.00",
       card: "Add to New Card",
     },
     {
@@ -126,7 +126,7 @@ const products = {
       name: "Computers",
       model: "Beats snarkitecture",
       desc: "Headphones",
-      price: " $ 12450.00",
+      price: " $ 180.00",
       card: "Add to New Card",
     },
     {
@@ -134,7 +134,7 @@ const products = {
       name: "Computers",
       model: "Apple Imac Zosc4824",
       desc: "Retin",
-      price: " $ 12850.00",
+      price: " $ 150.00",
       card: "Add to New Card",
     },
     {
@@ -142,7 +142,7 @@ const products = {
       name: "Computer",
       model: "Apple ipad 1232BG 9.7",
       desc: "Tablet",
-      price: " $ 42250.00",
+      price: " $ 420.00",
       card: "Add to New Card",
     },
     {
@@ -150,7 +150,7 @@ const products = {
       name: "Computers",
       model: "smartphone 75",
       desc: "123GB",
-      price: " $ 12552.03650",
+      price: " $ 152.03650",
       card: "Add to New Card",
     },
     {
@@ -158,7 +158,7 @@ const products = {
       name: "Computers",
       model: "Beats snarkitecture",
       desc: "Headphones",
-      price: " $ 12450.00",
+      price: " $ 420.00",
       card: "Add to New Card",
     },
     {
@@ -166,7 +166,7 @@ const products = {
       name: "Computer",
       model: "Notebook Widescreen Z51-120",
       desc: "40K6013UPB10",
-      price: " $ 12050.010",
+      price: " $ 159.010",
       card: "Add to New Card",
     },
     {
@@ -174,7 +174,7 @@ const products = {
       name: "Headphones",
       model: "Beats Solo",
       desc: "HD",
-      price: " $ 756250.00",
+      price: " $ 620.00",
       card: "Add to New Card",
     },
   ],
