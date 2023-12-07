@@ -94,7 +94,7 @@ const products = {
       name: "Cameras",
       model: "New X5c-12.4Ghz Gyro",
       desc: "Rc Quadcopter Drone",
-      price: " $ 12590.00",
+      price: " $ 190.00",
       card: "Add to New Card",
     },
     {
