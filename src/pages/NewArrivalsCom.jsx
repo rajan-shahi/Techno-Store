@@ -321,7 +321,7 @@ const sellings = {
       image: Four,
       name: "Headphones",
       model: "Beats Solo",
-      desc: "HD",
+      desc: " Head- phone HD",
       price: " $ 756.00",
       card: "Add to Selling",
     },
