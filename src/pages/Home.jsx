@@ -13,7 +13,6 @@ import NavbrFooter from "./../components/NavbrFooter";
 const Home = () => {
   return (
     <div name="home">
-   
       <NavbrFooter />
       <CategoriesComponents />
       <CardContainer />
