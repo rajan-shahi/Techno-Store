@@ -86,7 +86,7 @@ const products = {
       name: "Laptop",
       model: "Apple ipad Mini",
       desc: "G2356",
-      price: " $ 1250.6",
+      price: " $ 120.6",
       card: "Add to New Card",
     },
     {
