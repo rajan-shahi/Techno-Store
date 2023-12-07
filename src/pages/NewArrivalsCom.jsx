@@ -62,7 +62,7 @@ const NewArrivalsCom = () => {
                     {product.price}
                   </p>
                   <Link to={"/add to card"}>
-                    <p className=" flex items-center bg-orange-300 px-4 py-2 border rounded-full text-white cursor-pointer hover:bg-orange-600     transition all  ease-in-out ">
+                    <p className=" flex items-center bg-orange-300 px-4 py-2 border rounded-xl text-white cursor-pointer hover:bg-orange-600     transition all  ease-in-out ">
                       {product.card}
                     </p>
                   </Link>
