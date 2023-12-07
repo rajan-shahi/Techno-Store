@@ -19,7 +19,7 @@ export const smartphones = {
       name: "Laptop",
       model: "Apple ipad Mini",
       desc: "G2356",
-      price: " $ 1250.00",
+      price: " $ 120.00",
       card: "Add to Card",
     },
     {
