@@ -1,11 +1,12 @@
 
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import logo from "../assets/logo.png";
 import MobileMenu from "../components/MobileMenu";
 import { useState } from "react";
 
 const Navbar = () => {
   const [Nav,setNav] =useState("Home");
+
 
 
   return (
@@ -49,7 +50,7 @@ const Navbar = () => {
           <Link to={"/contact"}>
           <p onClick={()=>{setNav("Contact");}}
             className="  hover:text-orange-600 cursor-pointer">
-           Contact {Nav ==="Contact" ? <hr/>: <></>}
+           Contact {Nav ==="Contact" ? <hr/>: <> </>}
             </p>
           </Link>
           <Link to={"/signin"}>
