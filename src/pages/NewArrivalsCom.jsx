@@ -20,19 +20,19 @@ const NewArrivalsCom = () => {
         <div className=" flex gap-8 md:text-xl  text-gray-700  border-b-2 py-4 w-full border-gray-200 ">
           <button
             onClick={() => setActives(products)}
-            className={` ${actives.name === "pro" ? "text-red-500" : ""}`}
+            className={` ${actives.name === "pro" ? " text-orange-500" : ""}`}
           >
             New Arrivals
           </button>
           <button
             onClick={() => setActives(featureds)}
-            className={` ${actives.name === "featu" ? "text-red-500" : ""}`}
+            className={` ${actives.name === "featu" ? " text-orange-500" : ""}`}
           >
             Featured
           </button>
           <button
             onClick={() => setActives(sellings)}
-            className={` ${actives.name === "sells" ? "text-red-500" : ""}`}
+            className={` ${actives.name === "sells" ? " text-orange-500" : ""}`}
           >
             {" "}
             Top Selling
@@ -86,7 +86,7 @@ const products = {
       name: "Laptop",
       model: "Apple ipad Mini",
       desc: "G2356",
-      price: " $ 1250.00",
+      price: " $ 1250.6",
       card: "Add to New Card",
     },
     {
