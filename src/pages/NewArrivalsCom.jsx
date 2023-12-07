@@ -188,7 +188,7 @@ const featureds = {
       name: "Camera",
       model: "New X5c-12.4Ghz Gyro",
       desc: "G dwfet 2356",
-      price: " $ 1250.00",
+      price: " $ 150.00",
       card: "Add to New Featured",
     },
     {
@@ -196,7 +196,7 @@ const featureds = {
       name: "Cameras",
       model: "Apple ipad Mini",
       desc: "Rc Quadcopter Drone",
-      price: " $ 121200090.00",
+      price: " $ 190.00",
       card: "Add to Featured",
     },
     {
@@ -204,7 +204,7 @@ const featureds = {
       name: "Laptop",
       model: "New X5c-12563Djk",
       desc: "Gfgfgy2356",
-      price: " $ 12412200.00",
+      price: " $ 160.00",
       card: "Add to Featured",
     },
     {
@@ -212,7 +212,7 @@ const featureds = {
       name: "Cameras",
       model: "Apple Ipad new or Old",
       desc: "CKl cdfgf i-01Jb",
-      price: " $ 12542.00",
+      price: " $ 122.00",
       card: "Add to Featured",
     },
     {
@@ -220,7 +220,7 @@ const featureds = {
       name: "Headphones",
       model: "Apple ipad 1232BG 9.7",
       desc: " cfgvtrytb HD",
-      price: " $ 71056250.00",
+      price: " $ 750.00",
       card: "Add to Featured",
     },
     {
@@ -228,7 +228,7 @@ const featureds = {
       name: "Mobile",
       model: "Apple Imac Zosc4824",
       desc: "Retin fgfgvb  head",
-      price: " $ 128002250.00",
+      price: " $ 150.00",
       card: "Add to Featured",
     },
     {
@@ -236,7 +236,7 @@ const featureds = {
       name: "Computers",
       model: "Notebook Widescreen Z51-120",
       desc: "Headv gbtyhtgb phones",
-      price: " $ 12450.00",
+      price: " $ 250.00",
       card: "Add to Featured",
     },
     {
@@ -244,7 +244,7 @@ const featureds = {
       name: "Camera",
       model: "New X5c-12.4Ghz Gyro",
       desc: "G dwfet 2356",
-      price: " $ 1250.00",
+      price: " $ 170.00",
       card: "Add to Featured",
     },
     {
@@ -252,7 +252,7 @@ const featureds = {
       name: "Computer",
       model: "Beats head Solo",
       desc: "Tab cgvrfft let",
-      price: " $ 42250.00",
+      price: " $ 402.00",
       card: "Add to Featured",
     },
     {
