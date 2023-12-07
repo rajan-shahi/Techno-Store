@@ -25,31 +25,31 @@ const SmartPhone = () => {
           </button>
           <button
             onClick={() => setLists(tablets)}
-            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-orange-500  md:hover:rounded-full"
+            className={` ${lists.name === "tab" ? "px-2 text-white/80 bg-orange-500 rounded-full" : ""}`}
           >
             Tablets
           </button>
           <button
             onClick={() => setLists(games)}
-            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-orange-500  md:hover:rounded-full"
+            className={` ${lists.name === "gam" ? "px-2 text-white/80 bg-orange-500 rounded-full" : ""}`}
           >
             Game Box
           </button>
           <button
             onClick={() => setLists(accessories)}
-            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-orange-500  md:hover:rounded-full"
+            className={` ${lists.name === "access" ? "px-2 text-white/80 bg-orange-500 rounded-full" : ""}`}
           >
             Accessories
           </button>
           <button
             onClick={() => setLists(mobiles)}
-            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-orange-500  md:hover:rounded-full"
+            className={` ${lists.name === "mob" ? "px-2 text-white/80 bg-orange-500 rounded-full" : ""}`}
           >
             Mobiles
           </button>
           <button
             onClick={() => setLists(computers)}
-            className="px-2 md:text-xl md:hover:text-white/80 hover:text-orange-500 md:hover:bg-orange-500  md:hover:rounded-full"
+            className={` ${lists.name === "com" ? "px-2 text-white/80 bg-orange-500 rounded-full" : ""}`}
           >
             Computers
           </button>
