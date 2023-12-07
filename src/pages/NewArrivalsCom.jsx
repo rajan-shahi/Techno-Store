@@ -259,7 +259,8 @@ const featureds = {
       image: Two,
       name: "Headphones",
       model: "smartphone 75",
-      desc: "1 41025 23GB",
+      desc: "23GB",
+      price: " $ 259.00",
       card: "Add to Featured",
     },
     {
@@ -267,7 +268,7 @@ const featureds = {
       name: "Computers",
       model: "Notebook Widescreen Z51-120",
       desc: "Headv gbtyhtgb phones",
-      price: " $ 12450.00",
+      price: " $ 350.00",
       card: "Add to Featured",
     },
     {
@@ -275,7 +276,7 @@ const featureds = {
       name: "Computer",
       model: "Notebook Widescreen Z51-120",
       desc: "40K601 bgtytgb 3UPB10",
-      price: " $ 12050.010",
+      price: " $ 1950.010",
       card: "Add to Featured",
     },
   ],
@@ -297,7 +298,7 @@ const sellings = {
       name: "Cameras",
       model: "New X5c-12.4Ghz Gyro",
       desc: "Rc Quadcopter Drone",
-      price: " $ 12590.00",
+      price: " $ 126.00",
       card: "Add to Selling",
     },
     {
@@ -305,7 +306,7 @@ const sellings = {
       name: "Cameras",
       model: "Apple Ipad New",
       desc: "G2356",
-      price: " $ 12400.00",
+      price: " $ 630.00",
       card: "Add to Selling",
     },
     {
@@ -313,7 +314,7 @@ const sellings = {
       name: "Cameras",
       model: "New X5c-12563Djk",
       desc: "CKli-01Jb",
-      price: " $ 12542.00",
+      price: " $ 542.00",
       card: "Add to Selling",
     },
     {
@@ -321,13 +322,15 @@ const sellings = {
       name: "Headphones",
       model: "Beats Solo",
       desc: "HD",
-      price: " $ 756250.00",
+      price: " $ 756.00",
       card: "Add to Selling",
     },
     {
       image: One,
       name: "Computers",
       model: "Apple Imac Zosc4824",
+      price: " $ 856.00",
+      desc: "lkgli-01Jb",
       card: "Add to Selling",
     },
     {
@@ -335,7 +338,7 @@ const sellings = {
       name: "Computer",
       model: "Apple ipad 1232BG 9.7",
       desc: "Tablet",
-      price: " $ 42250.00",
+      price: " $ 280.00",
       card: "Add to Selling",
     },
     {
@@ -343,7 +346,7 @@ const sellings = {
       name: "Computer",
       model: "Notebook Widescreen Z51-120",
       desc: "40K6013UPB10",
-      price: " $ 12050.010",
+      price: " $ 550.010",
       card: "Add to Selling",
     },
     {
@@ -351,7 +354,7 @@ const sellings = {
       name: "Computers",
       model: "smartphone 75",
       desc: "123GB",
-      price: " $ 12552.03650",
+      price: " $ 552.050",
       card: "Add to Selling",
     },
     {
@@ -359,7 +362,7 @@ const sellings = {
       name: "Computers",
       model: "Beats snarkitecture",
       desc: "Headphones",
-      price: " $ 12450.00",
+      price: " $ 129.00",
       card: "Add to Selling",
     },
     {
@@ -367,7 +370,7 @@ const sellings = {
       name: "Computer",
       model: "Notebook Widescreen Z51-120",
       desc: "40K6013UPB10",
-      price: " $ 12050.010",
+      price: " $ 690.010",
       card: "Add to Selling",
     },
     {
@@ -375,7 +378,7 @@ const sellings = {
       name: "Cameras",
       model: "New X5c-12563Djk",
       desc: "CKli-01Jb",
-      price: " $ 12542.00",
+      price: " $ 292.00",
       card: "Add to Selling",
     },
   ],
