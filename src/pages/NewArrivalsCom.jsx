@@ -313,7 +313,7 @@ const sellings = {
       image: Seven,
       name: "Cameras",
       model: "New X5c-12563Djk",
-      desc: "CKli-01Jb",
+      desc: "LK023-01Jb",
       price: " $ 542.00",
       card: "Add to Selling",
     },
