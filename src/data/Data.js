@@ -190,7 +190,7 @@ export const accessories = {
       name: "Cameras",
       model: "New X5c-12563Djk",
       desc: "CKli-01Jb",
-      price: " $ 12542.00",
+      price: " $ 542.00",
       card: "Add to Card",
     },
     {
@@ -198,7 +198,7 @@ export const accessories = {
       name: "Headphones",
       model: "Beats Solo",
       desc: "HD",
-      price: " $ 756250.00",
+      price: " $ 790.00",
       card: "Add to Card",
     },
     {
