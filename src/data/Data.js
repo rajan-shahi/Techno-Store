@@ -222,7 +222,7 @@ export const accessories = {
       name: "Computers",
       model: "smartphone 75",
       desc: "123GB",
-      price: " $ 12552.03650",
+      price: " $ 552.050",
       card: "Add to Card",
     },
     {
