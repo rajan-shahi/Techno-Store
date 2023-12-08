@@ -237,7 +237,7 @@ export const accessories = {
       image: Ninteen,
       name: "Computer",
       desc: "40K6013UPB10",
-      price: " $ 12050.010",
+      price: " $ 120.010",
       card: "Add to Card",
     },
   ],

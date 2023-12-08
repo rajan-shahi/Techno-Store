@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const MobileMenu = () => {
   const [nav, setNev] = useState(false);
   const handleClick = () => setNev(!nav);
+
   return (
     <div className="fixed  border-b left-0 right-0 top-0 py-4  bg-white  z-50  md:hidden flex justify-center ">
       <div className=" w-full  md:w-10/12   ">
@@ -57,7 +58,6 @@ const MobileMenu = () => {
               {" "}
               <Link to={"/shopbar"}>Shop cards</Link>
             </li>
-
             <li
               onClick={handleClick}
               className="   hover:text-orange-400 cursor-pointer py-4 text-2xl text-gray-200"
