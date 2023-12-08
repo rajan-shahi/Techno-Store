@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const MobileMenu = () => {
   const [nav, setNev] = useState(false);
   const handleClick = () => setNev(!nav);
+  const location = useLocation();
+  console.log(location.pathname);
 
   return (
     <div className="fixed  border-b left-0 right-0 top-0 py-4  bg-white  z-50  md:hidden flex justify-center ">
@@ -31,14 +33,20 @@ const MobileMenu = () => {
           >
             <li
               onClick={handleClick}
-              className="    hover:text-orange-400  cursor-pointer py-4 text-2xl  text-gray-200"
+              className={`${
+                location.pathname === "/" ? " text-orange-500" : "text-gray-200"
+              } cursor-pointer py-4 text-2xl  `}
             >
               {" "}
               <Link to={"/"}>Home</Link>
             </li>
             <li
               onClick={handleClick}
-              className="   hover:text-orange-400  cursor-pointer py-4 text-2xl  text-gray-200"
+              className={`${
+                location.pathname === "/signin"
+                  ? " text-orange-500"
+                  : "text-gray-200"
+              } cursor-pointer py-4 text-2xl  `}
             >
               {" "}
               <Link to={"/signin"}>Sign in</Link>
@@ -46,14 +54,18 @@ const MobileMenu = () => {
 
             <li
               onClick={handleClick}
-              className="  hover:text-orange-400 cursor-pointer py-4 text-2xl  text-gray-200"
+              className={`${
+                location.pathname === "/about"
+                  ? " text-orange-500"
+                  : "text-gray-200"
+              } cursor-pointer py-4 text-2xl  `}
             >
               <Link to={"/about"}>About</Link>
             </li>
 
             <li
               onClick={handleClick}
-              className="   hover:text-orange-400 cursor-pointer py-4 text-2xl text-gray-200"
+              className={`${location.pathname=== "/shopbar" ? " text-orange-500" : "text-gray-200"} cursor-pointer py-4 text-2xl  `}
             >
               {" "}
               <Link to={"/shopbar"}>Shop cards</Link>
