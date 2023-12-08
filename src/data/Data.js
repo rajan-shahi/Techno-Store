@@ -166,7 +166,7 @@ export const accessories = {
       name: "Laptop",
       model: "Apple ipad Mini",
       desc: "G2356",
-      price: " $ 1250.00",
+      price: " $ 250.00",
       card: "Add to Card",
     },
     {
@@ -174,7 +174,7 @@ export const accessories = {
       name: "Cameras",
       model: "New X5c-12.4Ghz Gyro",
       desc: "Rc Quadcopter Drone",
-      price: " $ 12590.00",
+      price: " $ 190.00",
       card: "Add to Card",
     },
     {
@@ -182,7 +182,7 @@ export const accessories = {
       name: "Cameras",
       model: "Apple Ipad New",
       desc: "G2356",
-      price: " $ 12400.00",
+      price: " $ 400.00",
       card: "Add to Card",
     },
     {
