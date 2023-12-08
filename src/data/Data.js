@@ -206,7 +206,7 @@ export const accessories = {
       name: "Computers",
       model: "Apple Imac Zosc4824",
       desc: "Retin",
-      price: " $ 12850.00",
+      price: " $ 850.00",
       card: "Add to Card",
     },
     {
@@ -214,7 +214,7 @@ export const accessories = {
       name: "Computer",
       model: "Apple ipad 1232BG 9.7",
       desc: "Tablet",
-      price: " $ 42250.00",
+      price: " $ 450.00",
       card: "Add to Card",
     },
     {
