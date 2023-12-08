@@ -65,21 +65,33 @@ const MobileMenu = () => {
 
             <li
               onClick={handleClick}
-              className={`${location.pathname=== "/shopbar" ? " text-orange-500" : "text-gray-200"} cursor-pointer py-4 text-2xl  `}
+              className={`${
+                location.pathname === "/shopbar"
+                  ? " text-orange-500"
+                  : "text-gray-200"
+              } cursor-pointer py-4 text-2xl  `}
             >
               {" "}
               <Link to={"/shopbar"}>Shop cards</Link>
             </li>
             <li
               onClick={handleClick}
-              className="   hover:text-orange-400 cursor-pointer py-4 text-2xl text-gray-200"
+              className={`${
+                location.pathname === "/blog"
+                  ? " text-orange-500"
+                  : "text-gray-200"
+              } cursor-pointer py-4 text-2xl  `}
             >
               {" "}
               <Link to={"/blog"}>Blog SideBar</Link>
             </li>
             <li
               onClick={handleClick}
-              className="   hover:text-orange-400  cursor-pointer py-4 text-2xl  text-gray-200"
+              className={`${
+                location.pathname === "/contact"
+                  ? " text-orange-500"
+                  : "text-gray-200"
+              } cursor-pointer py-4 text-2xl  `}
             >
               {" "}
               <Link to={"/contact"}>Contacts</Link>
