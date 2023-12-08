@@ -230,7 +230,7 @@ export const accessories = {
       name: "Computers",
       model: "Beats snarkitecture",
       desc: "Headphones",
-      price: " $ 12450.00",
+      price: " $ 450.00",
       card: "Add to Card",
     },
     {
