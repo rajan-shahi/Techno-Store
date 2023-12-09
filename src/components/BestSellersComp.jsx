@@ -55,7 +55,7 @@ const BestSellersComp = () => {
                   <div className=" flex flex-col gap-3 justify-center items-center">
                     <span>
                       <img
-                        className=" cursor-pointer"
+                        className=" cursor-pointer h-36"
                         src={bestseller.image}
                         alt=""
                       />
@@ -88,15 +88,15 @@ const bestsellers = [
     name: "Laptop",
     model: "Apple ipad Mini",
     desc: "G2356",
-    price: " $ 1250.00",
+    price: " $199",
     card: "Add to Card",
   },
   {
     image: Two,
     name: "Cameras",
-    model: "New X5c-12.4Ghz Gyro",
+    model: "New X5c-1Gyro",
     desc: "Rc Quadcopter Drone",
-    price: " $ 12590.00",
+    price: " $230",
     card: "Add to Card",
   },
   {
@@ -104,15 +104,15 @@ const bestsellers = [
     name: "Cameras",
     model: "Apple Ipad New",
     desc: "G2356",
-    price: " $ 12400.00",
+    price: " $399",
     card: "Add to Card",
   },
   {
     image: Six,
     name: "Cameras",
-    model: "New X5c-12563Djk",
+    model: "New X5c-Djk",
     desc: "CKli-01Jb",
-    price: " $ 12542.00",
+    price: " $690",
     card: "Add to Card",
   },
   {
@@ -120,7 +120,7 @@ const bestsellers = [
     name: "Headphones",
     model: "Beats Solo",
     desc: "HD",
-    price: " $ 756250.00",
+    price: " $824",
     card: "Add to Card",
   },
 
@@ -129,23 +129,23 @@ const bestsellers = [
     name: "Computers",
     model: "smartphone 75",
     desc: "123GB",
-    price: " $ 12552.03650",
+    price: " $360",
     card: "Add to Card",
   },
   {
     image: Seventeen,
     name: "Computers",
-    model: "Beats snarkitecture",
+    model: "Beats-ture",
     desc: "Headphones",
-    price: " $ 12450.00",
+    price: " $125",
     card: "Add to Card",
   },
   {
     image: Ninteen,
     name: "Computer",
-    model: "Notebook Widescreen Z52",
+    model: "Notebook-LK52",
     desc: "40K6013UPB10",
-    price: " $ 12050.010",
+    price: " $387",
     card: "Add to Card",
   },
   {
@@ -153,24 +153,24 @@ const bestsellers = [
     name: "Headphones",
     model: "Beats Solo",
     desc: "HD",
-    price: " $ 756250.00",
+    price: " $699",
     card: "Add to Card",
   },
 
   {
     image: Seventeen,
     name: "Computers",
-    model: "Beats snarkitecture",
+    model: "Beats-ecture",
     desc: "Headphones",
-    price: " $ 12450.00",
+    price: " $460",
     card: "Add to Card",
   },
   {
     image: Ninteen,
     name: "Computer",
-    model: "Notebook Widescreen Z50",
+    model: "Notebook Z50",
     desc: "40K6013UPB10",
-    price: " $ 12050.010",
+    price: " $299",
     card: "Add to Card",
   },
 ];
