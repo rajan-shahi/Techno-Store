@@ -62,7 +62,7 @@ const SmartPhone = () => {
               {lists?.items?.map((smartphone, index) => (
                 <div
                   key={index}
-                  className="  bg-white  flex flex-col border-2  border-gray-100  hover:border-gray-300 rounded-xl items-center "
+                  className="  bg-white  flex flex-col border-2  border-gray-100  hover:border-orange-300 rounded-xl items-center "
                 >
                   <div className=" flex flex-col items-center gap-2  py-6">
                     <img
@@ -86,13 +86,13 @@ const SmartPhone = () => {
             </div>
           </div>
           {/* right */}
-          <div className=" hidden md:flex w-full md:w-3/12 bg-white px-4 py-4 rounded-md border-gray-100 hover:border-orange-400 border-2  h-max">
+          <div className=" hidden md:flex w-full md:w-3/12 bg-white px-4 py-4 rounded-md border-gray-100 hover:border-orange-300 border-2  h-max">
             <div className=" px-4 py-4 flex justify-center flex-col items-center gap-4 ">
               <img className="  h-80  cursor-pointer " src={Airphone} alt="" />
               <p className=" text-sm text-gray-400">Headphones</p>
               <h1 className=" text-2xl text-gray-600">Beats Solo</h1>
               <h1 className=" text-2xl text-gray-600">HD</h1>
-              <p className=" text-3xl text-orange-300">$559.00</p>
+              <p className=" text-3xl text-orange-300">$ 189</p>
               <button className=" w-full rounded-xl hover:bg-orange-700 px-4 py-2  text-xl  text-white bg-orange-400 hover:text-gray-200">
                 Add to card
               </button>

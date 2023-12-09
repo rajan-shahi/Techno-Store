@@ -150,7 +150,7 @@ const clocks = [
     name: "Enhanced Technology",
     model: "SMART TV",
     desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
-    price: "$1.635.999",
+    price: "$199",
     button: "Show Now",
   },
   {
@@ -158,7 +158,7 @@ const clocks = [
     name: "Enhanced Technology",
     model: "SMART TV",
     desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
-    price: "$1.635.999",
+    price: "$360",
     button: "Show Now",
   },
   {
@@ -166,7 +166,7 @@ const clocks = [
     name: "Enhanced Technology",
     model: "SMART TV",
     desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
-    price: "$1.635.999",
+    price: "$699",
     button: "Show Now",
   },
   {
@@ -174,16 +174,7 @@ const clocks = [
     name: "Enhanced Technology",
     model: "SMART TV",
     desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
-    price: "$1.635.999",
-    button: "Show Now",
-  },
-
-  {
-    image: clock,
-    name: "Enhanced Technology",
-    model: "SMART TV",
-    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
-    price: "$1.635.999",
+    price: "$250",
     button: "Show Now",
   },
 
@@ -192,7 +183,16 @@ const clocks = [
     name: "Enhanced Technology",
     model: "SMART TV",
     desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
-    price: "$1.635.999",
+    price: "$560",
+    button: "Show Now",
+  },
+
+  {
+    image: clock,
+    name: "Enhanced Technology",
+    model: "SMART TV",
+    desc: " The ship get ground on the shore of this unchared desert isle with gilligan the skipper too the millionare and his history",
+    price: "$699",
     button: "Show Now",
   },
   
