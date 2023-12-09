@@ -344,7 +344,7 @@ export const tablets = {
       name: "Cameras",
       model: "Apple Ipad New",
       desc: "G2356",
-      price: " $ 238",
+      price: " $ 298",
       card: "Add to Card",
     },
     {
