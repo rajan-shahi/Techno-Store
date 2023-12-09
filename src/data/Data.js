@@ -315,7 +315,7 @@ export const games = {
       name: "Computers",
       model: "Beats snarkitecture",
       desc: "Headphones",
-      price: " $ 12450.00",
+      price: " $ 299",
       card: "Add to Card",
     },
     {
