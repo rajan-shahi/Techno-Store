@@ -90,7 +90,7 @@ const prouducts = [
     name: "Laptop",
     model: "Apple ipad Mini",
     desc: "G2356",
-    price: " $ 125140.00",
+    price: " $ 129",
     card: "Add to Card",
   },
   {
@@ -98,7 +98,7 @@ const prouducts = [
     name: "Cameras",
     model: "New X5c-12.4Ghz ",
     desc: "Rc Quadcopter Drone",
-    price: " $ 12590.00",
+    price: " $ 630",
     card: "Add to Card",
   },
   {
@@ -106,7 +106,7 @@ const prouducts = [
     name: "Cameras",
     model: "Apple Ipad New",
     desc: "G2356",
-    price: " $ 12400.00",
+    price: " $ 199",
     card: "Add to Card",
   },
   {
@@ -114,7 +114,7 @@ const prouducts = [
     name: "Cameras",
     model: "New X5c-12Djk",
     desc: "CKli-01Jb",
-    price: " $ 12542.00",
+    price: " $ 293",
     card: "Add to Card",
   },
   {
@@ -122,7 +122,7 @@ const prouducts = [
     name: "Headphones",
     model: "Beats Solo",
     desc: "HD",
-    price: " $ 756250.00",
+    price: " $ 756",
     card: "Add to Card",
   },
   {
@@ -130,7 +130,7 @@ const prouducts = [
     name: "Computers",
     model: "Apple Imac Zosc4824",
     desc: "Retin",
-    price: " $ 12850.00",
+    price: " $ 290",
     card: "Add to Card",
   },
   {
@@ -138,7 +138,7 @@ const prouducts = [
     name: "Computer",
     model: "Apple ipad 1232BG 9.7",
     desc: "Tablet",
-    price: " $ 42250.00",
+    price: " $ 399",
     card: "Add to Card",
   },
   {
@@ -146,7 +146,7 @@ const prouducts = [
     name: "Computers",
     model: "smartphone 75",
     desc: "123GB",
-    price: " $ 12552.03650",
+    price: " $ 128",
     card: "Add to Card",
   },
   {
@@ -154,14 +154,14 @@ const prouducts = [
     name: "Computers",
     model: "Beats snarkitecture",
     desc: "Headphones",
-    price: " $ 12450.00",
+    price: " $ 560",
     card: "Add to Card",
   },
   {
     image: Ninteen,
     name: "Computer",
     desc: "40K6013UPB10",
-    price: " $ 12050.010",
+    price: " $ 499",
     card: "Add to Card",
   },
 ];

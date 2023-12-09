@@ -43,7 +43,7 @@ const NewArrivalsCom = () => {
             {actives?.items?.map((product, index) => (
               <div
                 key={index}
-                className="border border-transparent rounded-2xl hover:border-gray-300   transition all  ease-in-out "
+                className="border border-transparent rounded-2xl hover:border-orange-300   transition all  ease-in-out "
               >
                 <div className=" flex flex-col gap-3 py-12  items-center">
                   <img

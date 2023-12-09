@@ -28,7 +28,7 @@ const BestSellers = () => {
             </h1>
             <img  className=" cursor-pointer" src={Jug} alt="" />
             <h2>Harman Kardon</h2>
-            <p className=" text-orange-400  text-xl">$1,250.00</p>
+            <p className=" text-orange-400  text-xl">$199.00</p>
             <div className=" flex gap-8">
               <p className=" flex flex-col gap-2">
                 <h1>Days</h1>
@@ -144,7 +144,7 @@ const bestSellers = [
     img: One02,
     name: "Razer RZ02-01071500-R3M1",
     starImg: Star,
-    price: "$5020.00",
+    price: "$520.00",
   },
   {
     img: One03,
@@ -165,7 +165,7 @@ const features = [
     img: One05,
     name: " Apple iPad Mini G2356",
     starImg: Star,
-    price: "$520.00",
+    price: "$560.00",
   },
   {
     img: One06,
@@ -192,6 +192,6 @@ const hots = [
     img: One010,
     name: "Beats Pill + Portable Speaker",
     starImg: Star,
-    price: "$15.00",
+    price: "$105.00",
   },
 ];
