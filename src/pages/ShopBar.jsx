@@ -378,7 +378,7 @@ const shopcards = [
     the: "The iPhone 5c replaces the iPhone 5 in",
     apple: "the Apple stable, inheriting its internals,",
     like: "like the A6 processor, 4 screen...",
-    price: " $ 125140.00",
+    price: " $ 199",
     card: "Add to Card",
   },
   {
@@ -390,7 +390,7 @@ const shopcards = [
     the: "The iPhone 5c replaces the iPhone 5 in",
     apple: "the Apple stable, inheriting its internals,",
     like: "like the A6 processor, 4 screen...",
-    price: " $ 12542.00",
+    price: " $ 450",
     card: "Add to Card",
   },
   {
@@ -402,7 +402,7 @@ const shopcards = [
     the: "The iPhone 5c replaces the iPhone 5 in",
     apple: "the Apple stable, inheriting its internals,",
     like: "like the A6 processor, 4 screen...",
-    price: " $ 125140.00",
+    price: " $ 299",
     card: "Add to Card",
   },
   {
@@ -414,7 +414,7 @@ const shopcards = [
     the: "The iPhone 5c replaces the iPhone 5 in",
     apple: "the Apple stable, inheriting its internals,",
     like: "like the A6 processor, 4 screen...",
-    price: " $ 12400.00",
+    price: " $ 680",
     card: "Add to Card",
   },
   {
@@ -426,7 +426,7 @@ const shopcards = [
     the: "The iPhone 5c replaces the iPhone 5 in",
     apple: "the Apple stable, inheriting its internals,",
     like: "like the A6 processor, 4 screen...",
-    price: " $ 12542.00",
+    price: " $ 145",
     card: "Add to Card",
   },
   {
@@ -438,7 +438,7 @@ const shopcards = [
     the: "The iPhone 5c replaces the iPhone 5 in",
     apple: "the Apple stable, inheriting its internals,",
     like: "like the A6 processor, 4 screen...",
-    price: " $ 756250.00",
+    price: " $ 756",
     card: "Add to Card",
   },
 ];
