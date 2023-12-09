@@ -421,7 +421,7 @@ export const computers = {
       name: "Cameras",
       model: "New X5c-12.4Ghz",
       desc: "Rc Quadcopter Drone",
-      price: " $ 649",
+      price: " $ 657",
       card: "Add to Card",
     },
     {
