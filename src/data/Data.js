@@ -405,7 +405,7 @@ export const computers = {
       name: "Cameras",
       model: "New X5c-12563Djk",
       desc: "CKli-01Jb",
-      price: " $ 12542.00",
+      price: " $ 463",
       card: "Add to Card",
     },
     {
