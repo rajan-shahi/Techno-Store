@@ -291,7 +291,7 @@ export const games = {
       name: "Computers",
       model: "Apple Imac Zosc4824",
       desc: "Retin",
-      price: " $ 358",
+      price: " $ 351",
       card: "Add to Card",
     },
     {
