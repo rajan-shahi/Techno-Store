@@ -10,17 +10,17 @@ const CardContainer = () => {
     {/* container */}
     <div className='  hidden md:flex  w-10/12'>
         <div className=' grid  gap-4 grid-cols-1 md:grid-cols-2 py-8'>
-            <div className='cursor-pointer'>
-                <img  src={Home} alt="" />
+            <div className='cursor-pointer '>
+                <img  src={Home} alt=" " className='hover:animate-pulse duration-500' />
+            </div>
+            <div className=' cursor-pointer '>
+                <img src={Home7} alt="" className='hover:animate-pulse duration-500 ' />
             </div>
             <div className=' cursor-pointer'>
-                <img src={Home7} alt="" />
-            </div>
-            <div className=' cursor-pointer'>
-                <img src={Home9} alt="" />
+                <img src={Home9} alt="" className='  hover:animate-pulse duration-500' />
                 </div>
-            <div className=' cursor-pointer'>
-                <img src={Home10} alt="" />
+            <div className=' cursor-pointer '>
+                <img src={Home10} alt="" className=' hover:animate-pulse duration-500' />
             </div>
         </div>
     </div>
