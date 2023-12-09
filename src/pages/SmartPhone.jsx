@@ -18,7 +18,7 @@ const SmartPhone = () => {
         <div className=" grid grid-cols-2 gap-4 md:gap-1 md:flex justify-between text-gray-700  text-xl border-b-2 pb-2 ">
           <button
             onClick={() => setLists(smartphones)}
-            className={` ${lists.name === "smart" ? "px-2 text-white/80 bg-orange-500 rounded-full" : ""}`}
+            className={` ${lists.name === "smart" ? "px-2 text-white/80 bg-orange-500  rounded-full" : ""}`}
           >
             {" "}
             Smartphones
