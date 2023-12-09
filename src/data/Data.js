@@ -352,7 +352,7 @@ export const tablets = {
       name: "Cameras",
       model: "New X5c-12563Djk",
       desc: "CKli-01Jb",
-      price: " $ 499",
+      price: " $ 439",
       card: "Add to Card",
     },
     {
@@ -382,7 +382,7 @@ export const computers = {
       name: "Cameras",
       model: "Apple Ipad New",
       desc: "G2356",
-      price: " $ 609",
+      price: " $ 809",
       card: "Add to Card",
     },
     {
