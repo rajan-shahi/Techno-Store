@@ -126,7 +126,7 @@ const products = {
       name: "Computers",
       model: "Beats snarkitecture",
       desc: "Headphones",
-      price: " $ 180",
+      price: " $ 189",
       card: "Add to New Card",
     },
     {
