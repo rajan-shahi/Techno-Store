@@ -174,7 +174,7 @@ const products = {
       name: "Headphones",
       model: "Beats Solo",
       desc: "HD",
-      price: " $ 620",
+      price: " $ 610",
       card: "Add to New Card",
     },
   ],
