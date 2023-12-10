@@ -220,7 +220,7 @@ const featureds = {
       name: "Headphones",
       model: "Apple ipad 1232BG 9.7",
       desc: " cfgvtrytb HD",
-      price: " $ 750",
+      price: " $ 499",
       card: "Add to Featured",
     },
     {
