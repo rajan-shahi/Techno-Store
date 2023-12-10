@@ -102,7 +102,7 @@ const products = {
       name: "Cameras",
       model: "Apple Ipad New",
       desc: "G2356",
-      price: " $ 129",
+      price: " $ 299",
       card: "Add to New Card",
     },
     {
