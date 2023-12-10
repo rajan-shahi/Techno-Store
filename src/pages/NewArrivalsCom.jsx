@@ -110,7 +110,7 @@ const products = {
       name: "Cameras",
       model: "New X5c-12563Djk",
       desc: "CKli-01Jb",
-      price: " $ 160",
+      price: " $ 628",
       card: "Add to New Card",
     },
     {
