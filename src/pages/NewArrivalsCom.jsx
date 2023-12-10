@@ -142,7 +142,7 @@ const products = {
       name: "Computer",
       model: "Apple ipad 1232BG 9.7",
       desc: "Tablet",
-      price: " $ 420",
+      price: " $ 423",
       card: "Add to New Card",
     },
     {
