@@ -188,7 +188,7 @@ const featureds = {
       name: "Camera",
       model: "New X5c-12.4Ghz Gyro",
       desc: "G dwfet 2356",
-      price: " $ 150",
+      price: " $ 197",
       card: "Add to New Featured",
     },
     {
