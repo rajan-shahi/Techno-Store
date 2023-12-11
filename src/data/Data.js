@@ -35,7 +35,7 @@ export const smartphones = {
       name: "Cameras",
       model: "Apple Ipad New",
       desc: "G2356",
-      price: " $ 120",
+      price: " $ 175",
       card: "Add to Card",
     },
     {
