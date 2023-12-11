@@ -43,7 +43,7 @@ export const smartphones = {
       name: "Cameras",
       model: "New X5c-12563Djk",
       desc: "CKli-01Jb",
-      price: " $ 630",
+      price: " $ 397",
       card: "Add to Card",
     },
     {
