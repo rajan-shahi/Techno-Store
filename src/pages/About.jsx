@@ -207,7 +207,7 @@ const meets = [
   },
   {
     image: girl4,
-    name: "shori Rawal",
+    name: "Ishori Rawal",
     desc: "Web Designer",
   },
 ];
