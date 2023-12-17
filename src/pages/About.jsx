@@ -177,7 +177,7 @@ const meets = [
   },
   {
     image: girl5,
-    name: "Angela baby",
+    name: "Gita Bista",
     desc: "fashion Designer",
   },
   {
