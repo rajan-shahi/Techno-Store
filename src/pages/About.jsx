@@ -187,17 +187,17 @@ const meets = [
   },
   {
     image: girl4,
-    name: "Harry Dor",
+    name: "Bipana Sapkota",
     desc: "Web Designer",
   },
   {
     image: boy1,
-    name: "Garry Stil",
+    name: "Tapendra Bahadur Shahi",
     desc: "CEo/Founder",
   },
   {
     image: girl5,
-    name: "Angela baby",
+    name: "Jun parsad Rokaya",
     desc: "Full Stack Developer",
   },
   {
