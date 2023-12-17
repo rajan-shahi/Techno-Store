@@ -69,7 +69,7 @@ const About = () => {
               conduct a further search of the area. He was
             </p>
           </div>
-          <div className=" flex-1 flex flex-col l md:gap-3 gap-5  items-center md:items-start ">
+          <div className=" flex-1 flex flex-col  md:gap-3 gap-5  items-center md:items-start ">
             <img
               className=" cursor-pointer md:pt-0 pt-9 rounded-lg"
               src={girl2}
@@ -172,7 +172,7 @@ export default About;
 const meets = [
   {
     image: boy1,
-    name: "Garry Stil",
+    name: "Rajan Bahadur Shahi",
     desc: "CEo/Founder",
   },
   {
