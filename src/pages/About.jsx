@@ -182,7 +182,7 @@ const meets = [
   },
   {
     image: boy3,
-    name: "john swim",
+    name: "Lokendra Chaulagain",
     desc: "Manager/HOD",
   },
   {
