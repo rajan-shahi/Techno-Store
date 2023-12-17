@@ -197,12 +197,12 @@ const meets = [
   },
   {
     image: girl5,
-    name: "Jun parsad Rokaya",
+    name: "Anjali Thapa",
     desc: "Full Stack Developer",
   },
   {
     image: boy3,
-    name: "john swim",
+    name: "Jun Parsad Rokaya",
     desc: "Manager/HOD",
   },
   {
