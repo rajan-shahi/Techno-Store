@@ -10,14 +10,15 @@ import AddNeweCard from "./components/AddNeweCard";
 import BlogSideBar from "./components/BlogSideBar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
     <div className=" overflow-x-hidden">
+      <Toaster />
       <BrowserRouter>
         <Navbar />
-        <div className=" md:py-32 py-6  md:pb-32 pb-20"> 
+        <div className=" md:py-32 py-6  md:pb-32 pb-20">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
@@ -30,7 +31,6 @@ const App = () => {
           </Routes>
         </div>
         <Footer />
-   
       </BrowserRouter>
     </div>
   );

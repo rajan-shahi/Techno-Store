@@ -1,7 +1,11 @@
 import React from "react";
+import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
+  const handleSignup = () => {
+    toast.success("Sucess Register");
+  };
   return (
     <div className=" flex justify-center items-center  ">
       <div className="flex  flex-col gap-4 w-full md:w-3/12  ">
@@ -16,14 +20,17 @@ const Signup = () => {
             </span>
           </h2>
         </div>
-        <div className=" flex  md:px-4 flex-col md:gap-5  gap-6 justify-center items-center">
+        <form
+          onSubmit={handleSignup}
+          className=" flex  md:px-4 flex-col md:gap-5  gap-6 justify-center items-center"
+        >
           <div className=" flex flex-col">
             <span className=" text-md text-gray-600">Usename</span>
             <input
               name="name"
               className=" w-[350px] border  border-gray-400 outline-orange-400 px-2 md:py-1 py-2 rounded-lg  placeholder:text-sm"
-              type="email"
               placeholder="Enter Username"
+              required
             />
           </div>
 
@@ -34,6 +41,7 @@ const Signup = () => {
               className=" w-[350px] border  border-gray-400 outline-orange-400 px-2 md:py-1 py-2 rounded-lg  placeholder:text-sm"
               type="email"
               placeholder="Enter your email"
+              required
             />
           </div>
           <div className=" flex flex-col">
@@ -43,6 +51,7 @@ const Signup = () => {
               className=" w-[350px] border  border-gray-400 outline-orange-400 px-2 md:py-1 py-2 rounded-lg  placeholder:text-sm "
               type="text"
               placeholder="mm/dd/yyyy"
+              required
             />
           </div>
           <div className=" flex flex-col">
@@ -52,23 +61,28 @@ const Signup = () => {
               className=" w-[350px] border  border-gray-400 outline-orange-400 px-2 md:py-1 py-2 rounded-lg  placeholder:text-sm"
               type="password"
               placeholder="Enter password"
+              required
             />
           </div>
           <div className=" flex flex-col">
             <span className=" text-md text-gray-600">Conform Password</span>
             <input
-              name="name"
+              name="password"
               className=" w-[350px] border  border-gray-400 outline-orange-400 px-2 md:py-1 py-2 rounded-lg  placeholder:text-sm"
               type="password"
               placeholder="Enter Conform password"
+              required
             />
           </div>
           <div>
-            <button className=" hover:bg-orange-400 duration-500 w-[350px] border  border-gray-400 outline-orange-400 px-1 py-2 md:py-1 rounded-lg  bg-blue-400 text-white">
+            <button
+              type="submit"
+              className=" hover:bg-orange-400 duration-500 w-[350px] border  border-gray-400 outline-orange-400 px-1 py-2 md:py-1 rounded-lg  bg-blue-400 text-white"
+            >
               Submit
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
