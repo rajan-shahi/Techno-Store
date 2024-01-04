@@ -16,7 +16,7 @@ const SighIn = () => {
             </span>
           </h2>
         </div>
-        <div className=" flex  md:px-4 flex-col md:gap-5  gap-6 justify-center items-center">
+        <form className=" flex  md:px-4 flex-col md:gap-5  gap-6 justify-center items-center">
           <div className=" flex flex-col">
             <span className=" text-md text-gray-600">Email</span>
             <input
@@ -24,6 +24,7 @@ const SighIn = () => {
               className=" w-[350px] border  border-gray-400 outline-orange-400 px-2 md:py-1 py-2 rounded-lg  placeholder:text-sm"
               type="email"
               placeholder="Enter Your email"
+              required
             />
           </div>
           <div className=" flex flex-col">
@@ -33,13 +34,17 @@ const SighIn = () => {
               className=" w-[350px] border  border-gray-400 outline-orange-400 px-2 md:py-1  py-2 rounded-lg  placeholder:text-sm"
               type="password"
               placeholder="Enter Your password"
+              required
             />
           </div>
-          <div>
-            <button className=" w-[350px] border  border-gray-400 outline-orange-400 px-2 py-2 md:py-1 rounded-lg  bg-blue-400 text-white">
-              Login
-            </button>
-          </div>
+
+          <button
+            type="submit"
+            className=" w-[350px] border  border-gray-400 outline-orange-400 px-2 py-2 md:py-1 rounded-lg  bg-blue-400 text-white"
+          >
+            Login
+          </button>
+
           <div>
             <h1>or</h1>
           </div>
@@ -59,11 +64,7 @@ const SighIn = () => {
           </div>
           <div className="w-[350px] border  border-gray-400   py-3 rounded-lg flex justify-center items-center">
             <span className="  text-blue-500 px-1 cursor-pointer">
-              <a
-                href="https://www.facebook.com
-"
-                target="-blank"
-              >
+              <a href="https://www.facebook.com" target="-blank">
                 <SlSocialFacebook size={20} />
               </a>
             </span>
@@ -96,7 +97,7 @@ const SighIn = () => {
               </a>
             </h1>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
