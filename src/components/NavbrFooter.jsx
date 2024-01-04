@@ -9,7 +9,7 @@ const NavbrFooter = () => {
       {/* container */}
       <div className="   w-full md:w-10/12 flex justify-between ">
         {/* left */}
-        <div className=" flex  w-[500px] border rounded-full  px-2 text-sm">
+        <div className=" flex  w-[500px] border rounded-md  px-2 text-sm">
           <div className=" flex items-center">
             <select
               id=""
@@ -48,7 +48,7 @@ const NavbrFooter = () => {
               placeholder="search what you looking for ?"
             />
           </div>
-          <span className=" bg-gray-200 hover:bg-orange-300 duration-500 py-3 px-8 rounded-full cursor-pointer">
+          <span className=" hover:bg-gray-200 bg-orange-300 duration-500 py-3 px-8  rounded-md cursor-pointer">
             <FiSearch size={30} />
           </span>
         </div>
